@@ -50,3 +50,51 @@
   height: 3px;
   z-index: 10;
 }
+
+
+/* Burger menu in the work pages */
+.burger-menu-works {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  z-index: 1010;
+  background-color: transparent transparent;
+  position: absolute;
+  right: 40px;
+  top: 0px;
+
+  @media (max-width: 768px) {
+    right: 20px;
+    top: -50px;
+
+  }
+}
+
+.burger-menu-works .line {
+  width: 25px;
+  height: 3px;
+  background-color: $light-gray;
+  margin: 5px;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+
+}
+
+.burger-menu-works.active .top {
+  transform: rotate(45deg) translate(5px, 13px);
+  width: 25px;
+  height: 3px;
+  z-index: 10;
+}
+
+.burger-menu-works.active .middle {
+  opacity: 0;
+}
+
+.burger-menu-works.active .bottom {
+  transform: rotate(-45deg) translate(5px, -13px);
+  width: 25px;
+  height: 3px;
+  z-index: 10;
+}

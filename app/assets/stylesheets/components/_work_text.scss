@@ -90,4 +90,17 @@
       right: 30px;
     }
   }
+
+  #fot{
+    width: 60px;
+      position: absolute;
+      bottom: 0px;
+      right: 40px;
+    @media (max-width: 760px) {
+      width: 50px;
+      position: absolute;
+      bottom: 0px;
+      right: 30px;
+    }
+  }
 }
