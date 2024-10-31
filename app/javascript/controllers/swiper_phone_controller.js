@@ -31,6 +31,7 @@ export default class extends Controller {
             prevButton.style.color = 'blue';
             nextButton.style.color = 'blue';
             meter.style.backgroundColor = 'blue';
+            julian.style.color = 'blue';
             meter.style.width = (100 / totalSlides) * currentSlide + '%';
             lines.forEach((line) => {
               line.style.backgroundColor = 'blue';
