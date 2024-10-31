@@ -24,11 +24,15 @@ export default class extends Controller {
           const burgerMenu = document.getElementById('burger-menu');
           const lines = burgerMenu.querySelectorAll('.line');
           const meter = document.getElementById('meter');
+          const julian = document.getElementById('logo-text').firstElementChild;
+          console.log(julian);
+
 
           if (this.realIndex === 0) {
             prevButton.style.color = 'blue';
             nextButton.style.color = 'blue';
             meter.style.backgroundColor = 'blue';
+            julian.style.color = 'blue';
             meter.style.width = (100 / totalSlides) * currentSlide + '%';
             lines.forEach((line) => {
               line.style.backgroundColor = 'blue';
@@ -37,6 +41,7 @@ export default class extends Controller {
             prevButton.style.color = 'red';
             nextButton.style.color = 'red';
             meter.style.backgroundColor = 'red';
+            julian.style.color = 'red';
             meter.style.width = (100 / totalSlides) * currentSlide + '%';
             lines.forEach((line) => {
               line.style.backgroundColor = 'red';
@@ -45,6 +50,7 @@ export default class extends Controller {
             prevButton.style.color = 'violet';
             nextButton.style.color = 'violet';
             meter.style.backgroundColor = 'violet';
+            julian.style.color = 'violet';
             meter.style.width = (100 / totalSlides) * currentSlide + '%';
             lines.forEach((line) => {
               line.style.backgroundColor = 'violet';
@@ -53,6 +59,7 @@ export default class extends Controller {
             prevButton.style.color = 'white';
             nextButton.style.color = 'white';
             meter.style.backgroundColor = 'white';
+            julian.style.color = 'white';
             meter.style.width = (100 / totalSlides) * currentSlide + '%';
             lines.forEach((line) => {
               line.style.backgroundColor = 'white';
