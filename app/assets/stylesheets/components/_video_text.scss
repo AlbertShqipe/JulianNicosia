@@ -1,0 +1,44 @@
+#orsolina {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color:black;
+  transition: opacity 2s ease;
+
+  h1 {
+    font-size: 5rem;
+
+    span {
+      border-top: 4px solid black;
+      border-bottom: 4px solid black
+    }
+  }
+
+  p {
+    letter-spacing: 7px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 100;
+    margin-top:20px;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.6rem;
+      span {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+      }
+    }
+
+    p {
+      letter-spacing: 2px;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 100;
+      margin-top:15px;
+    }
+
+  }
+}

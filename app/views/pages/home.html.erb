@@ -1,2 +1,101 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="main-container-home">
+  <a href="javascript:void(0);" class="burger-menu" id="burger-menu" data-controller="burger-menu">
+    <div class="line top"></div>
+    <div class="line middle"></div>
+    <div class="line bottom"></div>
+  </a>
+  <%# <%= asset_path('logoBlack.png')%>
+  <div class="swiper-container-pc" data-controller="swiper-pc">
+    <div id="meter">
+    </div>
+    <!-- Add navigation buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" id="and-if-this-is-it">
+        <div class="video-background">
+          <iframe src="https://player.vimeo.com/video/1020732599?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;loop=1&amp;"
+            frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            style="width: 2000px;height: 1600px;z-index:-1;bottom:-30%; right:0%; transform:translate(-50%, 5%)">
+          </iframe>
+          <div class="work_text">
+            <h1 class="h1">"AND IF THIS IS IT"</h1>
+            <p class="p1">Orsolina 28</p>
+            <p class="p2">ART FOUNDATION</p>
+            <a class="link" href="/and_if_this_is_it">More info
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 9"><path d="M28.71,3.79,25.21.29a1,1,0,0,0-1.42,1.42l1.8,1.79H1a1,1,0,0,0,0,2H25.59l-1.8,1.79a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l3.5-3.5A1,1,0,0,0,28.71,3.79Z"/></svg>
+              </span>
+            </a>
+            <%= image_tag('logoWhite.png')%>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide" id="love-hurts">
+        <div class="video-background">
+          <iframe src="https://player.vimeo.com/video/1020747438?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;loop=1&amp;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+          style="width: 2000px;height: 1600px;z-index:-1;top:-55%; right:0%; transform:translate(-50%, 5%)" title="LOVE HURTS" class="swiper-video"></iframe>
+        </div>
+      </div>
+      <div class="swiper-slide" id="fragments-of-time">
+        <div class="video-background">
+          <iframe src="https://player.vimeo.com/video/945962977?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;loop=1&amp" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="&quot;FRAGMENTS OF TIME&quot; TRAILER"
+            style="width: 2000px;height: 1600px;z-index:-1;top:-45%; right:0%; transform:translate(-50%, 5%)" class="swiper-video"></iframe>
+        </div>
+      </div>
+      <div class="swiper-slide" id="fragments-of-time">
+        <div class="video-background">
+          <iframe src="https://player.vimeo.com/video/904727804?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;loop=1&amp" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="&quot;Le Goût de Dieu&quot;" style="width: 2000px;height: 1600px;z-index:-1;top:-45%; right:0%; transform:translate(-50%, 5%)" class="swiper-video"></iframe>
+        </div>
+      </div>
+      <!-- Add more video slides -->
+    </div>
+
+  </div>
+  <div class="swiper-container-phone" data-controller="swiper-phone">
+    <div id="meter-phone">
+    </div>
+    <!-- Add navigation buttons -->
+    <div id="phone-next" class="swiper-button-next"></div>
+    <div id="phone-prev" class="swiper-button-prev"></div>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" id="and-if-this-is-it">
+        <div class="video-background">
+          <%# <div id="orsolina">
+            <h1>ORSOLINA <span>28</span></h1>
+            <p>ART FOUNDATION</p>
+          </div> %>
+          <iframe src="https://player.vimeo.com/video/1020732599?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;loop=1&amp;"
+          frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+          style="width: 2000px;height: 1600px;z-index:-1;bottom:-30%; right:0%; transform:translate(-50%, 5%)"></iframe>
+        </div>
+        <div class="work_text">
+          <h1>"AND IF THIS IS IT"</h1>
+          <p class="p1">Orsolina 28</p>
+          <p class="p2">ART FOUNDATION</p>
+          <a class="link" href="/and_if_this_is_it">More info
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 9"><path d="M28.71,3.79,25.21.29a1,1,0,0,0-1.42,1.42l1.8,1.79H1a1,1,0,0,0,0,2H25.59l-1.8,1.79a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l3.5-3.5A1,1,0,0,0,28.71,3.79Z"/></svg>
+            </span>
+          </a>
+          <%= image_tag('logoWhite.png')%>
+        </div>
+      </div>
+      <div class="swiper-slide" id="love-hurts">
+        <div class="video-background">
+          <iframe src="https://player.vimeo.com/video/1020747438?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;loop=1&amp;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+          style="width:1300px;height:1200px;z-index:-1;top:-50%; right:0%; transform:translate(-50%, 5%)" title="LOVE HURTS" class="swiper-video"></iframe>
+        </div>
+      </div>
+      <div class="swiper-slide" id="fragments-of-time">
+        <div class="video-background">
+          <iframe src="https://player.vimeo.com/video/945962977?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;loop=1&amp" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="&quot;FRAGMENTS OF TIME&quot; TRAILER"
+            style="width: 2000px;height: 1600px;z-index:-1;top:-100%; right:0%; transform:translate(-50%, 5%)" class="swiper-video"></iframe>
+        </div>
+      </div>
+      <!-- Add more video slides -->
+    </div>
+
+  </div>
+</div>
+<script src="https://player.vimeo.com/api/player.js"></script>

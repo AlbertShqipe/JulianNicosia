@@ -1,0 +1,150 @@
+.swiper-container-pc {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden; /* Hide overflow */
+
+  @media (max-width: 760px) {
+    display: none;
+
+  }
+
+  .swiper-slide {
+    position: relative;
+    overflow: hidden; /* Hide overflow of video outside the container */
+  }
+
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: 44px !important;
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+    // color: $red;
+
+    @media (max-width: 768px) {
+      font-size: 20px !important;
+
+    }
+  }
+
+  .video-background {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    .text-container {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color:black;
+
+      h1 {
+        font-size: 5rem;
+
+        span {
+          border-top: 4px solid black;
+          border-bottom: 4px solid black
+        }
+      }
+
+      p {
+        letter-spacing: 7px;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 100;
+        margin-top:20px;
+      }
+    }
+  }
+
+  .video-background iframe {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 2000px;
+    height: 1500px;
+    transform: translate(0%, 0%);
+    z-index: -1;
+    pointer-events: none;
+
+  }
+}
+.swiper-container-phone {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden; /* Hide overflow */
+
+  @media (min-width: 760px) {
+    display: none;
+
+  }
+
+  .swiper-slide {
+    position: relative;
+    overflow: hidden; /* Hide overflow of video outside the container */
+  }
+
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: 44px !important;
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+    // color: $red;
+
+    @media (max-width: 768px) {
+      font-size: 20px !important;
+
+    }
+  }
+
+  .video-background {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    .text-container {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color:black;
+
+      h1 {
+        font-size: 5rem;
+
+        span {
+          border-top: 4px solid black;
+          border-bottom: 4px solid black
+        }
+      }
+
+      p {
+        letter-spacing: 7px;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 100;
+        margin-top:20px;
+      }
+    }
+  }
+
+  .video-background iframe {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 2000px;
+    height: 1500px;
+    transform: translate(0%, 0%);
+    z-index: -1;
+    pointer-events: none;
+
+  }
+}

@@ -1,0 +1,48 @@
+/* Plus button */
+#plus-btn {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+
+  &:hover {
+    .vertical, .horizontal {
+      background-color: $red;
+    }
+  }
+}
+
+#plus-btn .vertical {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 2px;
+  background-color: white;
+  transform: rotate(90deg);
+  transition: all 0.2s ease-in-out;
+  z-index: 10;
+
+}
+
+#plus-btn .horizontal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, 0%);
+  width: 10px;
+  height: 2px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+
+}
+
+#plus-btn.turn .vertical {
+  transform: rotate(0deg);
+  width: 10px;
+  height: 2px;
+  z-index: 10;
+}

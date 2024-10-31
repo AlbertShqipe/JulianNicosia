@@ -1,0 +1,21 @@
+#meter {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  width: 33.33%;
+  background-color: $blue;
+  transition: width 1s ease;
+  z-index: 10;
+}
+
+#meter-phone {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  width: 33.33%;
+  background-color: $blue;
+  transition: width 1s ease;
+  z-index: 10;
+}
