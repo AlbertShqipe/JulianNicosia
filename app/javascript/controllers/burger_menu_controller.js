@@ -8,6 +8,10 @@ export default class extends Controller {
     const julian = document.getElementById('logo-text');
     const textInfo1Pc = document.getElementById('text-info-1-pc');
     const textInfo1Phone = document.getElementById('text-info-1-phone');
+    const textInfo2Pc = document.getElementById('text-info-2-pc');
+    const textInfo2Phone = document.getElementById('text-info-2-phone');
+    const textInfo3Pc = document.getElementById('text-info-3-pc');
+    const textInfo3Phone = document.getElementById('text-info-3-phone');
 
     burgerMenu.addEventListener('click', () => {
       burgerMenu.classList.toggle('active');
@@ -16,11 +20,19 @@ export default class extends Controller {
         julian.style = 'display: none'
         textInfo1Pc.style = 'display: none'
         textInfo1Phone.style = 'display: none'
+        textInfo2Pc.style = 'display: none'
+        textInfo2Phone.style = 'display: none'
+        textInfo3Pc.style = 'display: none'
+        textInfo3Phone.style = 'display: none'
       } else {
         menu.style = 'opacity: 0; z-index:0';
         julian.style = 'display: inline-block'
         textInfo1Pc.style = 'display: inline-block'
         textInfo1Phone.style = 'display: inline-block'
+        textInfo2Pc.style = 'display: inline-block'
+        textInfo2Phone.style = 'display: inline-block'
+        textInfo3Pc.style = 'display: inline-block'
+        textInfo3Phone.style = 'display: inline-block'
       }
     });
   }
