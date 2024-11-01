@@ -17,6 +17,17 @@
 
   .h1 {
     font-size: 2rem;
+
+    @media (max-width: 760px) {
+      font-size: 1.6rem;
+    }
+  }
+  .h2 {
+    font-size: 1.8rem;
+
+    @media (max-width: 760px) {
+      font-size: 1.4rem;
+    }
   }
 
   .p1 {
@@ -32,6 +43,13 @@
   .p2 {
     margin-top: 0;
     // text-indent: 20px;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    // text-indent: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
   }
 
   .link {
@@ -41,7 +59,7 @@
     color: rgb(255, 255, 255);
     transition: color 0.3s ease;
     display: inline-flex;
-    text-indent: 20px;
+
 
     span > svg {
       width: 1.6rem;
@@ -55,7 +73,6 @@
         span > svg {
           fill: $red;
         }
-
     }
 
     /* Pseudo-element for the animated underline */
@@ -75,6 +92,10 @@
     /* Hover effect for underline */
     &:hover::after {
         transform: scaleX(1); /* Expand underline on hover */
+    }
+
+    @media (max-width: 760px) {
+      font-size: 1rem;
     }
   }
 
