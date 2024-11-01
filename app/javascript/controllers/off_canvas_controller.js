@@ -16,7 +16,7 @@ export default class extends Controller {
       document.getElementById('phone-prev').style = 'display: inline-block ';
       document.getElementById('phone-next').style = 'display: inline-block';
       document.getElementById('logo-text').style = "display: inline-block";
-      document.getElementById('burger-menu').style = "display: inline-block";
+      document.getElementById('burger-menu').style = "display: flex";
     });
   }
 
