@@ -46,7 +46,7 @@
 
 #logo-text {
   // width: 40%;
-  height: 20%;
+  // height: 20%;
   display: inline-block;
   font-family: $headers-font;
   margin: 0;
@@ -59,9 +59,9 @@
   font-size: 2.5rem;
 
   @media (max-width: 760px) {
-    top: 35px;
+    top: 25px;
     left: 30px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 
   }
 
