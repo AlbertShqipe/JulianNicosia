@@ -61,7 +61,7 @@
   @media (max-width: 760px) {
     top: 45px;
     left: 30px;
-    font-size: 1.75rem;
+    font-size: 1.4rem;
 
   }
 
@@ -71,15 +71,15 @@
     margin: 0;
     padding: 0;
     color: blue;
-    letter-spacing: 1rem;
+    letter-spacing: 0.3rem;
   }
 
-  @media (max-width: 768px) {
-    width: 100%;
-    top: 22px;
-    left: 15px;
-    font-size: 30px;
+  // @media (max-width: 768px) {
+  //   width: 100%;
+  //   top: 22px;
+  //   left: 15px;
+  //   font-size: 30px;
 
-  }
+  // }
 
 }
