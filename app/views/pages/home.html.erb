@@ -201,14 +201,11 @@
   </div>
   <div class="container text-sec">
     <h4>PHOTOS</h4>
-    <p>
       <img src="" alt="">
       <img src="" alt="">
       <img src="" alt="">
       <img src="" alt="">
       <img src="" alt="">
-      <img src="" alt="">
-    </p>
   </div>
 </div>
 <div id="mySidenav-lh" class="sidenav-love-hurts">
@@ -261,14 +258,52 @@
   </div>
   <div class="container text-sec">
     <h4>PHOTOS</h4>
-    <p>
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-    </p>
+
+    <div class="gallery">
+      <img src="/assets/Beast_and_Beauty_photo_gregory-batardon_058-1428b067d431c6b49636dbd521aa8e611164a30c8115c168adbf88967f56a3c2.jpg" onclick="openModal(4)" alt="Image 4" width="80px">
+      <img src="/assets/Beast_and_Beauty_photo_gregory-batardon_085-a2540bea371a92aa520540d04728de152cec392f101f2265010333668912339c.jpg" onclick="openModal(1)" alt="Image 1" width="80px">
+      <img src="/assets/Beast_and_Beauty_photo_gregory-batardon_024-0717ad83a3543edd6e5aca0361dbd4580c7aabfc7eb101c12c0153b74903e99c.jpg" onclick="openModal(2)" alt="Image 2" width="80px">
+      <img src="/assets/Beast_and_Beauty_photo_gregory-batardon_044-60b76ff1b4cb0edefb53f7e0bd0260200d6673d9030c4e82447c172ccde67631.jpg" onclick="openModal(3)" alt="Image 3" width="80px">
+      <img src="/assets/Beast_and_Beauty_photo_gregory-batardon_069-3f16c51402550401a9391f9e2a7cfe669d9e8986ab1c87fb8aa33620f1d528b4.jpg" onclick="openModal(5)" alt="Image 5" width="80px">
+      <img src="/assets/Beast_and_Beauty_photo_gregory-batardon_077 2-a1b226d66709c26bbbf56137d6aad127a28a000df7bcb155de6f7c5fdb9bb4ce.jpg" onclick="openModal(6)" alt="Image 6" width="80px">
+      <img src="/assets/Beast_and_Beauty_photo_gregory-batardon_085-a2540bea371a92aa520540d04728de152cec392f101f2265010333668912339c.jpg" onclick="openModal(7)" alt="Image 7" width="80px">
+    </div>
+
+    <div id="lightbox-modal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+          <img id="modal-img" src="" alt="Expanded image">
+          <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+          <button class="next" onclick="changeImage(1)">&#10095;</button>
+      </div>
+    </div>
   </div>
 </div>
 <script src="https://player.vimeo.com/api/player.js"></script>
+
+<script>
+  const images = [
+                  "/assets/Beast_and_Beauty_photo_gregory-batardon_085-a2540bea371a92aa520540d04728de152cec392f101f2265010333668912339c.jpg",
+                  "/assets/Beast_and_Beauty_photo_gregory-batardon_024-0717ad83a3543edd6e5aca0361dbd4580c7aabfc7eb101c12c0153b74903e99c.jpg",
+                  "/assets/Beast_and_Beauty_photo_gregory-batardon_044-60b76ff1b4cb0edefb53f7e0bd0260200d6673d9030c4e82447c172ccde67631.jpg",
+                  "/assets/Beast_and_Beauty_photo_gregory-batardon_058-1428b067d431c6b49636dbd521aa8e611164a30c8115c168adbf88967f56a3c2.jpg",
+                  "/assets/Beast_and_Beauty_photo_gregory-batardon_069-3f16c51402550401a9391f9e2a7cfe669d9e8986ab1c87fb8aa33620f1d528b4.jpg",
+                  "/assets/Beast_and_Beauty_photo_gregory-batardon_077 2-a1b226d66709c26bbbf56137d6aad127a28a000df7bcb155de6f7c5fdb9bb4ce.jpg",
+                  "/assets/Beast_and_Beauty_photo_gregory-batardon_085-a2540bea371a92aa520540d04728de152cec392f101f2265010333668912339c.jpg"];
+  let currentIndex = 0;
+
+  function openModal(index) {
+    currentIndex = index - 1;
+    document.getElementById("modal-img").src = images[currentIndex];
+    document.getElementById("lightbox-modal").style.display = "flex";
+  }
+
+  function closeModal() {
+    document.getElementById("lightbox-modal").style.display = "none";
+  }
+
+  function changeImage(direction) {
+    currentIndex = (currentIndex + direction + images.length) % images.length;
+    document.getElementById("modal-img").src = images[currentIndex];
+  }
+</script>
