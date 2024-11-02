@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   # Page to try things out
   get "test" => "pages#test"
+  get "media" => "pages#media"
 
   # Works routes
   get "index_works" => "works#index_works"

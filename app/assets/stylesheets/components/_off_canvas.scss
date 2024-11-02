@@ -82,6 +82,7 @@
 #main-lh {
   transition: margin-right .5s;
 }
+
 .sidenav-love-hurts {
   height: 100%;
   width: 0;
@@ -106,8 +107,13 @@
   .text {
     padding: 20px 8px 8px 8px;
     text-align: justify;
+
     h1 {
-      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 40px;
+      font-size: 3rem;
       color: $light-gray;
     }
     h4 {

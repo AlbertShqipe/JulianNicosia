@@ -10,8 +10,8 @@
     <%= javascript_importmap_tags %>
 
     <!--Cloudflare gallery-->
-    <%# <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script> %>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
     <!-- Favicon -->
     <%= favicon_link_tag 'logo.jpg' %>
@@ -38,7 +38,7 @@
         margin: 0;
         padding: 0;
         height: 100%;
-        overflow: hidden; /* Hide any overflow content */
+        overflow-y: scroll; /* Hide any overflow content */
       }
 
       .main-container {
@@ -49,15 +49,15 @@
     </style>
   </head>
   <body>
-    <div class="main-container" data-controller="full-contorl swiper-pc swiper-phone">
-        <%# <%= image_tag "/assets/logoBlack-d79ffd9b8d9dd258894faad20caac8c826fcd024d7e5051453312eef0f585f1c.png", class:"logo-black"%>
-        <%# <%= image_tag "/assets/logoWhite-941c41202184a68cca7dc87eb9ec20be26f774ed99022d1182a1edac03dce524.png", class:"logo-white" %>
+    <div class="main-container" data-controller="full-contorl swiper-pc swiper-phone works-list-disappear">
+        <%# <%= image_tag "/assets/logoBlack-d79ffd9b8d9dd258894faad20caac8c826fcd024d7e5051453312eef0f585f1c.png", class:"logo-black"
+        <%= image_tag "/assets/logoWhite-941c41202184a68cca7dc87eb9ec20be26f774ed99022d1182a1edac03dce524.png", class:"logo-white" %>
 
       <div id="menu-container" >
         <%= image_tag "/assets/logoWhite-941c41202184a68cca7dc87eb9ec20be26f774ed99022d1182a1edac03dce524.png", class:"logo-menu"%>
         <ul class="ul">
           <li id="julian"><a href="/julian_nicosia">Julian Nicosia</a></li>
-          <li>
+          <li id="works-list">
             <a href="/index_works">Works</a>
             <span id="plus-btn" data-controller="plus">
               <span class="vertical"></span>
@@ -72,7 +72,7 @@
               <li><a href="">LE GOUT DE DIEU</a></li>
             </ul>
           <li><a href="">Calendar</a></li>
-          <li><a href="">Media</a></li>
+          <li><a href="/media">Media</a></li>
           <li><a href="">Contact</a></li>
           <li><div id="slide-indicator"></div></li>
           <ul class="d-flex text-center justify-content-around mt-5">
@@ -82,8 +82,8 @@
           </ul>
         </ul>
       </div>
-      <%= yield %>
 
+      <%= yield %>
       <%= render "shared/flashes" %>
 
     </div>

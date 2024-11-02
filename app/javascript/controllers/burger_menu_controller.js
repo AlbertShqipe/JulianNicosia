@@ -12,6 +12,7 @@ export default class extends Controller {
     const textInfo2Phone = document.getElementById('text-info-2-phone');
     const textInfo3Pc = document.getElementById('text-info-3-pc');
     const textInfo3Phone = document.getElementById('text-info-3-phone');
+    const media = document.querySelector('gallery');
 
     burgerMenu.addEventListener('click', () => {
       burgerMenu.classList.toggle('active');
@@ -25,7 +26,7 @@ export default class extends Controller {
         textInfo3Pc.style = 'display: none'
         textInfo3Phone.style = 'display: none'
       } else {
-        menu.style = 'opacity: 0; z-index:0';
+        menu.style = 'display: none';
         julian.style = 'display: inline-block'
         textInfo1Pc.style = 'display: inline-block'
         textInfo1Phone.style = 'display: inline-block'
