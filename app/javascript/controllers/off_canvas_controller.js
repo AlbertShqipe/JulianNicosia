@@ -9,6 +9,9 @@ export default class extends Controller {
       document.getElementById('phone-next').style = 'display: none';
       document.getElementById('logo-text').style = "display: none";
       document.getElementById('burger-menu').style = "display: none";
+      document.getElementById('text-info-1-phone').style = 'display: none ';
+      document.getElementById('text-info-2-phone').style = 'display: none ';
+      document.getElementById('text-info-3-phone').style = 'display: none ';
     });
 
     document.getElementById("closebtn-itii").addEventListener("click", () => {
@@ -17,6 +20,9 @@ export default class extends Controller {
       document.getElementById('phone-next').style = 'display: inline-block';
       document.getElementById('logo-text').style = "display: inline-block";
       document.getElementById('burger-menu').style = "display: flex";
+      document.getElementById('text-info-1-phone').style = 'display: block';
+      document.getElementById('text-info-2-phone').style = 'display: block';
+      document.getElementById('text-info-3-phone').style = 'display: block';
     });
 
     document.getElementById("main-lh").addEventListener("click", () => {
@@ -25,6 +31,9 @@ export default class extends Controller {
       document.getElementById('phone-next').style = 'display: none';
       document.getElementById('logo-text').style = "display: none";
       document.getElementById('burger-menu').style = "display: none";
+      document.getElementById('text-info-1-phone').style = 'display: none ';
+      document.getElementById('text-info-2-phone').style = 'display: none ';
+      document.getElementById('text-info-3-phone').style = 'display: none ';
     });
 
     document.getElementById("closebtn-lh").addEventListener("click", () => {
@@ -33,6 +42,9 @@ export default class extends Controller {
       document.getElementById('phone-next').style = 'display: inline-block; color:red';
       document.getElementById('logo-text').style = "display: inline-block";
       document.getElementById('burger-menu').style = "display: flex";
+      document.getElementById('text-info-1-phone').style = 'display: block';
+      document.getElementById('text-info-2-phone').style = 'display: block';
+      document.getElementById('text-info-3-phone').style = 'display: block';
     });
   }
 }
