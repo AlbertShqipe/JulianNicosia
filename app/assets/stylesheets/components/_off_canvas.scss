@@ -99,6 +99,10 @@
   .text {
     padding: 20px 8px 8px 8px;
     text-align: justify;
+    h1 {
+      font-size: 2rem;
+      color: $light-gray;
+    }
     h4 {
       font-size: 1.1rem;
       color: $light-gray;
