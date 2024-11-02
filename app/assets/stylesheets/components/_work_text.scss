@@ -1,5 +1,4 @@
 .work_text {
-  width: 100% !important;
   color: rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0.4);
   display: inline-block;
@@ -14,6 +13,7 @@
   text-align: center;
 
   @media (max-width: 760px) {
+    width: 100% !important;
     bottom: 80px;
     left: 0px;
   }
