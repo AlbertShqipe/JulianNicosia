@@ -18,22 +18,51 @@ export default class extends Controller {
       burgerMenu.classList.toggle('active');
       if (burgerMenu.classList.contains('active')) {
         menu.style = 'opacity: 1;z-index:1000';
-        julian.style = 'display: none'
-        textInfo1Pc.style = 'display: none'
-        textInfo1Phone.style = 'display: none'
-        textInfo2Pc.style = 'display: none'
-        textInfo2Phone.style = 'display: none'
-        textInfo3Pc.style = 'display: none'
-        textInfo3Phone.style = 'display: none'
+        if (julian) {
+          julian.style = 'display: none'
+        }
+        if (textInfo1Pc) {
+          textInfo1Pc.style = 'display: none'
+        }
+        if (textInfo1Phone) {
+          textInfo1Phone.style = 'display: none'
+        }
+        if (textInfo2Pc) {
+          textInfo2Pc.style = 'display: none'
+        }
+        if (textInfo2Phone) {
+          textInfo2Phone.style = 'display: none'
+        }
+        if (textInfo3Pc) {
+          textInfo3Pc.style = 'display: none'
+        }
+        if (textInfo3Phone) {
+          textInfo3Phone.style = 'display: none'
+        }
       } else {
         menu.style = 'display: none';
-        julian.style = 'display: inline-block'
-        textInfo1Pc.style = 'display: inline-block'
-        textInfo1Phone.style = 'display: inline-block'
-        textInfo2Pc.style = 'display: inline-block'
-        textInfo2Phone.style = 'display: inline-block'
-        textInfo3Pc.style = 'display: inline-block'
-        textInfo3Phone.style = 'display: inline-block'
+        if (julian) {
+          julian.style = 'display: inline-block'
+        }
+        if (textInfo1Pc) {
+          textInfo1Pc.style = 'display: inline-block'
+        }
+        if (textInfo1Phone) {
+          textInfo1Phone.style = 'display: inline-block'
+        }
+        if (textInfo2Pc) {
+          textInfo2Pc.style = 'display: inline-block'
+        }
+        if (textInfo2Phone) {
+          textInfo2Phone.style = 'display: inline-block'
+        }
+        if (textInfo3Pc) {
+          textInfo3Pc.style = 'display: inline-block'
+        }
+        if (textInfo3Phone) {
+          textInfo3Phone.style = 'display: inline-block'
+
+        }
       }
     });
   }
