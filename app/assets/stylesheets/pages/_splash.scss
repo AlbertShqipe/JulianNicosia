@@ -12,7 +12,7 @@
   z-index: 9999; /* Ensure it covers other content */
 
   .image-bounce {
-    animation: bounce 5s ease-in-out infinite;
+    animation: bounce 5s ease-in-out;
 
     // Optional: Control the initial size of the image
     width: 100px;
@@ -21,11 +21,6 @@
     @keyframes bounce {
       0% {
         transform: scale(1);
-
-        @media screen {
-          transform: scale(100); // Biggest size
-          margin-bottom:2000px ;
-        }
       }
       50% {
         transform: scale(2.8); // Scaled up size
@@ -34,6 +29,30 @@
       100% {
         transform: scale(0.05); //Smallest size
       }
+    }
+    @media (max-width: 760px) {
+      @keyframes bounce {
+        0% {
+            transform: scale(100); // Biggest size
+            margin-bottom:2000px ;
+            opacity: 1;
+        }
+        40% {
+          transform: scale(2.8); // Scaled up size
+          margin: 0;
+          opacity: 1;
+        }
+        80% {
+          transform: scale(0.05); //Smallest size
+          opacity: 0.7;
+        }
+        100% {
+          transform: scale(0); // invisible
+          opacity: 0;
+          display: none;
+        }
+      }
+
     }
   }
 
