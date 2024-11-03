@@ -26,8 +26,14 @@
         transform: scale(2.8); // Scaled up size
         margin: 0;
       }
-      100% {
+      80% {
         transform: scale(0.05); //Smallest size
+        opacity: 0.7;
+      }
+      100% {
+        transform: scale(0); // invisible
+        opacity: 0;
+        display: none;
       }
     }
     @media (max-width: 760px) {
