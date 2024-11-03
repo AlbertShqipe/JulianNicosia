@@ -1,0 +1,61 @@
+#splash-screen {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999; /* Ensure it covers other content */
+
+  .image-bounce {
+    animation: bounce 5s ease-in-out infinite;
+
+    // Optional: Control the initial size of the image
+    width: 100px;
+    height: auto;
+
+    @keyframes bounce {
+      0% {
+        transform: scale(1);
+
+        @media screen {
+          transform: scale(100); // Biggest size
+          margin-bottom:2000px ;
+        }
+      }
+      50% {
+        transform: scale(2.8); // Scaled up size
+        margin: 0;
+      }
+      100% {
+        transform: scale(0.05); //Smallest size
+      }
+    }
+  }
+
+  h1 {
+    color: $red;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    display: none;
+
+
+    animation: mt 5s ease-in-out infinite;
+
+    @keyframes mt {
+      0%, 100% {
+        margin-top: 0rem; // Scaled up size
+      }
+      50% {
+        margin-top: 5rem ; // Normal size
+      }
+    }
+  }
+}

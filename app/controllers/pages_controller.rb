@@ -6,4 +6,7 @@ class PagesController < ApplicationController
 
   def media
   end
+
+  def splash
+  end
 end
