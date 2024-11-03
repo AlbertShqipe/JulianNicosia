@@ -27,7 +27,8 @@
     text-align: justify;
 
     h1 {
-      font-size: 2rem;
+      padding-top: 40px;
+      font-size: 3rem;
       color: $light-gray;
     }
 
@@ -109,9 +110,9 @@
     text-align: justify;
 
     h1 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
       padding-top: 40px;
       font-size: 3rem;
       color: $light-gray;

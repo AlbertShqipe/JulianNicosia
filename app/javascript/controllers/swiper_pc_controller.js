@@ -25,7 +25,7 @@ export default class extends Controller {
           const lines = burgerMenu.querySelectorAll('.line');
           const meter = document.getElementById('meter');
           const julian = document.getElementById('logo-text').firstElementChild;
-          console.log(julian);
+          // console.log(julian);
 
 
           if (this.realIndex === 0) {
