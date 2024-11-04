@@ -56,6 +56,10 @@
 
     .photo {
       margin-top: 10px;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 
@@ -87,7 +91,6 @@
 #main-lh {
   transition: margin-right .5s;
 }
-
 .sidenav-love-hurts {
   height: 100%;
   width: 0;
@@ -145,6 +148,10 @@
 
     .photo {
       margin-top: 10px;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 
@@ -172,10 +179,10 @@
   }
 }
 
+
 #main-fot {
   transition: margin-right .5s;
 }
-
 .sidenav-fragments-of-time {
   height: 100%;
   width: 0;
@@ -235,6 +242,10 @@
 
     .photo {
       margin-top: 10px;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 
