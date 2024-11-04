@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // Redirect to the main content after 4 seconds
       window.location.href = "https://www.juliannicosia.com/home";
       // window.location.href = "http://localhost:3000/home";
-    }, 3000); // 4000 milliseconds = 4 seconds
+    }, 2000); // 4000 milliseconds = 4 seconds
   } else {
     ''
   };
