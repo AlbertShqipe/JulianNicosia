@@ -53,6 +53,10 @@
       color: $light-gray;
       margin-bottom: 5px;
     }
+
+    .photo {
+      margin-top: 10px;
+    }
   }
 
   a {
@@ -138,6 +142,10 @@
       color: $light-gray;
       margin-bottom: 5px;
     }
+
+    .photo {
+      margin-top: 10px;
+    }
   }
 
   a {
@@ -213,14 +221,20 @@
   .text-sec {
     padding: 2px 8px 8px 8px;
     text-align: justify;
+
     h4 {
       font-size: 1.1rem;
       color: $light-gray;
     }
+
     p {
       font-size: 0.8rem;
       color: $light-gray;
       margin-bottom: 5px;
+    }
+
+    .photo {
+      margin-top: 10px;
     }
   }
 
