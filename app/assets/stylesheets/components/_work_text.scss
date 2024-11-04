@@ -1,6 +1,6 @@
 .work_text {
   color: rgb(255, 255, 255);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.05);
   display: inline-block;
   padding: 10px 20px;
   // border: 2px solid blue;
@@ -11,15 +11,21 @@
   bottom: 20px;
   left: 20px;
   text-align: center;
+  // border-top-right-radius: 50%;
+  // border-top-left-radius: 50%;
 
   @media (max-width: 760px) {
-    width: 100% !important;
+    width: max-content;
+    // padding-top: 10px;
     bottom: 0px;
-    left: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    // left: 0px;
   }
 
   .h1 {
     font-size: 2rem;
+    margin: 0;
 
     @media (max-width: 760px) {
       font-size: 1.6rem;
