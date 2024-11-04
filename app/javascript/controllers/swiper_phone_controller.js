@@ -28,13 +28,13 @@ export default class extends Controller {
           // console.log(julian);
 
           if (this.realIndex === 0) {
-            prevButton.style.color = 'blue';
-            nextButton.style.color = 'blue';
-            meter.style.backgroundColor = 'blue';
-            julian.style.color = 'blue';
+            prevButton.style.color = 'rgb(13, 110, 253)';
+            nextButton.style.color = 'rgb(13, 110, 253)';
+            meter.style.backgroundColor = 'rgb(13, 110, 253)';
+            julian.style.color = 'rgb(13, 110, 253)';
             meter.style.width = (100 / totalSlides) * currentSlide + '%';
             lines.forEach((line) => {
-              line.style.backgroundColor = 'blue';
+              line.style.backgroundColor = 'rgb(13, 110, 253)';
             });
           } else if (this.realIndex === 1) {
             prevButton.style.color = 'red';
@@ -46,13 +46,13 @@ export default class extends Controller {
               line.style.backgroundColor = 'red';
             });
           } else if (this.realIndex === 2) { // Third slide condition
-            prevButton.style.color = 'violet';
-            nextButton.style.color = 'violet';
-            meter.style.backgroundColor = 'violet';
-            julian.style.color = 'violet';
+            prevButton.style.color = 'rgb(100, 91, 149)';
+            nextButton.style.color = 'rgb(100, 91, 149)';
+            meter.style.backgroundColor = 'rgb(100, 91, 149)';
+            julian.style.color = 'rgb(100, 91, 149)';
             meter.style.width = (100 / totalSlides) * currentSlide + '%';
             lines.forEach((line) => {
-              line.style.backgroundColor = 'violet';
+              line.style.backgroundColor = 'rgb(100, 91, 149)';
             });
           } else {
             prevButton.style.color = 'white';
