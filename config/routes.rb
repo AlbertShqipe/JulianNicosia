@@ -15,4 +15,5 @@ Rails.application.routes.draw do
   get "fragments_of_time" => "works#fragments_of_time"
   get "unspoken_thoughts" => "works#unspoken_thoughts"
   get "le_gout_de_dieu" => "works#le_gout_de_dieu"
+  get "dusk" => "works#dusk"
 end

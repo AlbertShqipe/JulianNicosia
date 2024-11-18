@@ -55,6 +55,15 @@ export default class extends Controller {
             lines.forEach((line) => {
               line.style.backgroundColor = 'rgb(100, 91, 149)';
             });
+          } else if (this.realIndex === 4){
+            prevButton.style.color = '#898c5e';
+            nextButton.style.color = '#898c5e';
+            meter.style.backgroundColor = '#898c5e';
+            julian.style.color = '#898c5e';
+            meter.style.width = (100 / totalSlides) * currentSlide + '%';
+            lines.forEach((line) => {
+              line.style.backgroundColor = '#898c5e';
+            });
           } else {
             prevButton.style.color = 'white';
             nextButton.style.color = 'white';
