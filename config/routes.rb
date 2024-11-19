@@ -2,11 +2,15 @@ Rails.application.routes.draw do
   devise_for :users
 
   root to: "pages#splash"
+
+  # Pages routes
+  get "contact" => "pages#contact"
+  get "press" => "pages#press"
   get "home" => "pages#home"
+  get "media" => "pages#media"
 
   # Page to try things out
   get "test" => "pages#test"
-  get "media" => "pages#media"
 
   # Works routes
   get "index_works" => "works#index_works"
