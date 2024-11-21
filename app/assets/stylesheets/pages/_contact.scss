@@ -2,6 +2,7 @@
   position: relative;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 
   h1 {
     color: rgba(255, 255, 255, 0.75);
@@ -18,7 +19,7 @@
     width: 500px;
     position: absolute;
     bottom: -675px;
-    right: -750px;
+    right: -800px;
     opacity: 0.3;
 
     @media (max-width: 760px) {
@@ -38,7 +39,7 @@
     transform: translate(-50%, -50%);
 
     @media (max-width: 760px) {
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -45%);
     }
 
     h4 {
