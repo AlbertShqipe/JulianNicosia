@@ -33,7 +33,7 @@ export default class extends Controller {
           // console.log();
 
           // console.log('Current slide is', currentSlide);
-          // console.log(workTextElements[0]);
+          console.log(workTextElements[0]);
 
 
           if (this.realIndex === 0) {
