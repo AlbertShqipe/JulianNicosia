@@ -1,5 +1,5 @@
 #main-itii {
-  transition: margin-right .5s;
+  transition: margin-left .5s;
 }
 .sidenav-if-this-is-it {
   height: 100%;
@@ -7,7 +7,7 @@
   position: fixed;
   z-index: 2000;
   top: 0;
-  right: 0;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.8);
   transition: 0.2s  ease-in-out;
   overflow-x: hidden;
