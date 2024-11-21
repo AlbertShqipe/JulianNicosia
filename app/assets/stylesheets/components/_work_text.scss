@@ -1,18 +1,33 @@
 .work_text {
-  color: rgb(255, 255, 255);
-  // background-color: rgba(0, 0, 0, 0.05);
-  display: inline-block;
+  // Previous styles dedicated to the text for each peace
+  // color: rgb(255, 255, 255);
+  // // background-color: rgba(0, 0, 0, 0.05);
+  // display: inline-block;
+  // padding: 10px 20px;
+  // // border: 2px solid blue;
+  // font-family: "Roboto Mono", sans-serif !important;
+  // z-index: 10;
+  // position: absolute;
+  // margin: 0;
+  // bottom: 20px;
+  // left: 20px;
+  // text-align: center;
+  // border-top-right-radius: 50%;
+  // border-top-left-radius: 50%;
+
+  // color: rgb(13, 110, 253);
+  color: blue;
+  // background-color: rgba(255, 255, 255, 0.3);
+  display: block;
   padding: 10px 20px;
-  // border: 2px solid blue;
+  padding-left: 100px;
+  width:100%;
   font-family: "Roboto Mono", sans-serif !important;
   z-index: 10;
   position: absolute;
-  margin: 0;
-  bottom: 20px;
-  left: 20px;
-  text-align: center;
-  // border-top-right-radius: 50%;
-  // border-top-left-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
 
   @media (max-width: 760px) {
     width: max-content;
@@ -24,7 +39,7 @@
   }
 
   .h1 {
-    font-size: 2rem;
+    font-size: 8rem;
     margin: 0;
 
     @media (max-width: 760px) {
@@ -65,7 +80,8 @@
     font-size: 1.6rem;
     text-decoration: none;
     position: relative;
-    color: rgb(255, 255, 255);
+    // color:  rgb(13, 110, 253);
+    color: blue;
     transition: color 0.3s ease;
     display: inline-flex;
 
@@ -73,7 +89,8 @@
     span > svg {
       width: 1.6rem;
       margin-left: -10px;
-      fill: rgb(255, 255, 255);
+      // fill:  rgb(13, 110, 253);
+      fill:  blue;
 
     }
     /* Hover effect for text color */

@@ -1,6 +1,6 @@
 .swiper-container-pc {
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   position: relative;
   overflow: hidden; /* Hide overflow */
 
@@ -21,7 +21,7 @@
     letter-spacing: 0;
     font-variant: initial;
     line-height: 1;
-    // color: $red;
+
 
     @media (max-width: 768px) {
       font-size: 20px !important;
@@ -31,8 +31,8 @@
 
   .video-background {
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
     overflow: hidden;
 
     .text-container {
