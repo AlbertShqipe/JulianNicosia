@@ -10,12 +10,12 @@
     </a>
   </div> %>
   <%# <%= asset_path('logoBlack.png')%>
-  <div class="swiper-container-pc" data-controller="swiper-pc">
+  <div class="swiper-container-pc" data-controller="swiper-pc off-canvas-pc">
     <div id="meter">
     </div>
     <!-- Add navigation buttons -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    <div id="pc-next" class="swiper-button-next"></div>
+    <div id="pc-prev" class="swiper-button-prev"></div>
     <div class="swiper-wrapper">
       <div class="swiper-slide" id="and-if-this-is-it">
         <div class="video-background">
@@ -25,14 +25,12 @@
           </iframe>
           <div class="work_text" id="text-info-1-pc">
             <h1 class="h1">AND IF <br>THIS IS IT</h1>
-            <%# <p class="p1">ROBERTO BOLLE & FRIENDS FESTIVAL</p>
-            <p class="p2">World Premiere 25/04/2024</p> %>
-            <a class="link" href="/and_if_this_is_it">More info
+            <a class="link">More info
               <span style="margin-left: 20px;">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 9"><path d="M28.71,3.79,25.21.29a1,1,0,0,0-1.42,1.42l1.8,1.79H1a1,1,0,0,0,0,2H25.59l-1.8,1.79a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l3.5-3.5A1,1,0,0,0,28.71,3.79Z"/></svg>
               </span>
             </a>
-            <%# <%= image_tag('logoWhite.png') %>
+
           </div>
         </div>
       </div>
@@ -42,15 +40,12 @@
             style="width: 2000px;height: 1600px;z-index:-1;top:-55%; right:0%; transform:translate(-50%, 5%)" title="LOVE HURTS" class="swiper-video">
           </iframe>
           <div class="work_text" id="text-info-2-pc">
-            <h1 class="h1">LOVE<br> HURTS</h1>
-            <%# <p class="p1">St GALLEN DANCE COMPANY</p>
-            <p class="p2">World Premiere 16/03/2023</p> %>
-            <a class="link" href="/love_hurts">More info
+            <h1 class="h1">LOVE <br>HURTS</h1>
+            <a class="link">More info
               <span style="margin-left: 20px;">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 9"><path d="M28.71,3.79,25.21.29a1,1,0,0,0-1.42,1.42l1.8,1.79H1a1,1,0,0,0,0,2H25.59l-1.8,1.79a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l3.5-3.5A1,1,0,0,0,28.71,3.79Z"/></svg>
               </span>
             </a>
-            <%# <%= image_tag 'logoWhite.png', style:"right:30px"  %>
           </div>
         </div>
       </div>
@@ -59,15 +54,12 @@
           <iframe src="https://player.vimeo.com/video/1026571297?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;loop=1&amp" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
           style="width: 2000px;height: 1400px;z-index:-1;top:-50%; right:0%; transform:translate(-50%, 15%)" title="FRAGMENTS OF TIME"></iframe>
           <div class="work_text" id="text-info-3-pc">
-            <h1 class="h1">FRAGMENTS<br> OF TIME</h1>
-            <%# <p class="p1">Finnish National Ballet Youth Company</p>
-            <p class="p2">World Premiere 11/04/2024</p> %>
-            <a class="link" href="/fragments_of_time">More info
+            <h1 class="h1">FRAGMENTS <br>OF TIME</h1>
+            <a class="link">More info
               <span style="margin-left: 20px;">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 9"><path d="M28.71,3.79,25.21.29a1,1,0,0,0-1.42,1.42l1.8,1.79H1a1,1,0,0,0,0,2H25.59l-1.8,1.79a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l3.5-3.5A1,1,0,0,0,28.71,3.79Z"/></svg>
               </span>
             </a>
-            <%# <%= image_tag 'logoWhite.png', style: "right:110px"  %>
           </div>
         </div>
       </div>
@@ -77,8 +69,8 @@
           style="width: 2000px;height: 1600px;z-index:-1;top:-45%; right:0%; transform:translate(-50%, 5%)" class="swiper-video"></iframe>
         </div>
         <div class="work_text" id="text-info-4-pc">
-            <h1 class="h1">LE GOUT<br> DE DIEU</h1>
-            <a class="link" href="/le_gout_de_dieu">More info
+            <h1 class="h1">LE GOUT <br>DE DIEU</h1>
+            <a class="link">More info
               <span style="margin-left: 20px;">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 9"><path d="M28.71,3.79,25.21.29a1,1,0,0,0-1.42,1.42l1.8,1.79H1a1,1,0,0,0,0,2H25.59l-1.8,1.79a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l3.5-3.5A1,1,0,0,0,28.71,3.79Z"/></svg>
               </span>
@@ -88,24 +80,23 @@
       </div>
       <div class="swiper-slide" id="dusk">
         <div class="video-background">
-          <iframe src="https://player.vimeo.com/video/1026205438?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;loop=1&amp;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-          style="width: 2000px;height: 1600px;z-index:-1;top:-45%; right:0%; transform:translate(-50%, 5%)" class="swiper-video" title="DUSK"></iframe>
+          <iframe src="https://player.vimeo.com/video/1027273023?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;loop=1&amp;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+          style="width: 2000px;height: 1600px;z-index:-1;top:-45%; right:0%; transform:translate(-50%, 5%)" title="DUSK WEB LAPTOP"></iframe>
         </div>
         <div class="work_text" id="text-info-5-pc">
             <h1 class="h1">DUSK</h1>
-            <a class="link" href="/dusk">More info
+            <a class="link">More info
               <span style="margin-left: 20px;">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 9"><path d="M28.71,3.79,25.21.29a1,1,0,0,0-1.42,1.42l1.8,1.79H1a1,1,0,0,0,0,2H25.59l-1.8,1.79a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l3.5-3.5A1,1,0,0,0,28.71,3.79Z"/></svg>
               </span>
             </a>
-            <%# <%= image_tag 'logoWhite.png', style: "right:110px"  %>
           </div>
       </div>
       <!-- Add more video slides -->
     </div>
   </div>
 
-  <div class="swiper-container-phone" data-controller="swiper-phone">
+  <div class="swiper-container-phone" data-controller="swiper-phone off-canvas"">
     <div id="meter-phone">
     </div>
     <!-- Add navigation buttons -->
@@ -122,7 +113,7 @@
           frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
           style="width: 1700px;height: 1700px;z-index:-1;bottom:-50%; right:0%; transform:translate(-50%, 5%)"></iframe>
         </div>
-        <div id="main-itii" class="work_text_phone" id="text-info-1-phone" data-controller="off-canvas">
+        <div id="main-itii" class="work_text_phone" id="text-info-1-phone" >
           <h1  class="h1">AND IF <br>THIS IS IT</h1>
           <%# <p class="p1">ROBERTO BOLLE & FRIENDS FESTIVAL</p>
           <p class="p2">World Premiere 25/04/2024</p> %>
@@ -174,8 +165,10 @@
       </div>
       <div class="swiper-slide" id="dusk">
         <div class="video-background">
-          <iframe src="https://player.vimeo.com/video/1026205438?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;loop=1&amp;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-          style="width: 1500px;height: 1800px;z-index:-1;bottom:-65%; right:0%; transform:translate(-50%, 5%)" class="swiper-video" title="DUSK" data-ready="true"></iframe>
+          <%# <iframe src="https://player.vimeo.com/video/1026205438?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;loop=1&amp;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+          style="width: 1500px;height: 1800px;z-index:-1;bottom:-65%; right:0%; transform:translate(-50%, 5%)" class="swiper-video" title="DUSK" data-ready="true"></iframe> %>
+          <iframe src="https://player.vimeo.com/video/1027275809?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;loop=1&amp;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+          style="width: 1700px;height: 1700px;z-index:-1;bottom:-50%; right:0%; transform:translate(-50%, 7%)" title="DUSK"></iframe>
           <div id="main-d" class="work_text_phone" id="text-info-4-phone">
             <h1 class="h1">DUSK</h1>
             <a class="link" href="javascript:void(0)">More info
@@ -445,7 +438,6 @@
   <div style= "position: absolute; top: 800px; left: 250px;">
     <%= image_tag 'logoBlack.png', width: "120px" %>
   </div>
-  <%# <header>"IF THIS IS IT"</header> %>
   <div class="container text">
     <h1>DUSK</h1>
     <div style="padding:56.25% 0 0 0;position:relative;">
@@ -458,7 +450,6 @@
       "On the theme of dusk, the transition from day to night serves as a metaphor for change, reflection, and the passage of time. Through dance, music, and visuals, the piece explores the liminal space between light and darkness, inviting contemplation on the transient nature of existence and the beauty found in moments of transition.”
     </p>
   </div>
-  <%# Iframe video %>
   <div class="container text">
     <h4>CHOREOGRAPHY</h4>
     <p>
@@ -506,9 +497,6 @@
   </div>
   <div class="container text-sec">
     <h4>PHOTOS</h4>
-    <%# Blow there is some commented elements to be able to set the gallery when
-    clicking on the images, check also the link on the head of the application.html.erb %>
-    <%# <div class="gallery"> %>
       <div class="photo">
         <img src="/assets/D1-4da3c0e838353da737391ff598a4bcb98bf7b83e822e7915e013ebd2eaecf95e.JPG" alt="Fragments of Time 1">
       </div>
@@ -523,19 +511,10 @@
       </div>
       <div class="photo">
         <img src="/assets/D5-b1b9185d4fcb2f06e2845e220209e2341e9040b14415b5794f07e0b787155cf0.JPG" alt="Fragments of Time 5">
+      </div>
       <div class="photo">
         <img src="/assets/D6-8d7de5d0eaea8461d20e106ebb2b06dd7e75b2d8665fcb3bd3f9557f78be512b.JPG" alt="Fragments of Time 5">
       </div>
-    <%# </div> %>
-
-    <%# <div id="lightbox-modal" class="modal">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <div class="modal-content">
-          <img id="modal-img" src="" alt="Expanded image">
-          <button class="prev" onclick="changeImage(-1)">&#10094;</button>
-          <button class="next" onclick="changeImage(1)">&#10095;</button>
-      </div>
-    </div> %>
   </div>
 </div>
 
@@ -641,33 +620,3 @@
     </div> %>
   </div>
 </div>
-
-
-
-
-<%# <script>
-  const images = [
-                  "/assets/Beast_and_Beauty_photo_gregory-batardon_085-a2540bea371a92aa520540d04728de152cec392f101f2265010333668912339c.jpg",
-                  "/assets/Beast_and_Beauty_photo_gregory-batardon_024-0717ad83a3543edd6e5aca0361dbd4580c7aabfc7eb101c12c0153b74903e99c.jpg",
-                  "/assets/Beast_and_Beauty_photo_gregory-batardon_044-60b76ff1b4cb0edefb53f7e0bd0260200d6673d9030c4e82447c172ccde67631.jpg",
-                  "/assets/Beast_and_Beauty_photo_gregory-batardon_058-1428b067d431c6b49636dbd521aa8e611164a30c8115c168adbf88967f56a3c2.jpg",
-                  "/assets/Beast_and_Beauty_photo_gregory-batardon_069-3f16c51402550401a9391f9e2a7cfe669d9e8986ab1c87fb8aa33620f1d528b4.jpg",
-                  "/assets/Beast_and_Beauty_photo_gregory-batardon_077 2-a1b226d66709c26bbbf56137d6aad127a28a000df7bcb155de6f7c5fdb9bb4ce.jpg",
-                  "/assets/Beast_and_Beauty_photo_gregory-batardon_085-a2540bea371a92aa520540d04728de152cec392f101f2265010333668912339c.jpg"];
-  let currentIndex = 0;
-
-  function openModal(index) {
-    currentIndex = index - 1;
-    document.getElementById("modal-img").src = images[currentIndex];
-    document.getElementById("lightbox-modal").style.display = "flex";
-  }
-
-  function closeModal() {
-    document.getElementById("lightbox-modal").style.display = "none";
-  }
-
-  function changeImage(direction) {
-    currentIndex = (currentIndex + direction + images.length) % images.length;
-    document.getElementById("modal-img").src = images[currentIndex];
-  }
-</script> %>
