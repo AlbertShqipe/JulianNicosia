@@ -1,23 +1,5 @@
 .work_text {
-  // Previous styles dedicated to the text for each peace
-  // color: rgb(255, 255, 255);
-  // // background-color: rgba(0, 0, 0, 0.05);
-  // display: inline-block;
-  // padding: 10px 20px;
-  // // border: 2px solid blue;
-  // font-family: "Roboto Mono", sans-serif !important;
-  // z-index: 10;
-  // position: absolute;
-  // margin: 0;
-  // bottom: 20px;
-  // left: 20px;
-  // text-align: center;
-  // border-top-right-radius: 50%;
-  // border-top-left-radius: 50%;
-
-  // color: rgb(13, 110, 253);
-  color: blue;
-  // background-color: rgba(255, 255, 255, 0.3);
+  color: #ceceff;
   display: block;
   padding: 10px 20px;
   padding-left: 100px;
@@ -25,8 +7,8 @@
   font-family: "Roboto Mono", sans-serif !important;
   z-index: 10;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: 0%;
+  transform: translateY(0%);
   text-align: left;
 
   @media (max-width: 760px) {
@@ -40,6 +22,8 @@
   .h1 {
     font-size: 8rem;
     margin: 0;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px #fff;
 
     @media (max-width: 760px) {
       font-size: 3rem;
@@ -80,16 +64,18 @@
     text-decoration: none;
     position: relative;
     // color:  rgb(13, 110, 253);
-    color: blue;
+    color:#ceceff;
     transition: color 0.3s ease;
     display: inline-flex;
+    text-shadow: 0.4px 0.4px 0.4px #fff;
 
 
     span > svg {
       width: 1.6rem;
       margin-left: -10px;
       // fill:  rgb(13, 110, 253);
-      fill:  blue;
+      fill:  #ceceff;
+      text-shadow: 0.5px 0.5px 0.5px #fff;
 
     }
     /* Hover effect for text color */
@@ -133,7 +119,7 @@
 }
 
 .work_text_phone {
-  color: blue;
+  color: #ceceff;
   // background-color: rgba(255, 255, 255, 0.3);
   display: block;
   padding: 10px 20px;
@@ -141,14 +127,15 @@
   font-family: "Roboto Mono", sans-serif !important;
   z-index: 10;
   position: absolute;
-  transform: translateY(-50%);
+  bottom: 0%;
+  transform: translateY(0%);
   text-align: left;
-  padding-left: 10px;
-  top: 20%;
 
   .h1 {
     margin: 0;
     font-size: 3rem;
+    font-weight: 900;
+    text-shadow: 0.75px 0.75px 0.75px #fff;
   }
 
   .p1 {
@@ -167,16 +154,16 @@
     text-decoration: none;
     position: relative;
     // color:  rgb(13, 110, 253);
-    color: blue;
+    color: #ceceff;
     transition: color 0.3s ease;
     display: inline-flex;
+    text-shadow: 0.25px 0.25px 0.25px #fff;
 
 
     span > svg {
       width: 1.6rem;
       margin-left: -10px;
-      // fill:  rgb(13, 110, 253);
-      fill:  blue;
+      fill:  #ceceff;
 
     }
     /* Hover effect for text color */

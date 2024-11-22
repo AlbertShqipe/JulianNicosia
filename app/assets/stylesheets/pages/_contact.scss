@@ -4,31 +4,42 @@
   height: 100dvh;
   overflow: hidden;
 
-  h1 {
-    color: rgba(255, 255, 255, 0.75);
-    text-align: center;
-    padding-top: 50px;
-    margin-top: 50px;
-
-    // @media (max-width: 760px) {
-    //   padding-top: 20px;
-    // }
-  }
-
   img {
     width: 500px;
     position: absolute;
-    bottom: -675px;
-    right: -800px;
+    bottom: -475px;
+    right: -200px;
     opacity: 0.3;
 
     @media (max-width: 760px) {
       width: 300px;
       position: absolute;
-      bottom: -400px;
-      right: -215px;
+      bottom: -250px;
+      right: -150px;
     }
   }
+
+  h1 {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 8rem;
+    margin: 0;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 20px;
+    padding-left: 100px;
+    @media (max-width: 760px) {
+      margin: 0;
+      font-size: 3rem;
+      font-weight: 900;
+      text-shadow: 0.75px 0.75px 0.75px #fff;
+      padding-left: 20px;
+    }
+  }
+
+
 
   .contact-content {
     display: flex;
@@ -50,10 +61,18 @@
     a {
       text-decoration: none;
       transition: all 0.3s ease;
-      margin-bottom: 30px;
-      color: #ff0000;
+      font-size: small;
+      margin-bottom: 50px;
+      color: rgba(255, 255, 255, 0.75);
+      letter-spacing: 0.2rem;
+      padding: 0;
       &:hover {
         color: white;
+      }
+
+      @media (max-width: 760px) {
+        font-size: x-small;
+        margin-bottom: 50px;
       }
     }
 

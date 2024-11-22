@@ -15,8 +15,8 @@ export default class extends Controller {
           // Initialization logic (if any)
           const prevButton = document.getElementById('phone-prev');
           const nextButton = document.getElementById('phone-next');
-          prevButton.style.color = 'blue';
-          nextButton.style.color = 'blue';
+          prevButton.style.color = '#ceceff';
+          nextButton.style.color = '#ceceff';
         },
         slideChange: function () {
           const currentSlide = this.realIndex + 1; // Use realIndex for looped slides
@@ -34,24 +34,17 @@ export default class extends Controller {
           // console.log(julian);
 
           if (this.realIndex === 0) {
-            // prevButton.style.color = 'rgb(13, 110, 253)';
-            // nextButton.style.color = 'rgb(13, 110, 253)';
-            // meter.style.backgroundColor = 'rgb(13, 110, 253)';
-            // // julian.style.color = 'rgb(13, 110, 253)';
-            // workTextElements[0].querySelector('h1').style.color = 'rgb(13, 110, 253)';
-            // workTextElements[0].querySelector('a').style.color = 'rgb(13, 110, 253)';
-            // workTextElements[0].querySelector('svg').style.fill = 'rgb(13, 110, 253)';
-            prevButton.style.color = 'blue';
-            nextButton.style.color = 'blue';
-            meter.style.backgroundColor = 'blue';
-            // julian.style.color = 'blue';
-            workTextElements[0].querySelector('h1').style.color = 'blue';
-            workTextElements[0].querySelector('a').style.color = 'blue';
-            workTextElements[0].querySelector('svg').style.fill = 'blue';
+            prevButton.style.color = '#ceceff';
+            nextButton.style.color = '#ceceff';
+            meter.style.backgroundColor = '#ceceff';
+            // julian.style.color = '#ceceff';
+            workTextElements[0].querySelector('h1').style.color = '#ceceff';
+            workTextElements[0].querySelector('a').style.color = '#ceceff';
+            workTextElements[0].querySelector('svg').style.fill = '#ceceff';
             meter.style.width = (100 / totalSlides) * currentSlide + '%';
             lines.forEach((line) => {
               // line.style.backgroundColor = 'rgb(13, 110, 253)';
-              line.style.backgroundColor = 'blue';
+              line.style.backgroundColor = '#ceceff';
             });
           } else if (this.realIndex === 1) {
             // prevButton.style.color = 'red';

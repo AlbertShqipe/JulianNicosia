@@ -16,13 +16,13 @@ export default class extends Controller {
       // document.getElementById('text-info-3-phone').style = 'display: none ';
     });
     document.getElementById("closebtn-itii").addEventListener("click", () => {
-      document.getElementById("burger-menu").style = "opacity: 1; color: blue";
-      document.getElementById("main-itii").style = "; color: blue";
+      document.getElementById("burger-menu").style = "opacity: 1; color: #ceceff";
+      document.getElementById("main-itii").style = "; color: #ceceff";
       document.getElementById("mySidenav-itii").style.width = "0";
-      document.getElementById('phone-prev').style = "; color: blue";
-      document.getElementById('phone-next').style = "; color: blue";
-      document.getElementById('logo-text').style = "; color: blue";
-      document.getElementById('burger-menu').style = "; color: blue";
+      document.getElementById('phone-prev').style = "; color: #ceceff";
+      document.getElementById('phone-next').style = "; color: #ceceff";
+      document.getElementById('logo-text').style = "; color: #ceceff";
+      document.getElementById('burger-menu').style = "; color: #ceceff";
       // document.getElementById('text-info-1-phone').style = 'display: block';
       // document.getElementById('text-info-2-phone').style = 'display: block';
       // document.getElementById('text-info-3-phone').style = 'display: block';

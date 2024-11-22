@@ -5,64 +5,27 @@ export default class extends Controller {
   connect() {
     const burgerMenu = document.getElementById('burger-menu');
     const menu = document.getElementById('menu-container');
-    const julian = document.getElementById('logo-text');
-    const textInfo1Pc = document.getElementById('text-info-1-pc');
-    const textInfo1Phone = document.getElementById('text-info-1-phone');
-    const textInfo2Pc = document.getElementById('text-info-2-pc');
-    const textInfo2Phone = document.getElementById('text-info-2-phone');
-    const textInfo3Pc = document.getElementById('text-info-3-pc');
-    const textInfo3Phone = document.getElementById('text-info-3-phone');
+    const textInfosPc = document.querySelectorAll('.work_text');
+    const textInfosPhone = document.querySelectorAll('.work_text_phone');
     const media = document.querySelector('gallery');
-
     burgerMenu.addEventListener('click', () => {
       burgerMenu.classList.toggle('active');
       if (burgerMenu.classList.contains('active')) {
-        menu.style = 'opacity: 1;z-index:1000';
-        if (julian) {
-          julian.style = 'display: none'
-        }
-        if (textInfo1Pc) {
-          textInfo1Pc.style = 'display: none'
-        }
-        if (textInfo1Phone) {
-          textInfo1Phone.style = 'display: none'
-        }
-        if (textInfo2Pc) {
-          textInfo2Pc.style = 'display: none'
-        }
-        if (textInfo2Phone) {
-          textInfo2Phone.style = 'display: none'
-        }
-        if (textInfo3Pc) {
-          textInfo3Pc.style = 'display: none'
-        }
-        if (textInfo3Phone) {
-          textInfo3Phone.style = 'display: none'
-        }
+        menu.style = 'opacity: 1; z-index:1000';
+        textInfosPhone.forEach((textInfo) => {
+          textInfo.style = 'display: none';
+        });
+        textInfosPc.forEach((textInfo) => {
+          textInfo.style = 'display: none';
+        });
       } else {
         menu.style = 'display: none';
-        if (julian) {
-          julian.style = 'display: inline-block'
-        }
-        if (textInfo1Pc) {
-          textInfo1Pc.style = 'display: inline-block'
-        }
-        if (textInfo1Phone) {
-          textInfo1Phone.style = 'display: inline-block'
-        }
-        if (textInfo2Pc) {
-          textInfo2Pc.style = 'display: inline-block'
-        }
-        if (textInfo2Phone) {
-          textInfo2Phone.style = 'display: inline-block'
-        }
-        if (textInfo3Pc) {
-          textInfo3Pc.style = 'display: inline-block'
-        }
-        if (textInfo3Phone) {
-          textInfo3Phone.style = 'display: inline-block'
-
-        }
+        textInfosPhone.forEach((textInfo) => {
+          textInfo.style = 'display: inline-block';
+        });
+        textInfosPc.forEach((textInfo) => {
+          textInfo.style = 'display: inline-block';
+        });
       }
     });
   }

@@ -33,15 +33,18 @@
 }
 
 .logo-menu {
+  width: 500px;
   position: absolute;
-  top: 50%;
-  right: 50%;
-  // transform: translate(20%, -50%);
-  transform: translate(275%, -50%);
-  left: 0;
-  width: calc(31%);
-  margin-right: 500px;
-
+  bottom: -475px;
+  right: -200px;
+  opacity: 0.3;
+  @media (max-width: 768px) {
+    width: 300px;
+    position: absolute;
+    bottom: -250px;
+    right: -150px;
+    opacity: 0.3;
+  }
 }
 
 #logo-text {
