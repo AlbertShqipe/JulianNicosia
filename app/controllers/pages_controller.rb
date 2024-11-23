@@ -10,6 +10,9 @@ class PagesController < ApplicationController
   def contact
   end
 
+  def calendar
+  end
+
   def splash
   end
 end

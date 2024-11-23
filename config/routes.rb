@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get "press" => "pages#press"
   get "home" => "pages#home"
   get "media" => "pages#media"
+  get "calendar" => "pages#calendar"
 
   # Page to try things out
   get "test" => "pages#test"

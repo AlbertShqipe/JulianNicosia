@@ -11,3 +11,78 @@
     }
   }
 }
+
+.sidenav-if-this-is-it-page, .sidenav-dusk-page, .sidenav-fragments-of-time-page, .sidenav-love-hurts-page, .sidenav-rush-for-full-page {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
+  font-family: "Futura", "Helvetica", "sans-serif";
+  color: $black;
+  padding-bottom: 60px;
+
+  .img-works {
+    position: absolute;
+    top: 580px;
+    right: 100px;
+  }
+  header {
+    text-align: center;
+    font-size: 1.6rem;
+    color: $light-gray;
+  }
+
+  .text {
+    padding: 20px 8px 8px 8px;
+    text-align: justify;
+
+    h1 {
+      padding-top: 40px;
+      font-size: 3rem;
+      color: $light-gray;
+    }
+
+    h4 {
+      font-size: 1.1rem;
+      color: $light-gray;
+    }
+    p {
+      font-size: 0.8rem;
+      color: $light-gray;
+    }
+  }
+  .text-sec {
+    padding: 2px 8px 8px 8px;
+    text-align: justify;
+    h4 {
+      font-size: 1.1rem;
+      color: $light-gray;
+    }
+    p {
+      font-size: 0.8rem;
+      color: $light-gray;
+      margin-bottom: 5px;
+    }
+
+    .photo {
+      margin-top: 10px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  a {
+    // padding: 20px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1rem;
+
+
+    &:hover {
+    color: blue;
+    // border-bottom: 1.5px solid $red;
+    }
+  }
+
+}
