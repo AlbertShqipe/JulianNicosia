@@ -3,7 +3,7 @@
   display: block;
   padding: 10px 20px;
   padding-left: 100px;
-  width:100%;
+  width: 100%;
   font-family: "Roboto Mono", sans-serif !important;
   z-index: 10;
   position: absolute;
@@ -11,14 +11,6 @@
   transform: translateY(0%);
   text-align: left;
   cursor: pointer;
-
-  @media (max-width: 760px) {
-    width: max-content;
-    padding-left: 10px;
-    top: 20%;
-
-    // left: 0px;
-  }
 
   .h1 {
     text-indent: 0;
@@ -28,6 +20,7 @@
     font-weight: 900;
     text-shadow: 1px 1px 1px #fff;
     text-align: left; /* Ensures left alignment */
+
   }
 
   .h2 {
@@ -75,12 +68,12 @@
 
     }
     /* Hover effect for text color */
-    &:hover {
-        color: $red;
-        span > svg {
-          fill: $red;
-        }
-    }
+    // &:hover {
+    //     color: $red;
+    //     span > svg {
+    //       fill: $red;
+    //     }
+    // }
 
     /* Pseudo-element for the animated underline */
     &::after {
@@ -116,18 +109,17 @@
 
 .work_text_phone {
   color: #ceceff;
-    display: block;
-    padding: 10px 20px; /* Keep general padding */
-    width: 100%;
-    font-family: "Roboto Mono", sans-serif !important;
-    z-index: 10;
-    position: absolute;
-    bottom: 0%;
-    transform: translateY(0%);
-    text-align: left;
+  display: block;
+  padding: 10px 30px; /* Keep general padding */
+  font-family: "Roboto Mono", sans-serif !important;
+  z-index: 10;
+  position: absolute;
+  bottom: 0%;
+  transform: translateY(0%);
+  text-align: left;
 
   .h1 {
-    font-size: 8rem;
+    font-size: 6rem;
     margin: 0; /* Remove default margins */
     padding: 0; /* No padding */
     font-weight: 900;
@@ -162,32 +154,6 @@
       fill:  #ceceff;
 
     }
-    /* Hover effect for text color */
-    // &:hover {
-    //     color: $red;
-    //     span > svg {
-    //       fill: $red;
-    //     }
-    // }
-
-    // /* Pseudo-element for the animated underline */
-    // &::after {
-    //     content: "";
-    //     position: absolute;
-    //     left: 0;
-    //     bottom: 0;
-    //     width: 100%;
-    //     height: 1px;
-    //     background-color: $red;
-    //     transform: scaleX(0); /* Start with no underline */
-    //     transform-origin: left; /* Animation from left to right */
-    //     transition: transform 0.3s ease; /* Smooth transition */
-    // }
-
-    // /* Hover effect for underline */
-    // &:hover::after {
-    //     transform: scaleX(1); /* Expand underline on hover */
-    // }
   }
 
   img {

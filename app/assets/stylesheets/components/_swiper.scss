@@ -6,7 +6,6 @@
 
   @media (max-width: 760px) {
     display: none;
-
   }
 
   .swiper-slide {
@@ -41,23 +40,6 @@
       top: 50%;
       transform: translate(-50%, -50%);
       color:black;
-
-      h1 {
-        font-size: 5rem;
-
-        span {
-          border-top: 4px solid black;
-          border-bottom: 4px solid black
-        }
-      }
-
-      p {
-        letter-spacing: 7px;
-        text-align: center;
-        font-size: 3rem;
-        font-weight: 100;
-        margin-top:20px;
-      }
     }
   }
 

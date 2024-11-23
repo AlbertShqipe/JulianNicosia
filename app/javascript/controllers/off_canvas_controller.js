@@ -10,10 +10,6 @@ export default class extends Controller {
       document.getElementById('phone-prev').style = "opacity: 0";
       document.getElementById('phone-next').style = "opacity: 0";
       document.getElementById('logo-text').style = "opacity: 0";
-      document.getElementById('burger-menu').style = "opacity: 0";
-      // document.getElementById('text-info-1-phone').style = 'display: none ';
-      // document.getElementById('text-info-2-phone').style = 'display: none ';
-      // document.getElementById('text-info-3-phone').style = 'display: none ';
     });
     document.getElementById("closebtn-itii").addEventListener("click", () => {
       document.getElementById("burger-menu").style = "opacity: 1; color: #ceceff";
@@ -22,10 +18,6 @@ export default class extends Controller {
       document.getElementById('phone-prev').style = "; color: #ceceff";
       document.getElementById('phone-next').style = "; color: #ceceff";
       document.getElementById('logo-text').style = "; color: #ceceff";
-      document.getElementById('burger-menu').style = "; color: #ceceff";
-      // document.getElementById('text-info-1-phone').style = 'display: block';
-      // document.getElementById('text-info-2-phone').style = 'display: block';
-      // document.getElementById('text-info-3-phone').style = 'display: block';
     });
 
 
@@ -36,7 +28,6 @@ export default class extends Controller {
       document.getElementById('phone-prev').style = "opacity: 0";
       document.getElementById('phone-next').style = "opacity: 0";
       document.getElementById('logo-text').style = "opacity: 0";
-      document.getElementById('burger-menu').style = "opacity: 0";
     });
     document.getElementById("closebtn-lh").addEventListener("click", () => {
       document.getElementById("burger-menu").style = "opacity: 1; color:rgb(100, 0, 0)";
@@ -45,7 +36,6 @@ export default class extends Controller {
       document.getElementById('phone-prev').style = "opacity: 1; color:rgb(100, 0, 0)";
       document.getElementById('phone-next').style = "opacity: 1; color:rgb(100, 0, 0)";
       document.getElementById('logo-text').style = "opacity: 1; color:rgb(100, 0, 0)";
-      document.getElementById('burger-menu').style ="opacity: 1; color:rgb(100, 0, 0)";
     });
 
 
@@ -56,7 +46,6 @@ export default class extends Controller {
       document.getElementById('phone-prev').style = "opacity: 0";
       document.getElementById('phone-next').style = "opacity: 0";
       document.getElementById('logo-text').style = "opacity: 0";
-      document.getElementById('burger-menu').style ="opacity: 0";
     });
     document.getElementById("closebtn-fot").addEventListener("click", () => {
       document.getElementById("burger-menu").style = "opacity: 1; color:rgb(100, 10, 149)";
@@ -65,7 +54,6 @@ export default class extends Controller {
       document.getElementById('phone-prev').style = "opacity: 1; color:rgb(100, 10, 149)";
       document.getElementById('phone-next').style = "opacity: 1; color:rgb(100, 10, 149)";
       document.getElementById('logo-text').style = "opacity: 1; color:rgb(100, 10, 149)";
-      document.getElementById('burger-menu').style ="opacity: 1; color:rgb(100, 10, 149)";
     });
 
 
@@ -76,10 +64,6 @@ export default class extends Controller {
       document.getElementById('phone-prev').style = "opacity: 0";
       document.getElementById('phone-next').style = "opacity: 0";
       document.getElementById('logo-text').style = "opacity: 0";
-      document.getElementById('burger-menu').style = "opacity: 0";
-      // document.getElementById('text-info-1-phone').style = 'display: none ';
-      // document.getElementById('text-info-2-phone').style = 'display: none ';
-      // document.getElementById('text-info-3-phone').style = 'display: none ';
     });
     document.getElementById("closebtn-d").addEventListener("click", () => {
       document.getElementById("burger-menu").style = "opacity: 1;  color:#898c5e";
@@ -88,7 +72,6 @@ export default class extends Controller {
       document.getElementById('phone-prev').style = "opacity: 1; color:#898c5e";
       document.getElementById('phone-next').style = "opacity: 1; color:#898c5e";
       document.getElementById('logo-text').style = "opacity: 1;  color:#898c5e";
-      document.getElementById('burger-menu').style = "opacity: 1;  color:#898c5e";
     });
   }
 }
