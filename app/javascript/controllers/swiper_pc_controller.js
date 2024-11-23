@@ -35,7 +35,9 @@ export default class extends Controller {
             meter.style.backgroundColor = '#ceceff';
             workTextElements[0].querySelector('h1').style.color = '#ceceff';
             workTextElements[0].querySelector('a').style.color = '#ceceff';
-            workTextElements[0].querySelector('svg').style.fill = '#ceceff';
+            if (workTextElements[0].querySelector('svg')) {
+              workTextElements[0].querySelector('svg').style.fill = '#ceceff';
+            }
             meter.style.width = (100 / totalSlides) * currentSlide + '%';
             lines.forEach((line) => {
               line.style.backgroundColor = '#ceceff';
