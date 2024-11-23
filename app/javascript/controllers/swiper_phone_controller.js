@@ -29,9 +29,6 @@ export default class extends Controller {
           const lines = burgerMenu.querySelectorAll('.line');
           const meter = document.getElementById('meter-phone');
           const workTextElements = document.getElementsByClassName('work_text_phone');
-          // const julian = document.getElementById('logo-text').firstElementChild;
-          // console.log(this.realIndex);
-          // console.log(julian);
 
           if (this.realIndex === 0) {
             prevButton.style.color = '#ceceff';
@@ -47,13 +44,6 @@ export default class extends Controller {
               line.style.backgroundColor = '#ceceff';
             });
           } else if (this.realIndex === 1) {
-            // prevButton.style.color = 'red';
-            // nextButton.style.color = 'red';
-            // meter.style.backgroundColor = 'red';
-            // // julian.style.color = 'red';
-            // workTextElements[1].querySelector('h1').style.color = 'red';
-            // workTextElements[1].querySelector('a').style.color ='red';
-            // workTextElements[1].querySelector('svg').style.fill ='red';
             prevButton.style.color = 'rgb(100, 0, 0)';
             nextButton.style.color = 'rgb(100, 0, 0)';
             meter.style.backgroundColor = 'rgb(100, 0, 0)';
@@ -63,34 +53,23 @@ export default class extends Controller {
             workTextElements[1].querySelector('svg').style.fill ='rgb(100, 0, 0)';
             meter.style.width = (100 / totalSlides) * currentSlide + '%';
             lines.forEach((line) => {
-              // line.style.backgroundColor = 'red';
               line.style.backgroundColor = 'rgb(100, 0, 0)';
             });
           } else if (this.realIndex === 2) { // Third slide condition
-            // prevButton.style.color = 'rgb(100, 91, 149)';
-            // nextButton.style.color = 'rgb(100, 91, 149)';
-            // meter.style.backgroundColor = 'rgb(100, 91, 149)';
-            // // julian.style.color = 'rgb(100, 91, 149)';
-            // workTextElements[2].querySelector('h1').style.color = 'rgb(100, 91, 149)';
-            // workTextElements[2].querySelector('a').style.color = 'rgb(100, 91, 149)';
-            // workTextElements[2].querySelector('svg').style.fill = 'rgb(100, 91, 149)';
             prevButton.style.color = 'rgb(100, 10, 149)';
             nextButton.style.color = 'rgb(100, 10, 149)';
             meter.style.backgroundColor = 'rgb(100, 10, 149)';
-            // julian.style.color = 'rgb(100, 10, 149)';
             workTextElements[2].querySelector('h1').style.color = 'rgb(100, 10, 149)';
             workTextElements[2].querySelector('a').style.color = 'rgb(100, 10, 149)';
             workTextElements[2].querySelector('svg').style.fill = 'rgb(100, 10, 149)';
             meter.style.width = (100 / totalSlides) * currentSlide + '%';
             lines.forEach((line) => {
-              // line.style.backgroundColor = 'rgb(100, 91, 149)';
               line.style.backgroundColor = 'rgb(100, 10, 149)';
             });
-          } else if (this.realIndex === 3){
+          } else if (this.realIndex === 3) {
             prevButton.style.color = '#898c5e';
             nextButton.style.color = '#898c5e';
             meter.style.backgroundColor = '#898c5e';
-            // julian.style.color = '#898c5e';
             workTextElements[3].querySelector('h1').style.color = '#898c5e';
             workTextElements[3].querySelector('a').style.color = '#898c5e';
             workTextElements[3].querySelector('svg').style.fill = '#898c5e';
@@ -98,19 +77,20 @@ export default class extends Controller {
             lines.forEach((line) => {
               line.style.backgroundColor = '#898c5e';
             });
-          } else  if (this.realIndex === 4){
+          } else  if (this.realIndex === 4) {
             prevButton.style.color = 'black';
             nextButton.style.color = 'black';
             meter.style.backgroundColor = 'black';
-            // julian.style.color = 'black';
             workTextElements[4].querySelector('h1').style.color = 'black';
             workTextElements[4].querySelector('a').style.color = 'black';
-            workTextElements[4].querySelector('svg').style.fill = 'black';
+            if (workTextElements[4].querySelector('svg')) {
+              workTextElements[4].querySelector('svg').style.fill = 'black';
+            };
             meter.style.width = (100 / totalSlides) * currentSlide + '%';
             lines.forEach((line) => {
               line.style.backgroundColor = 'black';
             });
-          }
+          };
         }
       }
     });

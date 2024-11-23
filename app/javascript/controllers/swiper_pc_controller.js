@@ -64,7 +64,7 @@ export default class extends Controller {
             lines.forEach((line) => {
               line.style.backgroundColor = 'rgb(100, 10, 149)';
             });
-          } else if (this.realIndex === 4){
+          } else if (this.realIndex === 4) {
             prevButton.style.color = '#898c5e';
             nextButton.style.color = '#898c5e';
             meter.style.backgroundColor = '#898c5e';
