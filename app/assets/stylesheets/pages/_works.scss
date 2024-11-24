@@ -20,12 +20,14 @@
   font-family: "Futura", "Helvetica", "sans-serif";
   color: $black;
   padding-bottom: 60px;
+  padding-top: 60px;
 
   .img-works {
     position: absolute;
     top: 580px;
     right: 100px;
   }
+
   header {
     text-align: center;
     font-size: 1.6rem;
@@ -38,7 +40,7 @@
 
     h1 {
       padding-top: 40px;
-      font-size: 3rem;
+      font-size: 5rem;
       color: $light-gray;
     }
 
@@ -46,11 +48,13 @@
       font-size: 1.1rem;
       color: $light-gray;
     }
+
     p {
       font-size: 0.8rem;
       color: $light-gray;
     }
   }
+
   .text-sec {
     padding: 2px 8px 8px 8px;
     text-align: justify;

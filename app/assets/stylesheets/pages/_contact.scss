@@ -3,6 +3,7 @@
   width: 100dvw;
   height: 100dvh;
   overflow: hidden;
+  text-align: center;
 
   img {
     width: 500px;
@@ -39,8 +40,6 @@
     }
   }
 
-
-
   .contact-content {
     display: flex;
     justify-content: space-between;
@@ -55,7 +54,6 @@
 
     h4 {
       color: rgba(255, 255, 255, 0.75);
-      // margin-bottom: 20px;
     }
 
     a {
@@ -66,27 +64,18 @@
       color: rgba(255, 255, 255, 0.75);
       letter-spacing: 0.2rem;
       padding: 0;
+      width: 100%;
+      z-index: 100;
       &:hover {
         color: white;
       }
 
       @media (max-width: 760px) {
-        font-size: x-small;
+        font-size: 10px;
         margin-bottom: 50px;
+        width: 500px;
       }
     }
-
-    // .img-container-contact {
-    //   visibility: hidden;
-
-    //   img {
-    //     width:250px;
-
-    //     @media (max-width: 760px) {
-    //       width: 175px;
-    //     }
-    //   }
-    // }
 
     .contacts-container-contact {
       display: flex;
