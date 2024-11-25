@@ -68,6 +68,19 @@ export default class extends Controller {
             lines.forEach((line) => {
               line.style.backgroundColor = 'rgb(100, 10, 149)';
             });
+          } else if (this.realIndex === 3) {
+            prevButton.style.color = 'white';
+            nextButton.style.color = 'white';
+            meter.style.backgroundColor = 'white';
+            workTextElements[3].querySelector('h1').style.color = 'white';
+            workTextElements[3].querySelector('a').style.color = 'white';
+            if (workTextElements[3].querySelector('svg')) {
+              workTextElements[3].querySelector('svg').style.fill = 'white';
+            }
+            meter.style.width = (100 / totalSlides) * currentSlide + '%';
+            lines.forEach((line) => {
+              line.style.backgroundColor = 'white';
+            });
           } else if (this.realIndex === 4) {
             prevButton.style.color = '#898c5e';
             nextButton.style.color = '#898c5e';
@@ -82,17 +95,17 @@ export default class extends Controller {
               line.style.backgroundColor = '#898c5e';
             });
           } else {
-            prevButton.style.color = 'white';
-            nextButton.style.color = 'white';
-            meter.style.backgroundColor = 'white';
-            workTextElements[3].querySelector('h1').style.color = 'white';
-            workTextElements[3].querySelector('a').style.color = 'white';
-            if (workTextElements[3].querySelector('svg')) {
-              workTextElements[3].querySelector('svg').style.fill = 'white';
+            prevButton.style.color = '#b0885e';
+            nextButton.style.color = '#b0885e';
+            meter.style.backgroundColor = '#b0885e';
+            workTextElements[5].querySelector('h1').style.color = '#b0885e';
+            workTextElements[5].querySelector('a').style.color = '#b0885e';
+            if (workTextElements[5].querySelector('svg')) {
+              workTextElements[5].querySelector('svg').style.fill = '#b0885e';
             }
             meter.style.width = (100 / totalSlides) * currentSlide + '%';
             lines.forEach((line) => {
-              line.style.backgroundColor = 'white';
+              line.style.backgroundColor = '#b0885e';
             });
           }
         }

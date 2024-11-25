@@ -55,5 +55,18 @@ export default class extends Controller {
       document.getElementById('pc-prev').style = "opacity: 1; color:#898c5e";
       document.getElementById('pc-next').style = "opacity: 1; color:#898c5e";
     });
+
+    document.getElementById('text-info-6-pc').addEventListener('click', () => {
+      document.getElementById("burger-menu").style = "opacity: 0";
+      document.getElementById("mySidenav-ofri").style.width = "100%";
+      document.getElementById('pc-prev').style = "opacity: 0";
+      document.getElementById('pc-next').style = "opacity: 0";
+    });
+    document.getElementById("closebtn-ofri").addEventListener("click", () => {
+      document.getElementById("burger-menu").style = "opacity: 1; color:#898c5e";
+      document.getElementById("mySidenav-ofri").style.width = "0";
+      document.getElementById('pc-prev').style = "opacity: 1; color:#898c5e";
+      document.getElementById('pc-next').style = "opacity: 1; color:#898c5e";
+    });
   }
 }
