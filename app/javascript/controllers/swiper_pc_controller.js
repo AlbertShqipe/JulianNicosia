@@ -28,6 +28,7 @@ export default class extends Controller {
           const lines = burgerMenu.querySelectorAll('.line');
           const meter = document.getElementById('meter');
           const workTextElements = document.getElementsByClassName('work_text'); // Get all elements with the class 'work_text'
+          // console.log(this.realIndex)
 
           if (this.realIndex === 0) {
             prevButton.style.color = '#ceceff';
@@ -94,7 +95,7 @@ export default class extends Controller {
             lines.forEach((line) => {
               line.style.backgroundColor = '#898c5e';
             });
-          } else {
+          } else if (this.realIndex === 5) {
             prevButton.style.color = '#b0885e';
             nextButton.style.color = '#b0885e';
             meter.style.backgroundColor = '#b0885e';
@@ -107,7 +108,20 @@ export default class extends Controller {
             lines.forEach((line) => {
               line.style.backgroundColor = '#b0885e';
             });
-          }
+          } else if (this.realIndex === 6) {
+            prevButton.style.color = '#4871bc';
+            nextButton.style.color = '#4871bc';
+            meter.style.backgroundColor = '#4871bc';
+            workTextElements[6].querySelector('h1').style.color = '#4871bc';
+            workTextElements[6].querySelector('a').style.color = '#4871bc';
+            if (workTextElements[6].querySelector('svg')) {
+              workTextElements[6].querySelector('svg').style.fill = '#4871bc';
+            }
+            meter.style.width = (100 / totalSlides) * currentSlide + '%';
+            lines.forEach((line) => {
+              line.style.backgroundColor = '#4871bc';
+            });
+          };
         }
       }
     });

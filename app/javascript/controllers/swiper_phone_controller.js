@@ -21,7 +21,7 @@ export default class extends Controller {
         slideChange: function () {
           const currentSlide = this.realIndex + 1; // Use realIndex for looped slides
           const totalSlides = this.slides.length;
-          console.log('Current slide is', currentSlide);
+          // console.log('Current slide is', currentSlide);
 
           const prevButton = document.getElementById('phone-prev');
           const nextButton = document.getElementById('phone-next');
@@ -110,6 +110,16 @@ export default class extends Controller {
             meter.style.width = (100 / totalSlides) * currentSlide + '%';
             lines.forEach((line) => {
               line.style.backgroundColor = '#b0885e';
+            });
+          } else if (this.realIndex === 6){
+            prevButton.style.color = '#4871bc';
+            nextButton.style.color = '#4871bc';
+            meter.style.backgroundColor = '#4871bc';
+            workTextElements[6].querySelector('h1').style.color = '#4871bc';
+            workTextElements[6].querySelector('a').style.color = '#4871bc';
+            meter.style.width = (100 / totalSlides) * currentSlide + '%';
+            lines.forEach((line) => {
+              line.style.backgroundColor = '#4871bc';
             });
           };
         }
