@@ -28,7 +28,7 @@ export default class extends Controller {
           const lines = burgerMenu.querySelectorAll('.line');
           const meter = document.getElementById('meter');
           const workTextElements = document.getElementsByClassName('work_text'); // Get all elements with the class 'work_text'
-          // console.log(this.realIndex)
+          console.log(this.realIndex)
 
           if (this.realIndex === 0) {
             prevButton.style.color = '#ceceff';
