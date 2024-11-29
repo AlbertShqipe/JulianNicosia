@@ -6,6 +6,7 @@ export default class extends Controller {
     var swiper = new Swiper('.swiper-container-pc', {
       loop: false,
       allowTouchMove: true,
+      lazy: true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -29,6 +30,7 @@ export default class extends Controller {
           const meter = document.getElementById('meter');
           const workTextElements = document.getElementsByClassName('work_text'); // Get all elements with the class 'work_text'
           console.log(this.realIndex)
+
 
           if (this.realIndex === 0) {
             prevButton.style.color = '#ceceff';

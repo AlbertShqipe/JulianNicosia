@@ -6,6 +6,7 @@ export default class extends Controller {
     var swiper = new Swiper('.swiper-container-phone', {
       loop: false,
       allowTouchMove: true,
+      lazy: true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -29,6 +30,7 @@ export default class extends Controller {
           const lines = burgerMenu.querySelectorAll('.line');
           const meter = document.getElementById('meter-phone');
           const workTextElements = document.getElementsByClassName('work_text_phone');
+
 
           if (this.realIndex === 0) {
             prevButton.style.color = '#ceceff';
