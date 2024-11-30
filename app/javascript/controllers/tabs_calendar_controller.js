@@ -7,16 +7,24 @@ export default class extends Controller {
   connect() {
     this.linkTargets.forEach(link => {
       link.addEventListener('click', (event) => {
-      this.linkTargets.forEach(link => link.classList.remove('active'));
-      link.classList.add('active');
+        this.linkTargets.forEach(link => link.classList.remove('active'));
+        link.classList.toggle('active');
       });
     })
     this.tabTargets.forEach(tab => {
-      console.log(this.defaultValue)
+      console.log(tab.dataset.tabsTypeValue)
       if (tab.dataset.tabsTypeValue === this.defaultValue) {
         tab.classList.add('hidden');
       }
     });
+    // plus.addEventListener('click', () => {
+    //   plus.classList.toggle('turn');
+    //   if (plus.classList.contains('turn')) {
+    //     ulWorks.style = 'display: block';
+    //   } else {
+    //     ulWorks.style = 'display: none';
+    //   }
+    // });
   }
 
   open(event) {
@@ -26,7 +34,7 @@ export default class extends Controller {
       if (tab.dataset.tabsTypeValue !== tabId)
         tab.classList.add('hidden')
       else
-        tab.classList.remove('hidden')
+        tab.classList.toggle('hidden')
     });
   }
 }
