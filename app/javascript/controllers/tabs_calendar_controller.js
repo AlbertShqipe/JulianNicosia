@@ -5,12 +5,12 @@ export default class extends Controller {
   static targets= ["link", "tab"];
 
   connect() {
-    this.linkTargets.forEach(link => {
-      link.addEventListener('click', (event) => {
-        this.linkTargets.forEach(link => link.classList.remove('active'));
-        link.classList.toggle('active');
-      });
-    })
+    // this.linkTargets.forEach(link => {
+    //   link.addEventListener('click', (event) => {
+    //     this.linkTargets.forEach(link => link.classList.remove('active'));
+    //     link.classList.toggle('active');
+    //   });
+    // })
     this.tabTargets.forEach(tab => {
       console.log(tab.dataset.tabsTypeValue)
       if (tab.dataset.tabsTypeValue === this.defaultValue) {
