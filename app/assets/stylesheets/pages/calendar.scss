@@ -70,16 +70,27 @@
   .calendar-content {
     text-align: left;
     width: 90dvw;
-    h4 {
-      font-size: 1.1;
-      color: white;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 0.8rem;
-      color: rgb(210, 210, 210);
-      margin-bottom: 5px;
-      font-weight: 100 !important;
+
+    .calendar-work {
+      text-indent: 150px;
+      margin-bottom: 20px;
+
+      @media (max-width: 760px) {
+        text-indent: 0px;
+      }
+
+      h4 {
+        font-size: 1.1;
+        color: white;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 0.8rem;
+        color: rgb(210, 210, 210);
+        margin-bottom: 5px;
+        font-weight: 100 !important;
+      }
     }
   }
 }
