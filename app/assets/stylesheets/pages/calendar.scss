@@ -27,10 +27,10 @@
     text-align: left !important;
     color: white;
     font-size: 5rem;
-    padding-left: 50px;
+    padding-left: 150px;
 
     @media (max-width: 760px) {
-      font-size: 3rem;
+      font-size: 2.5rem;
       padding-left: 20px;
     }
   }
@@ -59,9 +59,9 @@
     }
   }
 
-  .hidden {
-    display: none;
-  }
+  // .hidden {
+  //   display: none;
+  // }
 
   // .active {
   //   color: rgb(255, 255, 255);
@@ -73,7 +73,7 @@
 
     .calendar-work {
       text-indent: 150px;
-      margin-bottom: 20px;
+      margin-top: 30px;
 
       @media (max-width: 760px) {
         text-indent: 0px;
@@ -86,7 +86,7 @@
       }
 
       p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         color: rgb(210, 210, 210);
         margin-bottom: 5px;
         font-weight: 100 !important;
