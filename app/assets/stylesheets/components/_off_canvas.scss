@@ -75,7 +75,7 @@
 
 
     .photo {
-      margin-top: 10px;
+      margin-top: 20px;
       width: 45%;
       height: fit-content;
       text-align: center;
@@ -83,7 +83,7 @@
 
       @media (max-width: 760px) {
         width: 100%;
-        margin-top: 5px;
+        margin-top: 10px;
       }
 
       img {
@@ -96,7 +96,7 @@
       width: 100%;
       height: fit-content;
       margin: auto;
-      margin-top: 10px;
+      margin-top: 20px;
       @media (max-width: 760px) {
         width: 100%;
         margin-top: 5px;
@@ -112,11 +112,11 @@
       width: 45%;
       height: fit-content;
       margin: auto;
-      margin-top: 10px;
+      margin-top: 20px;
 
       @media (max-width: 760px) {
         width: 100%;
-        margin-top: 5px;
+        margin-top: 10px;
       }
 
       img {

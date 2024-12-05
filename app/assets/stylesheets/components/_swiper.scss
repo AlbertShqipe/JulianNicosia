@@ -13,6 +13,8 @@
     overflow: hidden; /* Hide overflow of video outside the container */
   }
 
+
+
   .swiper-button-next:after, .swiper-button-prev:after {
     font-family: swiper-icons;
     font-size: 44px !important;
@@ -21,10 +23,13 @@
     font-variant: initial;
     line-height: 1;
 
-
     @media (max-width: 768px) {
       font-size: 20px !important;
 
+    }
+
+    &:hover {
+      font-size: 50px !important;
     }
   }
 

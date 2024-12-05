@@ -18,6 +18,19 @@ export default class extends Controller {
           const nextButton = document.querySelector('.swiper-button-next');
           prevButton.style.color = '#ceceff';
           nextButton.style.color = '#ceceff';
+          const addHoverEffect = (button) => {
+            button.addEventListener('mouseenter', () => {
+              button.style.transform = 'scale(1.3)';
+              button.style.transition = 'transform 0.3s ease';
+            });
+
+            button.addEventListener('mouseleave', () => {
+              button.style.transform = 'scale(1)';
+            });
+          };
+
+          addHoverEffect(prevButton);
+          addHoverEffect(nextButton);
 
         },
         slideChange: function () {

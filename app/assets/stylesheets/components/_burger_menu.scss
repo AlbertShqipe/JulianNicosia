@@ -20,22 +20,18 @@
 }
 
 .burger-menu .line {
-  width: 25px;
-  height: 3px;
-  // background-color: rgb(13, 110, 253);
+  width: 30px;
+  height: 5px;
   background-color: #ceceff;
   margin: 5px;
   transition: all 0.3s ease-in-out;
   z-index: 10;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5); // Add this line for shadow
 
-  // @media (max-width: 560px) {
-  //   background-color: $black;
-
-  // }
 }
 
 .burger-menu.active .top {
-  transform: rotate(45deg) translate(5px, 13px);
+  transform: rotate(45deg) translate(7px, 13px);
   width: 25px;
   height: 3px;
   z-index: 10;
@@ -46,7 +42,7 @@
 }
 
 .burger-menu.active .bottom {
-  transform: rotate(-45deg) translate(5px, -13px);
+  transform: rotate(-45deg) translate(7px, -13px);
   width: 25px;
   height: 3px;
   z-index: 10;
@@ -58,11 +54,12 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  position: relative;
   z-index: 1010;
   background-color: transparent transparent;
-  position: fixed;
+  position: absolute;
   right: 40px;
-  top: 30px;
+  top: 40px;
 
   @media (max-width: 768px) {
     right: 20px;
@@ -72,17 +69,18 @@
 }
 
 .burger-menu-works .line {
-  width: 25px;
-  height: 3px;
-  background-color: $light-gray;
+  width: 30px;
+  height: 5px;
+  background-color: #ffffff;
   margin: 5px;
   transition: all 0.3s ease-in-out;
   z-index: 10;
+  box-shadow: 0px 1px 2px rgba(255, 255, 255, 0.5); // Add this line for shadow
 
 }
 
 .burger-menu-works.active .top {
-  transform: rotate(45deg) translate(5px, 13px);
+  transform: rotate(45deg) translate(7px, 13px);
   width: 25px;
   height: 3px;
   z-index: 10;
@@ -93,7 +91,7 @@
 }
 
 .burger-menu-works.active .bottom {
-  transform: rotate(-45deg) translate(5px, -13px);
+  transform: rotate(-45deg) translate(7px, -13px);
   width: 25px;
   height: 3px;
   z-index: 10;

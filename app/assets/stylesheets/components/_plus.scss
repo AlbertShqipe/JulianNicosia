@@ -3,8 +3,8 @@
   position: relative;
   width: 20px;
   height: 20px;
-  margin-left: 10px;
   cursor: pointer;
+  display: inline-block;
 
   &:hover {
     .vertical, .horizontal {
@@ -16,10 +16,10 @@
 #plus-btn .vertical {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 20%;
   transform: translate(-50%, -50%);
-  width: 10px;
-  height: 2px;
+  width: 12px;
+  height: 3px;
   background-color: white;
   transform: rotate(90deg);
   transition: all 0.2s ease-in-out;
@@ -31,9 +31,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(0%, 0%);
-  width: 10px;
-  height: 2px;
+  transform: translate(-50%, -10%);
+  width: 12px;
+  height: 3px;
   background-color: white;
   transition: all 0.3s ease-in-out;
   z-index: 10;

@@ -25,12 +25,18 @@
   }
 
   .text {
-    padding: 20px 8px 8px 8px;
+    padding: 0px 8px 8px 8px;
     text-align: justify;
 
     h1 {
-      padding-top: 40px;
+      padding-top: 10px;
       font-size: 5rem;
+      color: $light-gray;
+    }
+
+    h3 {
+      padding-top: 10px;
+      font-size: 4rem;
       color: $light-gray;
     }
 
@@ -42,6 +48,7 @@
     p {
       font-size: 0.8rem;
       color: $light-gray;
+      margin-bottom: 5px
     }
   }
 
@@ -58,12 +65,68 @@
       margin-bottom: 5px;
     }
 
+
     .photo {
       margin-top: 10px;
+      width: 45%;
+      height: fit-content;
+      text-align: center;
+      // margin: auto;
+
+      @media (max-width: 760px) {
+        width: 100%;
+        margin-top: 5px;
+      }
+
       img {
         width: 100%;
         height: auto;
       }
+    }
+
+    .photo-singular {
+      width: 100%;
+      height: fit-content;
+      margin: auto;
+      margin-top: 10px;
+      @media (max-width: 760px) {
+        width: 100%;
+        margin-top: 5px;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .photo-singular-big {
+      width: 45%;
+      height: fit-content;
+      margin: auto;
+      margin-top: 10px;
+
+      @media (max-width: 760px) {
+        width: 100%;
+        margin-top: 5px;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .image-flex-off-canvas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 760px) {
+      display: block; // to be seen later
+      width: 100%;
+      margin: auto;
+
     }
   }
 
