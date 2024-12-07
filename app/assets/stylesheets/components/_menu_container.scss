@@ -16,6 +16,18 @@
   ul {
     #julian {
       font-size: 2rem;
+
+      @media (max-width: 760px) {
+        font-size: 1.7rem;
+      }
+    }
+
+    #works-ul {
+      margin-left: 10px;
+
+      @media (max-width: 760px) {
+        margin-left: 0;
+      }
     }
     list-style-type: none;
     margin: 0;
@@ -30,11 +42,13 @@
     }
 
     a {
-      color: $white;
+      // color: $white;
+      color:rgba(255, 255, 255, 0.75);
       text-decoration: none;
 
       &:hover {
-        color: $red;
+        // color: $red;
+        color: white;
       }
     }
 
@@ -42,11 +56,12 @@
     svg {
       width: 2rem;
       height: 2rem;
-      fill: rgb(229, 229, 229);
+      fill:  rgba(255, 255, 255, 0.75);
       margin: 0 10px;
 
       &:hover {
-        fill: $red;
+        // fill: $red;
+        fill: white;
       }
     }
   }
@@ -54,7 +69,7 @@
 
 #works {
   margin: 0;
-  color:  #ffffff9b;
+  color:   rgba(255, 255, 255, 0.75);
   transition: all 0.3s ease-in-out;
   display: none;
 
@@ -63,11 +78,12 @@
     font-size: 16px;
 
     a {
-      color: #ffffff9b;
+      color:  rgba(255, 255, 255, 0.75);
       text-decoration: none;
 
       &:hover {
-        color: $red;
+        // color: $red;
+        color: white;
       }
     }
   }

@@ -52,11 +52,11 @@
     <div class="main-container" data-controller="swiper-pc swiper-phone works-list-disappear">
       <div id="menu-container" >
         <%= image_tag "/assets/logoWhite-941c41202184a68cca7dc87eb9ec20be26f774ed99022d1182a1edac03dce524.png", class:"logo-menu"%>
-        <ul class="ul">
+        <ul class="ul" data-controller="plus">
           <li id="julian"><a href="/home">J U L I A N N I C O S I A</a></li>
           <li id="works-list">
-            <a href="/index_works">WORKS</a>
-            <div id="plus-btn" data-controller="plus">
+            <a href="/index_works" id="works-ul">WORKS</a>
+            <div id="plus-btn">
               <span class="vertical"></span>
               <span class="horizontal"></span>
             </div>
@@ -65,10 +65,11 @@
                 <li><a href="/love_hurts">LOVE HURTS</a></li>
                 <li><a href="/fragments_of_time">FRAGMENTS OF TIME</a></li>
                 <li><a href="/unspoken_thoughts">UNSPOKEN THOUGHTS</a></li>
-                <li><a href="/le_gout_de_dieu">LE GOUT DE DIEU</a></li>
                 <li><a href="/dusk">DUSK</a></li>
                 <li><a href="/unspoken_thoughts">UNSPOKEN THOUGHTS</a></li>
                 <li><a href="/only_fools_rush_in">ONLY FOOLS RUSH IN</a></li>
+                <p style="display:inline-block;font-size:14px; border-bottom:1px solid rgba(255, 255, 255, 0.75)">SHORT FILMS</p>
+                <li><a href="/le_gout_de_dieu">LE GOUT DE DIEU</a></li>
                 <li><a href="/alessandro_and_giada">AESSANDRO & GIADA</a></li>
               </ul>
           </li>
