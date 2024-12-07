@@ -123,19 +123,19 @@ export default class extends Controller {
             lines.forEach((line) => {
               line.style.backgroundColor = '#b0885e';
             });
-          // } else if (this.realIndex === 6) {
-          //   prevButton.style.color = '#4871bc';
-          //   nextButton.style.color = '#4871bc';
-          //   meter.style.backgroundColor = '#4871bc';
-          //   workTextElements[6].querySelector('h1').style.color = '#4871bc';
-          //   workTextElements[6].querySelector('a').style.color = '#4871bc';
-          //   if (workTextElements[6].querySelector('svg')) {
-          //     workTextElements[6].querySelector('svg').style.fill = '#4871bc';
-          //   }
-          //   meter.style.width = (100 / totalSlides) * currentSlide + '%';
-          //   lines.forEach((line) => {
-          //     line.style.backgroundColor = '#4871bc';
-          //   });
+          } else if (this.realIndex === 6) {
+            prevButton.style.color = '#3C383A';
+            nextButton.style.color = '#3C383A';
+            meter.style.backgroundColor = '#3C383A';
+            workTextElements[6].querySelector('h1').style.color = '#3C383A';
+            workTextElements[6].querySelector('a').style.color = '#3C383A';
+            if (workTextElements[6].querySelector('svg')) {
+              workTextElements[6].querySelector('svg').style.fill = '#3C383A';
+            }
+            meter.style.width = (100 / totalSlides) * currentSlide + '%';
+            lines.forEach((line) => {
+              line.style.backgroundColor = '#3C383A';
+            });
           };
         }
       }
