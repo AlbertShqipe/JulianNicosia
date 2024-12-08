@@ -125,11 +125,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 10px;
     @media (max-width: 760px) {
       display: block; // to be seen later
       width: 100%;
       margin: auto;
-
     }
   }
 
