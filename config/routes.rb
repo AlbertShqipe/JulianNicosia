@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get "home" => "pages#home"
   get "media" => "pages#media"
   get "calendar" => "pages#calendar"
+  get "biography" => "pages#biography"
 
   # Page to try things out
   get "test" => "pages#test"

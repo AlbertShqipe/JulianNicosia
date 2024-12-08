@@ -15,4 +15,7 @@ class PagesController < ApplicationController
 
   def splash
   end
+
+  def biography
+  end
 end
