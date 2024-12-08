@@ -1,0 +1,61 @@
+.bio-container {
+  max-height: fit-content;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+  overflow: hidden;
+
+  @media (max-width: 760px) {
+    max-height: 100%;
+
+  }
+
+  .bio-image {
+    float: right;
+    margin: 0 0 1em 1em; /* Margin to separate text from the image */
+    max-width: 200px; /* Ensure the image isn't too large */
+    border-radius: 8px; /* Optional styling for a modern look */
+  }
+
+  blockquote {
+    font-style: italic;
+    border-left: 4px solid #ccc;
+    padding: 1em;
+    margin: 2em 0;
+  }
+
+  blockquote footer {
+    font-size: 0.9em;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  p {
+    font-size: 0.8rem;
+    color: $light-gray;
+    margin-bottom: 5px;
+  }
+
+  h1 {
+    margin-bottom: 0.5em;
+    font-size: 5rem;
+    color: $light-gray;
+  }
+}
+
+.img-bio {
+  width: 500px;
+  position: absolute;
+  bottom: -475px;
+  left: -200px;
+  opacity: 0.3;
+  overflow: hidden;
+
+  @media (max-width: 760px) {
+    width: 300px;
+    position: fixed;
+
+    bottom: -350px;
+    left: -100px;
+  }
+}

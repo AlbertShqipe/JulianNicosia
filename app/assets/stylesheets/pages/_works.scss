@@ -57,6 +57,7 @@
   .text-sec {
     padding: 2px 8px 8px 8px;
     text-align: justify;
+
     h4 {
       font-size: 1.1rem;
       color: $light-gray;
@@ -159,7 +160,7 @@
   width: 2000px;
   height: 1600px;
   z-index: -1;
-  top: -55%;
+  top: -50%;
   right: 0%;
   transform: translate(-50%, 5%);
 }
