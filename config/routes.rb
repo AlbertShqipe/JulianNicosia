@@ -22,4 +22,7 @@ Rails.application.routes.draw do
   get "unspoken_thoughts" => "works#unspoken_thoughts"
   get "le_gout_de_dieu" => "works#le_gout_de_dieu"
   get "dusk" => "works#dusk"
+  get "only_fools_rush_in" => "works#only_fools_rush_in"
+  get "alessandro_and_giada" => "works#alessandro_and_giada"
+  get "rush_for_full" => "works#rush_for_full"
 end

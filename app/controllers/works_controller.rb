@@ -18,4 +18,16 @@ class WorksController < ApplicationController
   def le_gout_de_dieu
   end
 
+  def dusk
+  end
+
+  def only_fools_rush_in
+  end
+
+  def alessandro_and_giada
+  end
+
+  def rush_for_full
+  end
+
 end
