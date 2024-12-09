@@ -1,19 +1,29 @@
 .bio-container {
   max-height: fit-content;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 80%;
+  margin-left: 50px;
+  // margin-bottom: 10px;
   padding: 1em;
 
   @media (max-width: 760px) {
     max-height: 100%;
+    max-width: 100%;
+    margin: 0 ;
 
   }
 
   .bio-image {
-    float: right;
-    margin: 0 0 1em 1em; /* Margin to separate text from the image */
-    max-width: 200px; /* Ensure the image isn't too large */
-    border-radius: 8px; /* Optional styling for a modern look */
+      float: right;
+      margin: 0 0 1em 1.5em; /* Margin to separate text from the image */
+      max-width: 260px; /* Ensure the image isn't too large */
+      opacity: 0.8;
+      box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2),
+                0 6px 20px rgba(255, 255, 255, 0.15);
+    @media (max-width: 760px) {
+      float: right;
+      margin: 0 0 1em 1em; /* Margin to separate text from the image */
+      max-width: 200px; /* Ensure the image isn't too large *//* Optional styling for a modern look */
+    }
   }
 
   blockquote {
@@ -27,6 +37,7 @@
     font-size: 0.9em;
     text-align: right;
     color: rgba(255, 255, 255, 0.75);
+    margin-top: 10px;
   }
 
   p {

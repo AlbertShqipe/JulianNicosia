@@ -21,7 +21,7 @@
 
 .burger-menu .line {
   width: 30px;
-  height: 5px;
+  height: 3.5px;
   background-color: #ceceff;
   margin: 5px;
   transition: all 0.3s ease-in-out;
@@ -31,7 +31,7 @@
 }
 
 .burger-menu.active .top {
-  transform: rotate(45deg) translate(7px, 13px);
+  transform: rotate(45deg) translate(6px, 12px);
   width: 25px;
   height: 3px;
   z-index: 10;
@@ -70,7 +70,7 @@
 
 .burger-menu-works .line {
   width: 30px;
-  height: 5px;
+  height: 3.5px;
   background-color: #ffffff;
   margin: 5px;
   transition: all 0.3s ease-in-out;
@@ -80,7 +80,7 @@
 }
 
 .burger-menu-works.active .top {
-  transform: rotate(45deg) translate(7px, 13px);
+  transform: rotate(45deg) translate(6px, 12px);
   width: 25px;
   height: 3px;
   z-index: 10;
