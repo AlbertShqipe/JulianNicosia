@@ -22,7 +22,7 @@
 .burger-menu .line {
   width: 30px;
   height: 3.5px;
-  background-color: #ceceff;
+  background-color: #2C3651;
   margin: 5px;
   transition: all 0.3s ease-in-out;
   z-index: 10;
@@ -31,9 +31,9 @@
 }
 
 .burger-menu.active .top {
-  transform: rotate(45deg) translate(6px, 12px);
-  width: 25px;
-  height: 3px;
+  transform: rotate(45deg) translate(8px, 12px);
+  width: 27px;
+  height: 5px;
   z-index: 10;
 }
 
@@ -42,9 +42,9 @@
 }
 
 .burger-menu.active .bottom {
-  transform: rotate(-45deg) translate(7px, -13px);
-  width: 25px;
-  height: 3px;
+  transform: rotate(-45deg) translate(8px, -12px);
+  width: 27px;
+  height: 5px;
   z-index: 10;
 }
 

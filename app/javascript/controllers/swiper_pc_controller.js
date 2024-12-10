@@ -16,8 +16,8 @@ export default class extends Controller {
           // Initialization logic (if any)
           const prevButton = document.querySelector('.swiper-button-prev');
           const nextButton = document.querySelector('.swiper-button-next');
-          prevButton.style.color = '#ceceff';
-          nextButton.style.color = '#ceceff';
+          prevButton.style.color = '#2C3651';
+          nextButton.style.color = '#2C3651';
           const addHoverEffect = (button) => {
             button.addEventListener('mouseenter', () => {
               button.style.transform = 'scale(1.3)';
@@ -46,17 +46,17 @@ export default class extends Controller {
 
 
           if (this.realIndex === 0) {
-            prevButton.style.color = '#ceceff';
-            nextButton.style.color = '#ceceff';
-            meter.style.backgroundColor = '#ceceff';
-            workTextElements[0].querySelector('h1').style.color = '#ceceff';
-            workTextElements[0].querySelector('a').style.color = '#ceceff';
+            prevButton.style.color = '#2C3651';
+            nextButton.style.color = '#2C3651';
+            meter.style.backgroundColor = '#2C3651';
+            workTextElements[0].querySelector('h1').style.color = '#2C3651';
+            workTextElements[0].querySelector('a').style.color = '#2C3651';
             if (workTextElements[0].querySelector('svg')) {
-              workTextElements[0].querySelector('svg').style.fill = '#ceceff';
+              workTextElements[0].querySelector('svg').style.fill = '#2C3651';
             }
             meter.style.width = (100 / totalSlides) * currentSlide + '%';
             lines.forEach((line) => {
-              line.style.backgroundColor = '#ceceff';
+              line.style.backgroundColor = '#2C3651';
             });
           } else if (this.realIndex === 1) {
             prevButton.style.color = 'rgb(100, 0, 0)';

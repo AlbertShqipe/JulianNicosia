@@ -11,9 +11,9 @@ export default class extends Controller {
     });
     document.getElementById("closebtn-itii").addEventListener("click", () => {
       document.getElementById("mySidenav-itii").style.width = "0";
-      document.getElementById("burger-menu").style = "opacity: 1; color: #ceceff";
-      document.getElementById("pc-prev").style = "opacity: 1; color: #ceceff";
-      document.getElementById("pc-next").style = "opacity: 1; color: #ceceff";
+      document.getElementById("burger-menu").style = "opacity: 1; color: #2C3651";
+      document.getElementById("pc-prev").style = "opacity: 1; color: #2C3651";
+      document.getElementById("pc-next").style = "opacity: 1; color: #2C3651";
     });
 
 

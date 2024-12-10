@@ -13,8 +13,8 @@
   }
 
   .bio-image {
-      float: right;
-      margin: 0 0 1em 1.5em; /* Margin to separate text from the image */
+      float: left;
+      margin: 0 1em 0  0; /* Margin to separate text from the image */
       max-width: 260px; /* Ensure the image isn't too large */
       opacity: 0.8;
       box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2),
