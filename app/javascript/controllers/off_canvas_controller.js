@@ -11,11 +11,11 @@ export default class extends Controller {
       document.getElementById('phone-next').style = "opacity: 0";
     });
     document.getElementById("closebtn-itii").addEventListener("click", () => {
-      document.getElementById("burger-menu").style = "opacity: 1; color: #ceceff";
-      document.getElementById("main-itii").style = " color: #ceceff; transform:translate(-75%,-48%)";
+      document.getElementById("burger-menu").style = "opacity: 1; color: #2C3651";
+      document.getElementById("main-itii").style = " color: #2C3651; transform:translate(-75%,-48%)";
       document.getElementById("mySidenav-itii").style.width = "0";
-      document.getElementById('phone-prev').style = "; color: #ceceff";
-      document.getElementById('phone-next').style = "; color: #ceceff";
+      document.getElementById('phone-prev').style = "; color: #2C3651";
+      document.getElementById('phone-next').style = "; color: #2C3651";
     });
 
 
