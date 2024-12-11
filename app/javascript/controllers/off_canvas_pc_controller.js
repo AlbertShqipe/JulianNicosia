@@ -84,15 +84,15 @@ export default class extends Controller {
 
     document.getElementById('text-info-7-pc').addEventListener('click', () => {
       document.getElementById("burger-menu").style = "opacity: 0";
-      document.getElementById("mySidenav-ag").style.width = "100%";
+      document.getElementById("mySidenav-rff").style.width = "100%";
       document.getElementById('pc-prev').style = "opacity: 0";
       document.getElementById('pc-next').style = "opacity: 0";
     });
-    document.getElementById("closebtn-ag").addEventListener("click", () => {
-      document.getElementById("burger-menu").style = "opacity: 1; color:#3C383A";
-      document.getElementById("mySidenav-ag").style.width = "0";
-      document.getElementById('pc-prev').style = "opacity: 1; color:#3C383A";
-      document.getElementById('pc-next').style = "opacity: 1; color:#3C383A";
+    document.getElementById("closebtn-rff").addEventListener("click", () => {
+      document.getElementById("burger-menu").style = "opacity: 1; color:black";
+      document.getElementById("mySidenav-rff").style.width = "0";
+      document.getElementById('pc-prev').style = "opacity: 1; color:black";
+      document.getElementById('pc-next').style = "opacity: 1; color:black";
     });
   }
 }

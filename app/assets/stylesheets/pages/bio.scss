@@ -13,9 +13,9 @@
   }
 
   .bio-image {
-      float: left;
-      margin: 0 1em 0  0; /* Margin to separate text from the image */
-      max-width: 260px; /* Ensure the image isn't too large */
+      float: right;
+      margin: 0  0  0 1em; /* Margin to separate text from the image */
+      max-width: 350px; /* Ensure the image isn't too large */
       opacity: 0.8;
       box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2),
                 0 6px 20px rgba(255, 255, 255, 0.15);
@@ -31,6 +31,12 @@
     border-left: 4px solid #ccc;
     padding: 1em;
     margin: 2em 0;
+    width: 70%;
+
+    @media (max-width: 760px) {
+      width: 100%;
+    }
+
   }
 
   blockquote footer {
@@ -41,7 +47,7 @@
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: $light-gray;
     margin-bottom: 5px;
   }
