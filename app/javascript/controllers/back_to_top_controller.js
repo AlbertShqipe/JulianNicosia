@@ -43,7 +43,7 @@ export default class extends Controller {
           icon.style.opacity = 0;
         } else {
           // Gradually increase opacity between scroll positions 860 and 1160
-          let maxOpacityScroll = 2000; // Adjust this to define the scroll range over which opacity increases
+          let maxOpacityScroll = 1690; // Adjust this to define the scroll range over which opacity increases
           let opacity = (scrollTop - 860) / (maxOpacityScroll - 860);
 
           // Clamp the opacity value between 0 and 1
