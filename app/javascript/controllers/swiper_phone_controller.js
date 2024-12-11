@@ -36,7 +36,6 @@ export default class extends Controller {
             prevButton.style.color = '#2C3651';
             nextButton.style.color = '#2C3651';
             meter.style.backgroundColor = '#2C3651';
-            // julian.style.color = '#2C3651';
             workTextElements[0].querySelector('h1').style.color = '#2C3651';
             workTextElements[0].querySelector('a').style.color = '#2C3651';
             if (workTextElements[0].querySelector('svg')) {
