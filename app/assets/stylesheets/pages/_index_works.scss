@@ -15,7 +15,8 @@
   h1 {
     font-size: 5rem;
     color: rgba(255, 255, 255, 0.75);
-    padding-top: 50px;
+    padding-top: 20px;
+    margin-bottom: 40px;
   }
 }
 
@@ -24,8 +25,8 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 0px; /* Adjust gap between grid items */
-  width: 90vw;
-  height: 90vw;
+  width: 100vw;
+  height: 100vw;
   max-width: 1400px;
   max-height: 1400px;
 }
