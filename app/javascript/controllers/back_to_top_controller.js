@@ -3,21 +3,75 @@ import { Controller } from "@hotwired/stimulus"
 // Connects to data-controller="back-to-top"
 export default class extends Controller {
   connect() {
+
     const getScrollPosition = (element) => {
       // Get the vertical scroll position
       return element.scrollTop + element.scrollHeight;
     }
+
     // Get the div element that contains the scroll to top button
-    const scrollTopElements = document.querySelectorAll('.scrollTopElement'); // Replace with your off-canvas selector
+    const scrollTopElements = document.querySelectorAll('.scrollTopElement'); // Off-canvas elements
+    const pages = document.querySelectorAll('.page');
     const icon = document.getElementById('backToTop');
 
+    pages.forEach(function(page) {
+      page.addEventListener('scroll', () => {
+        const pageH = page.scrollTop;
+        const minScroll = 250; // Start opacity transition
+        const maxScroll = 784; // End opacity transition
+
+        if (pageH <= minScroll) {
+          icon.style.opacity = 0; // Fully hidden before minScroll
+        } else if (pageH >= maxScroll) {
+          icon.style.opacity = 1; // Fully visible after maxScroll
+        } else {
+          // Calculate opacity within the defined scroll range
+          let opacity = (pageH - minScroll) / (maxScroll - minScroll);
+          icon.style.opacity = opacity.toFixed(2); // Smooth gradual transition
+        }
+        icon.addEventListener('click', () => {
+          page.scrollTo({
+            top: 0,
+            behavior: 'smooth', // Smooth scrolling
+          });
+        });
+      });
+    });
+    // Scroll event listener to handle opacity changes
+    document.body.addEventListener('scroll', () => {
+      const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+      console.log(scrollPosition);
+
+      const minScroll = 250; // Start opacity transition
+      const maxScroll = 784; // End opacity transition
+
+      if (scrollPosition <= minScroll) {
+        icon.style.opacity = 0; // Fully hidden before minScroll
+      } else if (scrollPosition >= maxScroll) {
+        icon.style.opacity = 1; // Fully visible after maxScroll
+      } else {
+        // Calculate opacity within the defined scroll range
+        let opacity = (scrollPosition - minScroll) / (maxScroll - minScroll);
+        icon.style.opacity = opacity.toFixed(2); // Smooth gradual transition
+      }
+    });
+
+    // Click event listener to scroll back to the top
+    icon.addEventListener('click', () => {
+      document.body.scrollTo({
+        top: 0,
+        behavior: 'smooth', // Smooth scrolling
+      });
+    });
 
     // Listen for click events on the scroll-to-top icon
     icon.addEventListener('click', function () {
       scrollTopElements.forEach(function (element) {
           smoothScrollToTop(element);
       });
+
     });
+
 
     function smoothScrollToTop(element) {
         const scrollStep = element.scrollTop / 20; // Adjust the divisor for speed (higher = slower)
@@ -51,5 +105,6 @@ export default class extends Controller {
         };
       });
     });
+
   }
 }
