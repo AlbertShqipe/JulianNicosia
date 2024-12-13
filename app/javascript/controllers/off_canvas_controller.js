@@ -96,19 +96,19 @@ export default class extends Controller {
       document.getElementById('phone-next').style = "opacity: 1; color:#b0885e";
     });
 
-    // document.getElementById("main-ut").addEventListener("click", () => {
-    //   document.getElementById("burger-menu").style = "opacity: 0";
-    //   document.getElementById("main-ut").style = "opacity: 0";
-    //   document.getElementById("mySidenav-ut").style.width = "100%";
-    //   document.getElementById('phone-prev').style = "opacity: 0";
-    //   document.getElementById('phone-next').style = "opacity: 0";
-    // });
-    // document.getElementById("closebtn-ut").addEventListener("click", () => {
-    //   document.getElementById("mySidenav-ut").style.width = "0";
-    //   document.getElementById("burger-menu").style = "opacity: 1; color:#4871bc";
-    //   document.getElementById("main-ut").style = "opacity: 1; color:#4871bc";
-    //   document.getElementById('phone-prev').style = "opacity: 1; color:#4871bc";
-    //   document.getElementById('phone-next').style = "opacity: 1; color:#4871bc";
-    // });
+    document.getElementById("main-po").addEventListener("click", () => {
+      document.getElementById("burger-menu").style = "opacity: 0";
+      document.getElementById("main-po").style = "opacity: 0";
+      document.getElementById("mySidenav-po").style.width = "100%";
+      document.getElementById('phone-prev').style = "opacity: 0";
+      document.getElementById('phone-next').style = "opacity: 0";
+    });
+    document.getElementById("closebtn-po").addEventListener("click", () => {
+      document.getElementById("mySidenav-po").style.width = "0";
+      document.getElementById("burger-menu").style = "opacity: 1; color:#4871bc";
+      document.getElementById("main-po").style = "opacity: 1; color:#4871bc";
+      document.getElementById('phone-prev').style = "opacity: 1; color:#4871bc";
+      document.getElementById('phone-next').style = "opacity: 1; color:#4871bc";
+    });
   }
 }

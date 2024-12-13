@@ -1,5 +1,46 @@
 import { Controller } from "@hotwired/stimulus"
 
+// function animateButton(button) {
+//   let scaleUp = true;
+
+//   setInterval(() => {
+//     button.style.transform = scaleUp ? 'scale(2)' : 'scale(1)';
+//     button.style.transition = 'transform 1s'; // Smooth transition
+//     scaleUp = !scaleUp;
+//   }, 300); // Switch scale every 2 seconds
+// }
+// function stopAnimateButton(button) {
+//   // Remove scaling logic entirely or replace with a different animation
+//   button.style.transform = 'none'; // No animation
+// }
+
+let animationIntervals = new Map(); // Store intervals by button for precise control
+
+function animateButton(button) {
+  // Avoid starting multiple intervals for the same button
+  if (animationIntervals.has(button)) return;
+
+  let scaleUp = true;
+
+  const interval = setInterval(() => {
+    button.style.transform = scaleUp ? 'scale(1.7)' : 'scale(1)';
+    button.style.transition = 'transform 0.5s ease'; // Smooth transition
+    scaleUp = !scaleUp;
+  }, 500); // Switch scale every 0.5 seconds
+
+  animationIntervals.set(button, interval); // Store the interval
+}
+
+function stopAnimateButton(button) {
+  const interval = animationIntervals.get(button);
+  if (interval) {
+    clearInterval(interval); // Clear the interval
+    animationIntervals.delete(button); // Remove it from the map
+  }
+  button.style.transform = 'scale(1)'; // Reset scaling
+  button.style.transition = 'none'; // Stop transition
+}
+
 // Connects to data-controller="swiper-phone"
 export default class extends Controller {
   connect() {
@@ -16,8 +57,11 @@ export default class extends Controller {
           // Initialization logic (if any)
           const prevButton = document.getElementById('phone-prev');
           const nextButton = document.getElementById('phone-next');
+
           prevButton.style.color = '#2C3651';
           nextButton.style.color = '#2C3651';
+          // animateButton(nextButton);
+          animateButton(nextButton);
         },
         slideChange: function () {
           const currentSlide = this.realIndex + 1; // Use realIndex for looped slides
@@ -33,6 +77,7 @@ export default class extends Controller {
 
 
           if (this.realIndex === 0) {
+            animateButton(nextButton);
             prevButton.style.color = '#2C3651';
             nextButton.style.color = '#2C3651';
             meter.style.backgroundColor = '#2C3651';
@@ -47,6 +92,7 @@ export default class extends Controller {
               line.style.backgroundColor = '#2C3651';
             });
           } else if (this.realIndex === 1) {
+            stopAnimateButton(nextButton);
             prevButton.style.color = 'rgb(100, 0, 0)';
             nextButton.style.color = 'rgb(100, 0, 0)';
             meter.style.backgroundColor = 'rgb(100, 0, 0)';
@@ -61,6 +107,7 @@ export default class extends Controller {
               line.style.backgroundColor = 'rgb(100, 0, 0)';
             });
           } else if (this.realIndex === 2) { // Third slide condition
+
             prevButton.style.color = 'rgb(100, 10, 149)';
             nextButton.style.color = 'rgb(100, 10, 149)';
             meter.style.backgroundColor = 'rgb(100, 10, 149)';
@@ -87,6 +134,7 @@ export default class extends Controller {
               line.style.backgroundColor = '#898c5e';
             });
           } else if (this.realIndex === 4) {
+
             prevButton.style.color = 'black';
             nextButton.style.color = 'black';
             meter.style.backgroundColor = 'black';
@@ -100,6 +148,7 @@ export default class extends Controller {
               line.style.backgroundColor = 'black';
             });
           } else if (this.realIndex === 5) {
+            stopAnimateButton(prevButton);
             prevButton.style.color = '#b0885e';
             nextButton.style.color = '#b0885e';
             meter.style.backgroundColor = '#b0885e';
@@ -112,16 +161,17 @@ export default class extends Controller {
             lines.forEach((line) => {
               line.style.backgroundColor = '#b0885e';
             });
-          // } else if (this.realIndex === 6){
-          //   prevButton.style.color = '#4871bc';
-          //   nextButton.style.color = '#4871bc';
-          //   meter.style.backgroundColor = '#4871bc';
-          //   workTextElements[6].querySelector('h1').style.color = '#4871bc';
-          //   workTextElements[6].querySelector('a').style.color = '#4871bc';
-          //   meter.style.width = (100 / totalSlides) * currentSlide + '%';
-          //   lines.forEach((line) => {
-          //     line.style.backgroundColor = '#4871bc';
-          //   });
+          } else if (this.realIndex === 6){
+            animateButton(prevButton);
+            prevButton.style.color = '#4871bc';
+            nextButton.style.color = '#4871bc';
+            meter.style.backgroundColor = '#4871bc';
+            workTextElements[6].querySelector('h1').style.color = '#4871bc';
+            workTextElements[6].querySelector('a').style.color = '#4871bc';
+            meter.style.width = (100 / totalSlides) * currentSlide + '%';
+            lines.forEach((line) => {
+              line.style.backgroundColor = '#4871bc';
+            });
           };
         }
       }

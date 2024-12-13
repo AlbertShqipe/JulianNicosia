@@ -1,4 +1,5 @@
-.sidenav-if-this-is-it, .sidenav-love-hurts, .sidenav-fragments-of-time, .sidenav-le-gout-de-dieu, .sidenav-d, .sidenav-rush-for-full, .sidenav-only-fools-rush-in, .sidenav-alessandro-giada {
+.sidenav-if-this-is-it, .sidenav-love-hurts, .sidenav-fragments-of-time, .sidenav-le-gout-de-dieu, .sidenav-d,
+.sidenav-rush-for-full, .sidenav-only-fools-rush-in, .sidenav-alessandro-giada, .sidenav-paris-opera {
   height: 100%;
   width: 0;
   position: fixed;
@@ -48,7 +49,7 @@
 
     h3 {
       padding-top: 10px;
-      font-size: 4rem;
+      font-size: 3.7rem;
       color: $light-gray;
     }
 
@@ -140,7 +141,8 @@
     }
   }
 
-  #closebtn-itii, #closebtn-lh, #closebtn-fot, #closebtn-lgdd, #closebtn-d, #closebtn-rff, #closebtn-ofri, #closebtn-ut, #closebtn-ag {
+  #closebtn-itii, #closebtn-lh, #closebtn-fot, #closebtn-lgdd,
+  #closebtn-d, #closebtn-rff, #closebtn-ofri, #closebtn-ut, #closebtn-ag, #closebtn-po {
     text-align: center;
     position: absolute;
     top: 0px;
