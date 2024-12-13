@@ -93,7 +93,6 @@ export default class extends Controller {
               line.style.backgroundColor = 'rgb(100, 0, 0)';
             });
           } else if (this.realIndex === 2) { // Third slide condition
-
             prevButton.style.color = 'rgb(100, 10, 149)';
             nextButton.style.color = 'rgb(100, 10, 149)';
             meter.style.backgroundColor = 'rgb(100, 10, 149)';
@@ -120,7 +119,6 @@ export default class extends Controller {
               line.style.backgroundColor = '#898c5e';
             });
           } else if (this.realIndex === 4) {
-
             prevButton.style.color = 'black';
             nextButton.style.color = 'black';
             meter.style.backgroundColor = 'black';

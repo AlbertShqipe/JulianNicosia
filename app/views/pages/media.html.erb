@@ -109,7 +109,7 @@
       <button class="next" onclick="changeImage(1)">&#10095;</button>
   </div>
 </div>
-<script>
+<%# <script>
   const images = [
                   "/assets/LH1-55163fccf54f097884b99b32c3858047afe0ed7de6bf57631ab2bb65c969bbc1.jpg",
                   "/assets/LH2-a1c47da4f8812d04ab46cfd6825a68df40e3f0a4e14cf99cee5532074f2e3ada.jpg",
@@ -155,4 +155,4 @@
     currentIndex = (currentIndex + direction + images.length) % images.length;
     document.getElementById("modal-img").src = images[currentIndex];
   }
-</script>
+</script> %>

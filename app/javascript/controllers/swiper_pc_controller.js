@@ -55,7 +55,7 @@ export default class extends Controller {
             });
 
             button.addEventListener('mouseleave', () => {
-              if (this.realIndex === 0 || this.realIndex === 6) {
+              if (this.realIndex === 0) {
                 animateButton(button);
               }
               button.style.transform = 'scale(1)';
@@ -146,7 +146,7 @@ export default class extends Controller {
               line.style.backgroundColor = '#898c5e';
             });
           } else if (this.realIndex === 5) {
-            stopAnimateButton(nextButton);
+            stopAnimateButton(prevButton);
             prevButton.style.color = '#b0885e';
             nextButton.style.color = '#b0885e';
             meter.style.backgroundColor = '#b0885e';
