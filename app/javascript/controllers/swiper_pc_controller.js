@@ -1,5 +1,32 @@
 import { Controller } from "@hotwired/stimulus"
 
+let animationIntervals = new Map(); // Store intervals by button for precise control
+
+function animateButton(button) {
+  // Avoid starting multiple intervals for the same button
+  if (animationIntervals.has(button)) return;
+
+  let scaleUp = true;
+
+  const interval = setInterval(() => {
+    button.style.transform = scaleUp ? 'scale(1.7)' : 'scale(1)';
+    button.style.transition = 'transform 0.5s ease'; // Smooth transition
+    scaleUp = !scaleUp;
+  }, 500); // Switch scale every 0.5 seconds
+
+  animationIntervals.set(button, interval); // Store the interval
+}
+
+function stopAnimateButton(button) {
+  const interval = animationIntervals.get(button);
+  if (interval) {
+    clearInterval(interval); // Clear the interval
+    animationIntervals.delete(button); // Remove it from the map
+  }
+  button.style.transform = 'scale(1)'; // Reset scaling
+  button.style.transition = 'none'; // Stop transition
+}
+
 // Connects to data-controller="swiper-pc"
 export default class extends Controller {
   connect() {
@@ -18,13 +45,19 @@ export default class extends Controller {
           const nextButton = document.querySelector('.swiper-button-next');
           prevButton.style.color = '#2C3651';
           nextButton.style.color = '#2C3651';
+          animateButton(nextButton);
+
           const addHoverEffect = (button) => {
             button.addEventListener('mouseenter', () => {
-              button.style.transform = 'scale(1.3)';
+              stopAnimateButton(button);
+              button.style.transform = 'scale(1.7)';
               button.style.transition = 'transform 0.3s ease';
             });
 
             button.addEventListener('mouseleave', () => {
+              if (this.realIndex === 0 || this.realIndex === 6) {
+                animateButton(button);
+              }
               button.style.transform = 'scale(1)';
             });
           };
@@ -42,10 +75,11 @@ export default class extends Controller {
           const lines = burgerMenu.querySelectorAll('.line');
           const meter = document.getElementById('meter');
           const workTextElements = document.getElementsByClassName('work_text'); // Get all elements with the class 'work_text'
-          console.log(this.realIndex)
+          // console.log(this.realIndex)
 
 
           if (this.realIndex === 0) {
+            animateButton(nextButton);
             prevButton.style.color = '#2C3651';
             nextButton.style.color = '#2C3651';
             meter.style.backgroundColor = '#2C3651';
@@ -59,6 +93,7 @@ export default class extends Controller {
               line.style.backgroundColor = '#2C3651';
             });
           } else if (this.realIndex === 1) {
+            stopAnimateButton(nextButton);
             prevButton.style.color = 'rgb(100, 0, 0)';
             nextButton.style.color = 'rgb(100, 0, 0)';
             meter.style.backgroundColor = 'rgb(100, 0, 0)';
@@ -111,6 +146,7 @@ export default class extends Controller {
               line.style.backgroundColor = '#898c5e';
             });
           } else if (this.realIndex === 5) {
+            stopAnimateButton(nextButton);
             prevButton.style.color = '#b0885e';
             nextButton.style.color = '#b0885e';
             meter.style.backgroundColor = '#b0885e';
@@ -124,6 +160,7 @@ export default class extends Controller {
               line.style.backgroundColor = '#b0885e';
             });
           } else if (this.realIndex === 6) {
+            animateButton(prevButton);
             prevButton.style.color = 'black';
             nextButton.style.color = 'black';
             meter.style.backgroundColor = 'black';

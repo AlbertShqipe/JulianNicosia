@@ -13,7 +13,6 @@ export default class extends Controller {
     const scrollTopElements = document.querySelectorAll('.scrollTopElement'); // Off-canvas elements
     const pages = document.querySelectorAll('.page');
     const icon = document.getElementById('backToTop');
-
     pages.forEach(function(page) {
       page.addEventListener('scroll', () => {
         const pageH = page.scrollTop;
@@ -40,7 +39,7 @@ export default class extends Controller {
     // Scroll event listener to handle opacity changes
     document.body.addEventListener('scroll', () => {
       const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-      console.log(scrollPosition);
+      // console.log(scrollPosition);
 
       const minScroll = 250; // Start opacity transition
       const maxScroll = 784; // End opacity transition
@@ -105,6 +104,5 @@ export default class extends Controller {
         };
       });
     });
-
   }
 }

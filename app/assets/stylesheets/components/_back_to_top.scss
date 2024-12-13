@@ -19,13 +19,27 @@
   opacity: 0;
 
   span {
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.75);
     font-size: 2rem;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.75);
+    animation: scaleAnimation 1s infinite ease-in-out; // Add scaling animation
+    transform-origin: center; // Scale from the center
 
-    &:hover {
-      color: #1f2c4e;
-      border-bottom: 2px solid #1f2c4e;
+    // &:hover {
+    //   color: #1f2c4e;
+    //   border-bottom: 2px solid #1f2c4e;
+    // }
+  }
+
+  // Define scaling animation
+  @keyframes scaleAnimation {
+    0%, 100% {
+      transform: scale(1); // Default size
+    }
+    50% {
+      transform: scale(1.1); // Enlarged size
+      color: #ffffff;
+      border-bottom: 2px solid #ffffff;
     }
   }
 }

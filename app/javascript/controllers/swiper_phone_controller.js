@@ -1,19 +1,5 @@
 import { Controller } from "@hotwired/stimulus"
 
-// function animateButton(button) {
-//   let scaleUp = true;
-
-//   setInterval(() => {
-//     button.style.transform = scaleUp ? 'scale(2)' : 'scale(1)';
-//     button.style.transition = 'transform 1s'; // Smooth transition
-//     scaleUp = !scaleUp;
-//   }, 300); // Switch scale every 2 seconds
-// }
-// function stopAnimateButton(button) {
-//   // Remove scaling logic entirely or replace with a different animation
-//   button.style.transform = 'none'; // No animation
-// }
-
 let animationIntervals = new Map(); // Store intervals by button for precise control
 
 function animateButton(button) {
