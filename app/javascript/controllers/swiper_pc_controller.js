@@ -56,7 +56,7 @@ export default class extends Controller {
 
             button.addEventListener('mouseleave', () => {
               if (this.realIndex === 0) {
-                animateButton(button);
+                animateButton(nextButton);
               }
               button.style.transform = 'scale(1)';
             });
