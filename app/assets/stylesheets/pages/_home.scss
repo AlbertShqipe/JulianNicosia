@@ -6,24 +6,42 @@
 }
 
 #h3-swipe {
-  font-size: 90px;
+  font-size: 30px;
   padding: 0;
   margin: 0;
   display: inline-block;
   background-color: transparent;
   position: absolute;
-  bottom: 150px;
-  right: -80px;
+  bottom: 50%;
+  right: -15px;
   transform: rotate(270deg);
-  color: red;
-
+  // color: rgb(152, 248, 56);
+  color: #2C3651;
+  text-shadow: 1px 1px 1px #000000;
+  animation: scale 2s linear infinite;
+    // animation-delay: 2s;
   span {
-    transform: scale(2);
     margin-left: -10px;
+    display: none;
   }
 
   @media (min-width: 768px) {
     display: none;
+
+  }
+
+  @keyframes scale {
+    0% {
+      transform: scale(1) rotate(270deg);
+    }
+    50% {
+      transform: scale(1.2) rotate(270deg);
+      right: -10px;
+    }
+    100% {
+      transform: scale(1) rotate(270deg);
+      right: -15px;
+    }
 
   }
 }

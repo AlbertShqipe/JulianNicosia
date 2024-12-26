@@ -43,17 +43,21 @@ export default class extends Controller {
           // Initialization logic (if any)
           const prevButton = document.getElementById('phone-prev');
           const nextButton = document.getElementById('phone-next');
+          const swipeText = document.getElementById('h3-swipe');
+
 
           prevButton.style.color = '#2C3651';
           nextButton.style.color = '#2C3651';
           // animateButton(nextButton);
           animateButton(nextButton);
+
         },
         slideChange: function () {
           const currentSlide = this.realIndex + 1; // Use realIndex for looped slides
           const totalSlides = this.slides.length;
           // console.log('Current slide is', currentSlide);
 
+          const swipeText = document.getElementById('h3-swipe');
           const prevButton = document.getElementById('phone-prev');
           const nextButton = document.getElementById('phone-next');
           const burgerMenu = document.getElementById('burger-menu');
@@ -61,7 +65,7 @@ export default class extends Controller {
           const meter = document.getElementById('meter-phone');
           const workTextElements = document.getElementsByClassName('work_text_phone');
 
-
+          swipeText.style.display = 'none';
           if (this.realIndex === 0) {
             animateButton(nextButton);
             prevButton.style.color = '#2C3651';
