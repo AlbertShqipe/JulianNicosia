@@ -7,6 +7,7 @@ export default class extends Controller {
     const menu = document.getElementById('menu-container');
     const textInfosPc = document.querySelectorAll('.work_text');
     const textInfosPhone = document.querySelectorAll('.work_text_phone');
+    const swipeText = document.getElementById('h3-swipe');
     const media = document.querySelector('gallery');
     burgerMenu.addEventListener('click', () => {
       burgerMenu.classList.toggle('active');
@@ -18,6 +19,7 @@ export default class extends Controller {
         textInfosPc.forEach((textInfo) => {
           textInfo.style = 'display: none';
         });
+        swipeText.style = 'opacity: 0';
       } else {
         menu.style = 'display: none';
         textInfosPhone.forEach((textInfo) => {
@@ -26,6 +28,7 @@ export default class extends Controller {
         textInfosPc.forEach((textInfo) => {
           textInfo.style = 'display: inline-block';
         });
+        // swipeText.style = 'opacity: 1';
       }
     });
   }

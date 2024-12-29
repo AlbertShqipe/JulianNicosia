@@ -4,6 +4,7 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   connect() {
     document.getElementById("main-itii").addEventListener("click", () => {
+      document.getElementById('h3-swipe').style = "opacity: 0";
       document.getElementById("burger-menu").style = "opacity: 0";
       document.getElementById("main-itii").style = "opacity: 0";
       document.getElementById("mySidenav-itii").style.width = "100%";
@@ -11,6 +12,7 @@ export default class extends Controller {
       document.getElementById('phone-next').style = "opacity: 0";
     });
     document.getElementById("closebtn-itii").addEventListener("click", () => {
+      document.getElementById('h3-swipe').style = "opacity: 1";
       document.getElementById("burger-menu").style = "opacity: 1; color: #2C3651";
       document.getElementById("main-itii").style = " color: #2C3651; transform:translate(-75%,-48%)";
       document.getElementById("mySidenav-itii").style.width = "0";
