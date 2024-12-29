@@ -146,7 +146,7 @@ export default class extends Controller {
               line.style.backgroundColor = '#898c5e';
             });
           } else if (this.realIndex === 5) {
-            stopAnimateButton(prevButton);
+            // stopAnimateButton(prevButton);
             prevButton.style.color = '#b0885e';
             nextButton.style.color = '#b0885e';
             meter.style.backgroundColor = '#b0885e';
@@ -160,7 +160,8 @@ export default class extends Controller {
               line.style.backgroundColor = '#b0885e';
             });
           } else if (this.realIndex === 6) {
-            animateButton(prevButton);
+            // animateButton(prevButton);
+            stopAnimateButton(prevButton);
             prevButton.style.color = 'black';
             nextButton.style.color = 'black';
             meter.style.backgroundColor = 'black';
@@ -173,7 +174,21 @@ export default class extends Controller {
             lines.forEach((line) => {
               line.style.backgroundColor = 'black';
             });
-          };
+          } else if (this.realIndex === 7) {
+            animateButton(prevButton);
+            prevButton.style.color = '#776a7c';
+            nextButton.style.color = '#776a7c';
+            meter.style.backgroundColor = '#776a7c';
+            workTextElements[7].querySelector('h1').style.color = '#776a7c';
+            workTextElements[7].querySelector('a').style.color = '#776a7c';
+            if (workTextElements[7].querySelector('svg')) {
+              workTextElements[7].querySelector('svg').style.fill = '#776a7c';
+            }
+            meter.style.width = (100 / totalSlides) * currentSlide + '%';
+            lines.forEach((line) => {
+              line.style.backgroundColor = '#776a7c';
+            });
+          }
         }
       }
     });

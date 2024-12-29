@@ -30,4 +30,7 @@ class WorksController < ApplicationController
   def rush_for_full
   end
 
+  def veil_of_perspective
+  end
+
 end

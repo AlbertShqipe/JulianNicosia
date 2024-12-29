@@ -25,4 +25,5 @@ Rails.application.routes.draw do
   get "only_fools_rush_in" => "works#only_fools_rush_in"
   get "alessandro_and_giada" => "works#alessandro_and_giada"
   get "rush_for_full" => "works#rush_for_full"
+  get "veil_of_perspective" => "works#veil_of_perspective"
 end

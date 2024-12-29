@@ -207,9 +207,17 @@
   text-align: left;
 }
 
-// #main-fot {
-
-// }
+#main-fot {
+  display: block;
+  padding: 10px 30px; /* Keep general padding */
+  font-family: "Roboto Mono", sans-serif !important;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-54%,-48%);
+  text-align: left;
+}
 
 #main-d{
   display: block;
@@ -256,5 +264,17 @@
   top: 50%;
   left: 50%;
   transform: translate(-67%,-46%);
+  text-align: left;
+}
+
+#main-vop {
+  display: block;
+  padding: 10px 30px; /* Keep general padding */
+  font-family: "Roboto Mono", sans-serif !important;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-60%,-48%);
   text-align: left;
 }
