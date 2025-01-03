@@ -13,6 +13,7 @@ export default class extends Controller {
     const scrollTopElements = document.querySelectorAll('.scrollTopElement'); // Off-canvas elements
     const pages = document.querySelectorAll('.page');
     const icon = document.getElementById('backToTop');
+
     pages.forEach(function(page) {
       page.addEventListener('scroll', () => {
         const pageH = page.scrollTop;

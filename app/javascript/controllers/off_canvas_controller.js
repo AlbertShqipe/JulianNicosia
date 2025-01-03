@@ -21,6 +21,8 @@ export default class extends Controller {
 
     // Function to close sidenav
     const closeSidenav = (sidenav) => {
+      console.log(document.getElementById('mySidenav-itii').scrollTop);
+      sidenav.scrollTop = 0; // Reset scroll position
       sidenav.style.width = "0";
       sidenav.style.opacity = "0"; // Optional opacity reset
       document.getElementById('h3-swipe').style = "opacity: 1";
@@ -33,7 +35,8 @@ export default class extends Controller {
       document.getElementById("main-ofri").style = "opacity: 1";
       document.getElementById("main-po").style = "opacity: 1";
       document.getElementById("main-vop").style = "opacity: 1";
-      sidenav.scrollTop = 0; // Reset scroll position
+
+       // Reset scroll position
     };
 
     // Function to handle swipe events for each sidenav
