@@ -23,31 +23,31 @@ export default class extends Controller {
       sidenav.style.opacity = "0"; // Optional opacity reset
     };
 
-    // Function to handle swipe events for each sidenav
-    const handleSwipeToClose = (sidenav) => {
-      sidenav.addEventListener('touchstart', (e) => {
-        startX = e.touches[0].clientX;
-      });
+    // // Function to handle swipe events for each sidenav
+    // const handleSwipeToClose = (sidenav) => {
+    //   sidenav.addEventListener('touchstart', (e) => {
+    //     startX = e.touches[0].clientX;
+    //   });
 
-      sidenav.addEventListener('touchend', (e) => {
-        endX = e.changedTouches[0].clientX;
+    //   sidenav.addEventListener('touchend', (e) => {
+    //     endX = e.changedTouches[0].clientX;
 
-        // Calculate swipe distance
-        const swipeDistance = startX - endX;
+    //     // Calculate swipe distance
+    //     const swipeDistance = startX - endX;
 
-        // Close sidenav if swiped left (swipeDistance > 50) or swiped right (swipeDistance < -50)
-        if (swipeDistance > 50 || swipeDistance < -50) {
-          closeSidenav(sidenav); // Close the sidenav
-        }
-      });
-    };
+    //     // Close sidenav if swiped left (swipeDistance > 50) or swiped right (swipeDistance < -50)
+    //     if (swipeDistance > 50 || swipeDistance < -50) {
+    //       closeSidenav(sidenav); // Close the sidenav
+    //     }
+    //   });
+    // };
 
     // Loop through each sidenav in the object and apply the swipe handling
-    for (const key in sidenavs) {
-      if (sidenavs.hasOwnProperty(key)) {
-        handleSwipeToClose(sidenavs[key]);
-      }
-    }
+    // for (const key in sidenavs) {
+    //   if (sidenavs.hasOwnProperty(key)) {
+    //     handleSwipeToClose(sidenavs[key]);
+    //   }
+    // }
 
     // Function to open sidenav
     const openSidenav = (sidenav) => {
@@ -69,9 +69,9 @@ export default class extends Controller {
       document.getElementById('h3-swipe').style = "opacity: 1";
       document.getElementById("burger-menu").style = "opacity: 1; color: #2C3651";
       document.getElementById("main-itii").style = " color: #2C3651; transform:translate(-75%,-48%)";
-      closeSidenav(sidenavs.itii);
       document.getElementById('phone-prev').style = "color: #2C3651";
       document.getElementById('phone-next').style = "color: #2C3651";
+      closeSidenav(sidenavs.itii);
     });
 
 
