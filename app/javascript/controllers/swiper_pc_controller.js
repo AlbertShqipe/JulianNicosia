@@ -235,7 +235,7 @@ export default class extends Controller {
               line.style.backgroundColor = 'white';
             });
           } else if (this.realIndex === 7) { // Veil of Perspective
-            // animateButton(prevButton);
+            animateButton(prevButton);
             // prevButton.style.color = '#776a7c'; // Veil of Perspective
             // nextButton.style.color = '#776a7c';
             // meter.style.backgroundColor = '#776a7c';
