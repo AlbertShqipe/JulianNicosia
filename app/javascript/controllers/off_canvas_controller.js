@@ -40,6 +40,15 @@ export default class extends Controller {
           closeSidenav(sidenav); // Close the sidenav
           document.getElementById('h3-swipe').style = "opacity: 1";
           document.getElementById("burger-menu").style = "opacity: 1";
+          document.getElementById("main-itii").style = "opacity: 1";
+          document.getElementById("main-lh").style = "opacity: 1";
+          document.getElementById("main-fot").style = "opacity: 1";
+          document.getElementById("main-d").style = "opacity: 1";
+          document.getElementById("main-r-f-f").style = "opacity: 1";
+          document.getElementById("main-ofri").style = "opacity: 1";
+          document.getElementById("main-po").style = "opacity: 1";
+          document.getElementById("main-vop").style = "opacity: 1";
+
 
         }
       });
