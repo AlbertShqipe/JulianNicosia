@@ -149,24 +149,24 @@ export default class extends Controller {
             lines.forEach((line) => {
               line.style.backgroundColor = '#b0885e';
             });
+          // } else if (this.realIndex === 6){
+          //   animateButton(prevButton);
+          //   prevButton.style.color = '#4871bc';
+          //   nextButton.style.color = '#4871bc';
+          //   meter.style.backgroundColor = '#4871bc';
+          //   workTextElements[6].querySelector('h1').style.color = '#4871bc';
+          //   workTextElements[6].querySelector('a').style.color = '#4871bc';
+          //   meter.style.width = (100 / totalSlides) * currentSlide + '%';
+          //   lines.forEach((line) => {
+          //     line.style.backgroundColor = '#4871bc';
+          //   });
           } else if (this.realIndex === 6){
-            animateButton(prevButton);
-            prevButton.style.color = '#4871bc';
-            nextButton.style.color = '#4871bc';
-            meter.style.backgroundColor = '#4871bc';
-            workTextElements[6].querySelector('h1').style.color = '#4871bc';
-            workTextElements[6].querySelector('a').style.color = '#4871bc';
-            meter.style.width = (100 / totalSlides) * currentSlide + '%';
-            lines.forEach((line) => {
-              line.style.backgroundColor = '#4871bc';
-            });
-          }else if (this.realIndex === 7){
             animateButton(prevButton);
             prevButton.style.color = '#776a7c';
             nextButton.style.color = '#776a7c';
             meter.style.backgroundColor = '#776a7c';
-            workTextElements[7].querySelector('h1').style.color = '#776a7c';
-            workTextElements[7].querySelector('a').style.color = '#776a7c';
+            workTextElements[6].querySelector('h1').style.color = '#776a7c';
+            workTextElements[6].querySelector('a').style.color = '#776a7c';
             meter.style.width = (100 / totalSlides) * currentSlide + '%';
             lines.forEach((line) => {
               line.style.backgroundColor = '#776a7c';
