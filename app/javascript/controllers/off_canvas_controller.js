@@ -17,6 +17,8 @@ export default class extends Controller {
     let startX = 0;
     let endX = 0;
 
+    const backToTop = document.getElementById("back-to-top");
+
     // Function to close sidenav
     const closeSidenav = (sidenav) => {
       sidenav.style.width = "0";
@@ -31,6 +33,7 @@ export default class extends Controller {
       document.getElementById("main-ofri").style = "opacity: 1";
       document.getElementById("main-po").style = "opacity: 1";
       document.getElementById("main-vop").style = "opacity: 1";
+      backToTop.style.opacity = "1";
 
     };
 
@@ -75,10 +78,9 @@ export default class extends Controller {
       document.getElementById("main-ofri").style = "opacity: 0";
       document.getElementById("main-po").style = "opacity: 0";
       document.getElementById("main-vop").style = "opacity: 0";
-
+      backToTop.style.opacity = "0";
     };
 
-    // Example: Opening a sidenav when clicking a button
     document.getElementById("main-itii").addEventListener("click", () => {
       // document.getElementById('h3-swipe').style = "opacity: 0";
       // document.getElementById("burger-menu").style = "opacity: 0";
@@ -87,7 +89,7 @@ export default class extends Controller {
       // document.getElementById('phone-next').style = "opacity: 0";
       openSidenav(sidenavs.itii);
     });
-    // Close button handler for sidenav
+
     document.getElementById("closebtn-itii").addEventListener("click", () => {
       document.getElementById('h3-swipe').style = "opacity: 1";
       document.getElementById("burger-menu").style = "opacity: 1; color: #2C3651";
