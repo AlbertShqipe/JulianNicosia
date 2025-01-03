@@ -33,8 +33,7 @@ export default class extends Controller {
       document.getElementById("main-ofri").style = "opacity: 1";
       document.getElementById("main-po").style = "opacity: 1";
       document.getElementById("main-vop").style = "opacity: 1";
-      backToTop.style.opacity = "1";
-
+      sidenav.scrollTop = 0; // Reset scroll position
     };
 
     // Function to handle swipe events for each sidenav
@@ -78,7 +77,6 @@ export default class extends Controller {
       document.getElementById("main-ofri").style = "opacity: 0";
       document.getElementById("main-po").style = "opacity: 0";
       document.getElementById("main-vop").style = "opacity: 0";
-      backToTop.style.opacity = "0";
     };
 
     document.getElementById("main-itii").addEventListener("click", () => {
