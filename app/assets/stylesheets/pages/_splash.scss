@@ -84,4 +84,24 @@
       z-index: 1;
     }
   }
+
+  #loading-container {
+    width: 300px;
+    height: 5px;
+    background-color: #424242;
+    position: relative;
+  }
+
+  #loading-bar {
+    height: 100%;
+    width: 0;
+    background-color: #ffffff; /* Green, or your preferred color */
+    animation: load 2s forwards;
+  }
+
+  @keyframes load {
+    to {
+      width: 100%;
+    }
+  }
 }
