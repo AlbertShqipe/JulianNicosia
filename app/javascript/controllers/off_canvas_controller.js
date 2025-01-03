@@ -25,7 +25,7 @@ export default class extends Controller {
       sidenav.scrollTop = 0; // Reset scroll position
       sidenav.style.width = "0";
       sidenav.style.opacity = "0"; // Optional opacity reset
-      document.getElementById('h3-swipe').style = "opacity: 1";
+      // document.getElementById('h3-swipe').style = "opacity: 1";
       document.getElementById("burger-menu").style = "opacity: 1";
       document.getElementById("main-itii").style = "opacity: 1";
       document.getElementById("main-lh").style = "opacity: 1";
@@ -35,8 +35,6 @@ export default class extends Controller {
       document.getElementById("main-ofri").style = "opacity: 1";
       document.getElementById("main-po").style = "opacity: 1";
       document.getElementById("main-vop").style = "opacity: 1";
-
-       // Reset scroll position
     };
 
     // Function to handle swipe events for each sidenav
@@ -54,7 +52,6 @@ export default class extends Controller {
         // Close sidenav if swiped left (swipeDistance > 50) or swiped right (swipeDistance < -50)
         if (swipeDistance > 50 || swipeDistance < -50) {
           closeSidenav(sidenav); // Close the sidenav
-
         }
       });
     };
@@ -83,23 +80,16 @@ export default class extends Controller {
     };
 
     document.getElementById("main-itii").addEventListener("click", () => {
-      // document.getElementById('h3-swipe').style = "opacity: 0";
-      // document.getElementById("burger-menu").style = "opacity: 0";
-      // document.getElementById("main-itii").style = "opacity: 0";
-      // document.getElementById('phone-prev').style = "opacity: 0";
-      // document.getElementById('phone-next').style = "opacity: 0";
       openSidenav(sidenavs.itii);
     });
-
     document.getElementById("closebtn-itii").addEventListener("click", () => {
-      document.getElementById('h3-swipe').style = "opacity: 1";
-      document.getElementById("burger-menu").style = "opacity: 1; color: #2C3651";
-      document.getElementById("main-itii").style = " color: #2C3651; transform:translate(-75%,-48%)";
+      // document.getElementById('h3-swipe').style = "opacity: 1";
+      // document.getElementById("burger-menu").style = "opacity: 1; color: #2C3651";
+      // document.getElementById("main-itii").style = " color: #2C3651; transform:translate(-75%,-48%)";
       // document.getElementById('phone-prev').style = "color: #2C3651";
       // document.getElementById('phone-next').style = "color: #2C3651";
       closeSidenav(sidenavs.itii);
     });
-
 
     document.getElementById("main-lh").addEventListener("click", () => {
       // document.getElementById("burger-menu").style = "opacity: 0";
@@ -134,7 +124,6 @@ export default class extends Controller {
       // document.getElementById('phone-prev').style = "opacity: 1; color:rgb(100, 10, 149)";
       // document.getElementById('phone-next').style = "opacity: 1; color:rgb(100, 10, 149)";
     });
-
 
     document.getElementById("main-d").addEventListener("click", () => {
       // document.getElementById("burger-menu").style = "opacity: 0";
@@ -191,10 +180,11 @@ export default class extends Controller {
     //   document.getElementById("burger-menu").style = "opacity: 0";
     //   document.getElementById("main-po").style = "opacity: 0";
     //   document.getElementById("mySidenav-po").style.width = "100%";
-    //   // document.getElementById('phone-prev').style = "opacity: 0";
-    //   // document.getElementById('phone-next').style = "opacity: 0";
+    //   document.getElementById('phone-prev').style = "opacity: 0";
+    //   document.getElementById('phone-next').style = "opacity: 0";
     //   openSidenav(sidenavs.po);
     // });
+
     // document.getElementById("closebtn-po").addEventListener("click", () => {
     //   document.getElementById("mySidenav-po").style.width = "0";
     //   document.getElementById("burger-menu").style = "opacity: 1; color:#4871bc";
