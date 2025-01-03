@@ -65,6 +65,17 @@ export default class extends Controller {
     const openSidenav = (sidenav) => {
       sidenav.style.width = "100%";  // Open the sidenav
       sidenav.style.opacity = "1";   // Optionally, set opacity to 1
+      document.getElementById('h3-swipe').style = "opacity: 0";
+      document.getElementById("burger-menu").style = "opacity: 0";
+      document.getElementById("main-itii").style = "opacity: 0";
+      document.getElementById("main-lh").style = "opacity: 0";
+      document.getElementById("main-fot").style = "opacity: 0";
+      document.getElementById("main-d").style = "opacity: 0";
+      document.getElementById("main-r-f-f").style = "opacity: 0";
+      document.getElementById("main-ofri").style = "opacity: 0";
+      document.getElementById("main-po").style = "opacity: 0";
+      document.getElementById("main-vop").style = "opacity: 0";
+
     };
 
     // Example: Opening a sidenav when clicking a button
