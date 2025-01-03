@@ -123,7 +123,7 @@ export default class extends Controller {
     document.getElementById("closebtn-vop").addEventListener("click", () => {
       document.getElementById("mySidenav-vop").style.width = "0";
       document.getElementById("burger-menu").style = "opacity: 1; color:#4871bc";
-      document.getElementById("main-vop").style = "opacity: 1; color:#4871bc; transform:translate(-60%,-48%)";
+      document.getElementById("main-vop").style = "opacity: 1; color:#4871bc; transform:translate(-57%,-48%)";
       document.getElementById('phone-prev').style = "opacity: 1; color:#4871bc";
       document.getElementById('phone-next').style = "opacity: 1; color:#4871bc";
     });
