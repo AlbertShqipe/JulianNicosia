@@ -19,9 +19,10 @@
     width: 100px;
     height: auto;
 
-    // @media (max-width: 760px) {
-    //   animation-delay: 1s;
-    // }
+    @media (max-width: 760px) {
+      width: 80px;
+      margin-bottom: 20px;
+    }
 
     // @keyframes bounce {
     //   0% {
@@ -86,10 +87,15 @@
   }
 
   #loading-container {
-    width: 300px;
+    width: 200px;
     height: 5px;
     background-color: #424242;
     position: relative;
+
+    @media (max-width: 760px) {
+      width: 125px;
+
+    }
   }
 
   #loading-bar {
