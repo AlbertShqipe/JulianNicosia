@@ -11,7 +11,9 @@ export default class extends Controller {
       rff: document.getElementById("mySidenav-rff"),
       ofri: document.getElementById("mySidenav-ofri"),
       po: document.getElementById("mySidenav-po"),
-      vop: document.getElementById("mySidenav-vop")
+      vop: document.getElementById("mySidenav-vop"),
+      lgdd: document.getElementById("mySidenav-lgdd"),
+
     };
 
     let startX = 0;
@@ -21,7 +23,6 @@ export default class extends Controller {
 
     // Function to close sidenav
     const closeSidenav = (sidenav) => {
-      console.log(document.getElementById('mySidenav-itii').scrollTop);
       sidenav.scrollTop = 0; // Reset scroll position
       sidenav.style.width = "0";
       sidenav.style.opacity = "0"; // Optional opacity reset
@@ -35,6 +36,7 @@ export default class extends Controller {
       document.getElementById("main-ofri").style = "opacity: 1";
       document.getElementById("main-po").style = "opacity: 1";
       document.getElementById("main-vop").style = "opacity: 1";
+      document.getElementById("main-lgdd").style = "opacity: 1";
     };
 
     // Function to handle swipe events for each sidenav
@@ -77,6 +79,7 @@ export default class extends Controller {
       document.getElementById("main-ofri").style = "opacity: 0";
       document.getElementById("main-po").style = "opacity: 0";
       document.getElementById("main-vop").style = "opacity: 0";
+      document.getElementById("main-lgdd").style = "opacity: 0";
     };
 
     document.getElementById("main-itii").addEventListener("click", () => {
@@ -209,6 +212,23 @@ export default class extends Controller {
       // document.getElementById('phone-prev').style = "opacity: 1; color:#4871bc";
       // document.getElementById('phone-next').style = "opacity: 1; color:#4871bc";
       closeSidenav(sidenavs.vop);
+    });
+
+    document.getElementById("main-lgdd").addEventListener("click", () => {
+      // document.getElementById("burger-menu").style = "opacity: 0";
+      // document.getElementById("main-lgdd").style = "opacity: 0";
+      // document.getElementById("mySidenav-lgdd").style.width = "100%";
+      // document.getElementById('phone-prev').style = "opacity: 0";
+      // document.getElementById('phone-next').style = "opacity: 0";
+      openSidenav(sidenavs.lgdd);
+    });
+    document.getElementById("closebtn-lgdd").addEventListener("click", () => {
+      // document.getElementById("mySidenav-lgdd").style.width = "0";
+      // document.getElementById("burger-menu").style = "opacity: 1; color:#4871bc";
+      // document.getElementById("main-lgdd").style = "opacity: 1; color:#4871bc; transform:translate(-57%,-48%)";
+      // document.getElementById('phone-prev').style = "opacity: 1; color:#4871bc";
+      // document.getElementById('phone-next').style = "opacity: 1; color:#4871bc";
+      closeSidenav(sidenavs.lgdd);
     });
   }
 }

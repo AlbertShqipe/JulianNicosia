@@ -92,46 +92,22 @@ export default class extends Controller {
             lines.forEach((line) => {
               line.style.backgroundColor = '#2C3651';
             });
-          } else if (this.realIndex === 1) { // Love Hurt
+          } else if (this.realIndex === 1) { // Fragments of Time
             stopAnimateButton(nextButton);
-            // prevButton.style.color = 'rgb(100, 0, 0)'; // Love Hurt
-            // nextButton.style.color = 'rgb(100, 0, 0)';
-            // meter.style.backgroundColor = 'rgb(100, 0, 0)';
-            // workTextElements[1].querySelector('h1').style.color = 'rgb(100, 0, 0)';
-            // workTextElements[1].querySelector('a').style.color ='rgb(100, 0, 0)';
-            // if (workTextElements[1].querySelector('svg')) {
-            //   workTextElements[1].querySelector('svg').style.fill ='rgb(100, 0, 0)';
-            // }
-            // meter.style.width = (100 / totalSlides) * currentSlide + '%';
-            // lines.forEach((line) => {
-            //   line.style.backgroundColor = 'rgb(100, 0, 0)';
-            // });
-            prevButton.style.color = '#776a7c'; // Veil of Perspective
-            nextButton.style.color = '#776a7c';
-            meter.style.backgroundColor = '#776a7c';
-            workTextElements[1].querySelector('h1').style.color = '#776a7c';
-            workTextElements[1].querySelector('a').style.color = '#776a7c';
+            prevButton.style.color = 'rgb(100, 50, 200)';
+            nextButton.style.color = 'rgb(100, 50, 200)';
+            meter.style.backgroundColor = 'rgb(100, 50, 200)';
+            workTextElements[1].querySelector('h1').style.color = 'rgb(100, 50, 200)';
+            workTextElements[1].querySelector('a').style.color = 'rgb(100, 50, 200)';
             if (workTextElements[1].querySelector('svg')) {
-              workTextElements[1].querySelector('svg').style.fill = '#776a7c';
+              workTextElements[1].querySelector('svg').style.fill = 'rgb(100, 50, 200)';
             }
             meter.style.width = (100 / totalSlides) * currentSlide + '%';
             lines.forEach((line) => {
-              line.style.backgroundColor = '#776a7c';
+              line.style.backgroundColor = 'rgb(100, 50, 200)';
             });
-          } else if (this.realIndex === 2) { // Fragments of Time
-            // prevButton.style.color = 'rgb(100, 10, 149)'; // Fragments of Time
-            // nextButton.style.color = 'rgb(100, 10, 149)';
-            // meter.style.backgroundColor = 'rgb(100, 10, 149)';
-            // workTextElements[2].querySelector('h1').style.color = 'rgb(100, 10, 149)';
-            // workTextElements[2].querySelector('a').style.color = 'rgb(100, 10, 149)';
-            // if (workTextElements[2].querySelector('svg')) {
-            //   workTextElements[2].querySelector('svg').style.fill = 'rgb(100, 10, 149)';
-            // }
-            // meter.style.width = (100 / totalSlides) * currentSlide + '%';
-            // lines.forEach((line) => {
-            //   line.style.backgroundColor = 'rgb(100, 10, 149)';
-            // });
-            prevButton.style.color = 'rgb(100, 0, 0)'; // Love Hurt
+          } else if (this.realIndex === 2) { // Love Hurt
+            prevButton.style.color = 'rgb(100, 0, 0)';
             nextButton.style.color = 'rgb(100, 0, 0)';
             meter.style.backgroundColor = 'rgb(100, 0, 0)';
             workTextElements[2].querySelector('h1').style.color = 'rgb(100, 0, 0)';
@@ -143,45 +119,21 @@ export default class extends Controller {
             lines.forEach((line) => {
               line.style.backgroundColor = 'rgb(100, 0, 0)';
             });
-          } else if (this.realIndex === 3) { // Le Gout de Dieu
-            // prevButton.style.color = 'white'; // Le Gout de Dieu
-            // nextButton.style.color = 'white';
-            // meter.style.backgroundColor = 'white';
-            // workTextElements[3].querySelector('h1').style.color = 'white';
-            // workTextElements[3].querySelector('a').style.color = 'white';
-            // if (workTextElements[3].querySelector('svg')) {
-            //   workTextElements[3].querySelector('svg').style.fill = 'white';
-            // }
-            // meter.style.width = (100 / totalSlides) * currentSlide + '%';
-            // lines.forEach((line) => {
-            //   line.style.backgroundColor = 'white';
-            // });
-            prevButton.style.color = 'rgb(100, 10, 149)'; // Fragments of Time
-            nextButton.style.color = 'rgb(100, 10, 149)';
-            meter.style.backgroundColor = 'rgb(100, 10, 149)';
-            workTextElements[3].querySelector('h1').style.color = 'rgb(100, 10, 149)';
-            workTextElements[3].querySelector('a').style.color = 'rgb(100, 10, 149)';
+          } else if (this.realIndex === 3) { // Veil of Perspective
+            prevButton.style.color = '#776a7c';
+            nextButton.style.color = '#776a7c';
+            meter.style.backgroundColor = '#776a7c';
+            workTextElements[3].querySelector('h1').style.color = '#776a7c';
+            workTextElements[3].querySelector('a').style.color = '#776a7c';
             if (workTextElements[3].querySelector('svg')) {
-              workTextElements[3].querySelector('svg').style.fill = 'rgb(100, 10, 149)';
+              workTextElements[3].querySelector('svg').style.fill = '#776a7c';
             }
             meter.style.width = (100 / totalSlides) * currentSlide + '%';
             lines.forEach((line) => {
-              line.style.backgroundColor = 'rgb(100, 10, 149)';
+              line.style.backgroundColor = '#776a7c';
             });
-          } else if (this.realIndex === 4) { // Dusk
-            // prevButton.style.color = '#898c5e'; // Dusk
-            // nextButton.style.color = '#898c5e';
-            // meter.style.backgroundColor = '#898c5e';
-            // workTextElements[4].querySelector('h1').style.color = '#898c5e';
-            // workTextElements[4].querySelector('a').style.color = '#898c5e';
-            // if (workTextElements[4].querySelector('svg')) {
-            //   workTextElements[4].querySelector('svg').style.fill = '#898c5e';
-            // }
-            // meter.style.width = (100 / totalSlides) * currentSlide + '%';
-            // lines.forEach((line) => {
-            //   line.style.backgroundColor = '#898c5e';
-            // });
-            prevButton.style.color = 'black'; // Rush For Full
+          } else if (this.realIndex === 4) { // Rush For Full
+            prevButton.style.color = 'black';
             nextButton.style.color = 'black';
             meter.style.backgroundColor = 'black';
             workTextElements[4].querySelector('h1').style.color = 'black';
@@ -195,7 +147,7 @@ export default class extends Controller {
             });
           } else if (this.realIndex === 5) { // Only Fools Rush In
             // stopAnimateButton(prevButton);
-            prevButton.style.color = '#b0885e'; // Only Fools Rush In
+            prevButton.style.color = '#b0885e';
             nextButton.style.color = '#b0885e';
             meter.style.backgroundColor = '#b0885e';
             workTextElements[5].querySelector('h1').style.color = '#b0885e';
@@ -207,22 +159,10 @@ export default class extends Controller {
             lines.forEach((line) => {
               line.style.backgroundColor = '#b0885e';
             });
-          } else if (this.realIndex === 6) { // Rush For Full
+          } else if (this.realIndex === 6) { // Le Gout de Dieu
             // animateButton(prevButton);
             stopAnimateButton(prevButton);
-            // prevButton.style.color = 'black'; // Rush For Full
-            // nextButton.style.color = 'black';
-            // meter.style.backgroundColor = 'black';
-            // workTextElements[6].querySelector('h1').style.color = 'black';
-            // workTextElements[6].querySelector('a').style.color = 'black';
-            // if (workTextElements[6].querySelector('svg')) {
-            //   workTextElements[6].querySelector('svg').style.fill = 'black';
-            // }
-            // meter.style.width = (100 / totalSlides) * currentSlide + '%';
-            // lines.forEach((line) => {
-            //   line.style.backgroundColor = 'black';
-            // });
-            prevButton.style.color = 'white'; // Le Gout de Dieu
+            prevButton.style.color = 'white';
             nextButton.style.color = 'white';
             meter.style.backgroundColor = 'white';
             workTextElements[6].querySelector('h1').style.color = 'white';
@@ -234,21 +174,9 @@ export default class extends Controller {
             lines.forEach((line) => {
               line.style.backgroundColor = 'white';
             });
-          } else if (this.realIndex === 7) { // Veil of Perspective
+          } else if (this.realIndex === 7) { // Dusk
             animateButton(prevButton);
-            // prevButton.style.color = '#776a7c'; // Veil of Perspective
-            // nextButton.style.color = '#776a7c';
-            // meter.style.backgroundColor = '#776a7c';
-            // workTextElements[7].querySelector('h1').style.color = '#776a7c';
-            // workTextElements[7].querySelector('a').style.color = '#776a7c';
-            // if (workTextElements[7].querySelector('svg')) {
-            //   workTextElements[7].querySelector('svg').style.fill = '#776a7c';
-            // }
-            // meter.style.width = (100 / totalSlides) * currentSlide + '%';
-            // lines.forEach((line) => {
-            //   line.style.backgroundColor = '#776a7c';
-            // });
-            prevButton.style.color = '#898c5e'; // Dusk
+            prevButton.style.color = '#898c5e';
             nextButton.style.color = '#898c5e';
             meter.style.backgroundColor = '#898c5e';
             workTextElements[7].querySelector('h1').style.color = '#898c5e';

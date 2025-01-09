@@ -189,7 +189,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform:translate(-75%,-48%);
+  // transform:translate(-75%,-48%);
+  transform:translate(-100%,-48%);
   text-align: left;
 
 }
@@ -203,7 +204,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform:translate(-57%,-48%);
+  transform:translate(-78%,-48%);
   text-align: left;
 }
 
@@ -215,7 +216,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform:translate(-54%,-48%);
+  // transform:translate(-54%,-48%);
+  transform:translate(-74%,-48%);
   text-align: left;
 }
 
@@ -227,7 +229,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform:translate(-60%,-75%);
+  // transform:translate(-60%,-75%);
+  transform:translate(-87%,-48%);
   text-align: left;
 }
 
@@ -239,7 +242,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-65%,-62%);
+  // transform: translate(-65%,-62%);
+  transform:translate(-88%,-48%);
   text-align: left;
 }
 
@@ -251,7 +255,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-55%,-48%);
+  // transform: translate(-55%,-48%);
+  transform:translate(-75%,-48%);
   text-align: left;
 }
 
@@ -263,7 +268,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-67%,-46%);
+  transform:translate(-57%,-48%);
+  // transform: translate(-67%,-46%);
   text-align: left;
 }
 
@@ -276,5 +282,17 @@
   top: 50%;
   left: 50%;
   transform:translate(-57%,-48%);
+  text-align: left;
+}
+
+#main-lgdd {
+  display: block;
+  padding: 10px 30px; /* Keep general padding */
+  font-family: "Roboto Mono", sans-serif !important;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-85%,-48%);
   text-align: left;
 }
