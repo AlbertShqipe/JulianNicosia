@@ -13,7 +13,6 @@ export default class extends Controller {
       po: document.getElementById("mySidenav-po"),
       vop: document.getElementById("mySidenav-vop"),
       lgdd: document.getElementById("mySidenav-lgdd"),
-
     };
 
     let startX = 0;
@@ -34,7 +33,7 @@ export default class extends Controller {
       document.getElementById("main-d").style = "opacity: 1";
       document.getElementById("main-r-f-f").style = "opacity: 1";
       document.getElementById("main-ofri").style = "opacity: 1";
-      document.getElementById("main-po").style = "opacity: 1";
+      // document.getElementById("main-po").style = "opacity: 1";
       document.getElementById("main-vop").style = "opacity: 1";
       document.getElementById("main-lgdd").style = "opacity: 1";
     };
@@ -77,9 +76,10 @@ export default class extends Controller {
       document.getElementById("main-d").style = "opacity: 0";
       document.getElementById("main-r-f-f").style = "opacity: 0";
       document.getElementById("main-ofri").style = "opacity: 0";
-      document.getElementById("main-po").style = "opacity: 0";
+      // document.getElementById("main-po").style = "opacity: 0";
       document.getElementById("main-vop").style = "opacity: 0";
       document.getElementById("main-lgdd").style = "opacity: 0";
+      console.log(document.getElementById("main-lgdd"));
     };
 
     document.getElementById("main-itii").addEventListener("click", () => {
