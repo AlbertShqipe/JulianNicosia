@@ -5,6 +5,17 @@
   // margin-bottom: 10px;
   padding: 1em;
 
+  .margin-bottom-pc {
+    margin-bottom: 20px;
+
+  }
+
+  .margin-bottom-ph {
+    @media (min-width: 760px) {
+      margin-bottom: 20px;
+    }
+  }
+
   @media (max-width: 760px) {
     max-height: 100%;
     max-width: 100%;
