@@ -6,7 +6,6 @@
   <div class="line bottom"></div>
 </a>
 
-
 <div class="gallery" data-controller="heart-beat-logo">
   <div class="cancel">
     <img src="/assets/LH1-55163fccf54f097884b99b32c3858047afe0ed7de6bf57631ab2bb65c969bbc1.jpg" onclick="openModal(1)" alt="Image 1" width="100%">
@@ -110,6 +109,8 @@
       <button class="next" onclick="changeImage(1)">&#10095;</button>
   </div>
 </div>
+
+<%= javascript_include_tag 'swipe_back', 'data-turbo-track': 'reload' %>
 <%# <script>
   const images = [
                   "/assets/LH1-55163fccf54f097884b99b32c3858047afe0ed7de6bf57631ab2bb65c969bbc1.jpg",
