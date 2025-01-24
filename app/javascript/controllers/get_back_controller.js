@@ -1,43 +1,47 @@
-import { Controller } from "@hotwired/stimulus"
+import { Controller } from "@hotwired/stimulus";
 
-// Connects to data-controller="get-back"
 export default class extends Controller {
   connect() {
-    setupSwipeListener();
     console.log("Hello, Stimulus!", this.element);
-    console.log("Current page: " + window.location.pathname)
+    console.log("Current page: " + window.location.pathname);
+
+    // Select specific elements where swipe detection is needed
+    const backElements = this.element.querySelectorAll('.backElement');
+
+    backElements.forEach((element) => {
+      this.setupSwipeListener(element);
+    });
   }
 
-  setupSwipeListener() {
-    if (window.innerWidth < 760 && window.location.pathname !== '/home') {
-      let touchStartX = 0;
-      let touchEndX = 0;
-      const backElements = document.querySelectorAll('.backElement');
+  setupSwipeListener(element) {
+    let touchStartX = 0;
+    let touchEndX = 0;
 
-      const handleSwipe = () => {
-        const swipeDistance = touchEndX - touchStartX;
-        if (swipeDistance > 50) { // Swipe right
-          window.history.back();
-        }
-      };
+    const handleSwipe = () => {
+      const swipeDistance = touchEndX - touchStartX;
+      if (swipeDistance > 50) { // Swipe right
+        console.log("Swipe detected on:", element);
+        window.history.back();
+      }
+    };
 
-      const onTouchStart = (e) => {
-        touchStartX = e.changedTouches[0].screenX;
-      };
+    const onTouchStart = (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    };
 
-      const onTouchEnd = (e) => {
-        touchEndX = e.changedTouches[0].screenX;
-        handleSwipe();
-      };
+    const onTouchEnd = (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    };
 
-      document.addEventListener('touchstart', onTouchStart);
-      document.addEventListener('touchend', onTouchEnd);
+    // Attach touch event listeners to the specific element
+    element.addEventListener('touchstart', onTouchStart);
+    element.addEventListener('touchend', onTouchEnd);
 
-      // Optionally remove event listeners on disconnect to avoid memory leaks
-      this.disconnect = () => {
-        document.removeEventListener('touchstart', onTouchStart);
-        document.removeEventListener('touchend', onTouchEnd);
-      };
-    }
+    // Clean up event listeners on disconnect
+    this.disconnect = () => {
+      element.removeEventListener('touchstart', onTouchStart);
+      element.removeEventListener('touchend', onTouchEnd);
+    };
   }
 }
