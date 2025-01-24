@@ -1,16 +1,13 @@
 import { Controller } from "@hotwired/stimulus";
 
+// Connects to data-controller="get-back"
 export default class extends Controller {
   connect() {
-    console.log("Hello, Stimulus!", this.element);
-    console.log("Current page: " + window.location.pathname);
-
     // Select specific elements where swipe detection is needed
     const backElements = document.querySelectorAll('.backElement');
-    console.log("Back elements detected:", backElements);
 
     backElements.forEach((element) => {
-      setupSwipeListener(element);
+      this.setupSwipeListener(element); // Use `this` to call the class method
     });
   }
 
@@ -39,7 +36,7 @@ export default class extends Controller {
     element.addEventListener('touchstart', onTouchStart);
     element.addEventListener('touchend', onTouchEnd);
 
-    // Clean up event listeners on disconnect
+    // Store references for cleanup
     this.disconnect = () => {
       element.removeEventListener('touchstart', onTouchStart);
       element.removeEventListener('touchend', onTouchEnd);
