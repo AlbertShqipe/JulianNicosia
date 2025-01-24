@@ -1,4 +1,4 @@
-<div class="container-contact backElement">
+<div class="container-contact" data-controller="get-back">
   <%= image_tag 'logoWhite.png'%>
   <a href="javascript:void(0);" class="burger-menu-works" id="burger-menu" data-controller="burger-menu">
     <div class="line top"></div>
@@ -6,7 +6,7 @@
     <div class="line bottom"></div>
   </a>
   <%# <h1>CON<br>TACT</h1> %>
-  <div class="contact-content">
+  <div class="contact-content backElement">
     <%# <div class="img-container-contact"> %>
     <%# </div> %>
     <div class="contacts-container-contact">
@@ -29,4 +29,3 @@
     </div>
   </div>
 </div>
-<%= javascript_include_tag 'swipe_back', 'data-turbo-track': 'reload' %>
