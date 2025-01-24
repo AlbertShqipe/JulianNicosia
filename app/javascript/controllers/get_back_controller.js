@@ -6,7 +6,7 @@ export default class extends Controller {
     console.log("Current page: " + window.location.pathname);
 
     // Select specific elements where swipe detection is needed
-    const backElements = this.element.querySelectorAll('.backElement');
+    const backElements = document.querySelectorAll('.backElement');
 
     backElements.forEach((element) => {
       this.setupSwipeListener(element);
