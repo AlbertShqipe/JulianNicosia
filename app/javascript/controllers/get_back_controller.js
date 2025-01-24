@@ -3,11 +3,14 @@ import { Controller } from "@hotwired/stimulus";
 // Connects to data-controller="get-back"
 export default class extends Controller {
   connect() {
-    // Select specific elements where swipe detection is needed
-    const backElements = document.querySelectorAll('.backElement');
+    console.log("Stimulus connected!", this.element);
 
+    // Select all elements where swipe detection is required
+    const backElements = this.element.querySelectorAll('.backElement');
+
+    // Attach swipe listeners to each element
     backElements.forEach((element) => {
-      this.setupSwipeListener(element); // Use `this` to call the class method
+      this.setupSwipeListener(element); // Use `this` to ensure correct method binding
     });
   }
 
@@ -15,14 +18,17 @@ export default class extends Controller {
     let touchStartX = 0;
     let touchEndX = 0;
 
+    // Helper function to detect a right swipe
     const handleSwipe = () => {
       const swipeDistance = touchEndX - touchStartX;
-      if (swipeDistance > 50) { // Swipe right
+      console.log(`Swipe distance: ${swipeDistance}`);
+      if (swipeDistance > 50) { // Right swipe detected
         console.log("Swipe detected on:", element);
-        window.history.back();
+        window.history.back(); // Go back to the previous page
       }
     };
 
+    // Touch event listeners
     const onTouchStart = (e) => {
       touchStartX = e.changedTouches[0].screenX;
     };
@@ -32,11 +38,11 @@ export default class extends Controller {
       handleSwipe();
     };
 
-    // Attach touch event listeners to the specific element
+    // Add touch event listeners to the element
     element.addEventListener('touchstart', onTouchStart);
     element.addEventListener('touchend', onTouchEnd);
 
-    // Store references for cleanup
+    // Cleanup: Remove event listeners when the controller disconnects
     this.disconnect = () => {
       element.removeEventListener('touchstart', onTouchStart);
       element.removeEventListener('touchend', onTouchEnd);
