@@ -4,6 +4,8 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   connect() {
     setupSwipeListener();
+    console.log("Hello, Stimulus!", this.element);
+    console.log("Current page: " + window.location.pathname)
   }
 
   setupSwipeListener() {
