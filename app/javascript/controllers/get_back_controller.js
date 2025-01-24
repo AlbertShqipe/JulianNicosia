@@ -7,9 +7,10 @@ export default class extends Controller {
 
     // Select specific elements where swipe detection is needed
     const backElements = document.querySelectorAll('.backElement');
+    console.log("Back elements detected:", backElements);
 
     backElements.forEach((element) => {
-      this.setupSwipeListener(element);
+      setupSwipeListener(element);
     });
   }
 
