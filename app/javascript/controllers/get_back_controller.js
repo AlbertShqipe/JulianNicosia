@@ -31,6 +31,14 @@ export default class extends Controller {
       if (swipeDistanceX > swipeThreshold && swipeDistanceY < verticalTolerance) {
         console.log(`Swipe detected on: ${element}`);
         window.history.back(); // Go back to the previous page
+
+        // Add the fade-out effect
+        document.body.classList.add('fade-out');
+
+        // Wait for the transition to complete, then go back
+        setTimeout(() => {
+          window.history.back();
+        }, 300); // Match the duration of the CSS transition (0.3s)
       }
     };
 

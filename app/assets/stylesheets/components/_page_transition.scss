@@ -1,0 +1,9 @@
+/* Add this to your CSS */
+.page-transition {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.page-transition.fade-out {
+  opacity: 0;
+}
