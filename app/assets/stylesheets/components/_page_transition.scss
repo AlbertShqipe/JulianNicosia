@@ -6,5 +6,6 @@
 }
 
 .page-transition.fade-out {
+  transform: translateX(-20%);
   opacity: 0;
 }
