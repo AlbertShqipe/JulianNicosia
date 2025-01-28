@@ -10,7 +10,7 @@ export default class extends Controller {
 
     // Attach swipe listeners to each element
     backElements.forEach((element) => {
-      this.setupSwipeListener(element); // Use `this` to ensure correct method binding
+      this.setupSwipeListener(element);
     });
   }
 
@@ -29,15 +29,16 @@ export default class extends Controller {
       const swipeDistanceY = Math.abs(touchEndY - touchStartY);
 
       if (swipeDistanceX > swipeThreshold && swipeDistanceY < verticalTolerance) {
-        console.log(`Swipe detected on: ${element}`);
+        console.log(`Swipe detected on:`, element);
 
-        // Add the fade-out effect
-        document.body.classList.add('fade-out');
+        // Target the `main-container` instead of `body`
+        const page = document.querySelector(".main-container");
+        page.classList.add("fade-out");
 
         // Wait for the transition to complete, then go back
         setTimeout(() => {
-          window.history.back(); // Go back to the previous page
-        }, 300); // Match the duration of the CSS transition (0.3s)
+          window.history.back();
+        }, 300); // Match the CSS transition duration
       }
     };
 
@@ -54,13 +55,13 @@ export default class extends Controller {
     };
 
     // Add touch event listeners to the element
-    element.addEventListener('touchstart', onTouchStart, { passive: true });
-    element.addEventListener('touchend', onTouchEnd, { passive: true });
+    element.addEventListener("touchstart", onTouchStart, { passive: true });
+    element.addEventListener("touchend", onTouchEnd, { passive: true });
 
     // Cleanup: Remove event listeners when the controller disconnects
     this.disconnect = () => {
-      element.removeEventListener('touchstart', onTouchStart);
-      element.removeEventListener('touchend', onTouchEnd);
+      element.removeEventListener("touchstart", onTouchStart);
+      element.removeEventListener("touchend", onTouchEnd);
     };
   }
 }
