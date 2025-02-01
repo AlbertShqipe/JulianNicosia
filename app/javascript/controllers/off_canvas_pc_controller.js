@@ -7,11 +7,11 @@ export default class extends Controller {
     const lh = document.getElementById('text-info-2-pc');
     const fot = document.getElementById('text-info-3-pc');
     const lgdd = document.getElementById('text-info-4-pc');
-    // const d = document.getElementById('text-info-5-pc');
-    // const ofri = document.getElementById('text-info-6-pc');
     const rff = document.getElementById('text-info-7-pc');
     const vop = document.getElementById('text-info-8-pc');
     const burger = document.getElementById('burger-menu');
+    // const d = document.getElementById('text-info-5-pc');
+    // const ofri = document.getElementById('text-info-6-pc');
 
     aitii.addEventListener('click', () => {
       document.getElementById("mySidenav-itii").style = "width:100%;opacity:1";

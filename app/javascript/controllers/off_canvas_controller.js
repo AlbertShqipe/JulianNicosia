@@ -7,12 +7,12 @@ export default class extends Controller {
       itii: document.getElementById("mySidenav-itii"),
       lh: document.getElementById("mySidenav-lh"),
       fot: document.getElementById("mySidenav-fot"),
-      d: document.getElementById("mySidenav-d"),
       rff: document.getElementById("mySidenav-rff"),
-      ofri: document.getElementById("mySidenav-ofri"),
       po: document.getElementById("mySidenav-po"),
       vop: document.getElementById("mySidenav-vop"),
       lgdd: document.getElementById("mySidenav-lgdd"),
+      // d: document.getElementById("mySidenav-d"),
+      // ofri: document.getElementById("mySidenav-ofri"),
     };
 
     let startX = 0;
@@ -73,9 +73,9 @@ export default class extends Controller {
       document.getElementById("main-itii").style = "opacity: 0";
       document.getElementById("main-lh").style = "opacity: 0";
       document.getElementById("main-fot").style = "opacity: 0";
-      document.getElementById("main-d").style = "opacity: 0";
+      // document.getElementById("main-d").style = "opacity: 0";
       document.getElementById("main-r-f-f").style = "opacity: 0";
-      document.getElementById("main-ofri").style = "opacity: 0";
+      // document.getElementById("main-ofri").style = "opacity: 0";
       // document.getElementById("main-po").style = "opacity: 0";
       document.getElementById("main-vop").style = "opacity: 0";
       document.getElementById("main-lgdd").style = "opacity: 0";
