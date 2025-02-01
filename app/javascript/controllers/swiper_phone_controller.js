@@ -132,20 +132,20 @@ export default class extends Controller {
             lines.forEach((line) => {
               line.style.backgroundColor = 'black';
             });
-          } else if (this.realIndex === 5) { // Only Fools Rush In
-            stopAnimateButton(prevButton);
-            prevButton.style.color = '#b0885e';
-            nextButton.style.color = '#b0885e';
-            meter.style.backgroundColor = '#b0885e';
-            workTextElements[5].querySelector('h1').style.color = '#b0885e';
-            workTextElements[5].querySelector('a').style.color = '#b0885e';
-            if (workTextElements[5].querySelector('svg')) {
-              workTextElements[5].querySelector('svg').style.fill = '#b0885e';
-            };
-            meter.style.width = (100 / totalSlides) * currentSlide + '%';
-            lines.forEach((line) => {
-              line.style.backgroundColor = '#b0885e';
-            });
+          // } else if (this.realIndex === 5) { // Only Fools Rush In
+          //   stopAnimateButton(prevButton);
+          //   prevButton.style.color = '#b0885e';
+          //   nextButton.style.color = '#b0885e';
+          //   meter.style.backgroundColor = '#b0885e';
+          //   workTextElements[5].querySelector('h1').style.color = '#b0885e';
+          //   workTextElements[5].querySelector('a').style.color = '#b0885e';
+          //   if (workTextElements[5].querySelector('svg')) {
+          //     workTextElements[5].querySelector('svg').style.fill = '#b0885e';
+          //   };
+          //   meter.style.width = (100 / totalSlides) * currentSlide + '%';
+          //   lines.forEach((line) => {
+          //     line.style.backgroundColor = '#b0885e';
+          //   });
           // } else if (this.realIndex === 6){
           //   animateButton(prevButton);
           //   prevButton.style.color = '#4871bc';
@@ -157,33 +157,33 @@ export default class extends Controller {
           //   lines.forEach((line) => {
           //     line.style.backgroundColor = '#4871bc';
           //   });
-          } else if (this.realIndex === 6){ // Le gou de dieu
+          } else if (this.realIndex === 5){ // Le gou de dieu
             prevButton.style.color = 'white';
             nextButton.style.color = 'white';
             meter.style.backgroundColor = 'white';
-            workTextElements[6].querySelector('h1').style.color = 'white';
-            workTextElements[6].querySelector('a').style.color = 'white';
-            if (workTextElements[6].querySelector('svg')) {
-              workTextElements[6].querySelector('svg').style.fill = 'white';
+            workTextElements[5].querySelector('h1').style.color = 'white';
+            workTextElements[5].querySelector('a').style.color = 'white';
+            if (workTextElements[5].querySelector('svg')) {
+              workTextElements[5].querySelector('svg').style.fill = 'white';
             }
             meter.style.width = (100 / totalSlides) * currentSlide + '%';
             lines.forEach((line) => {
               line.style.backgroundColor = 'white';
             });
-          } else if (this.realIndex === 7){ // Dusk
-            animateButton(prevButton);
-            prevButton.style.color = '#898c5e'; // Dusk
-            nextButton.style.color = '#898c5e';
-            meter.style.backgroundColor = '#898c5e';
-            workTextElements[7].querySelector('h1').style.color = '#898c5e';
-            workTextElements[7].querySelector('a').style.color = '#898c5e';
-            if (workTextElements[7].querySelector('svg')) {
-              workTextElements[7].querySelector('svg').style.fill = '#898c5e';
-            }
-            meter.style.width = (100 / totalSlides) * currentSlide + '%';
-            lines.forEach((line) => {
-              line.style.backgroundColor = '#898c5e';
-            });
+          // } else if (this.realIndex === 7){ // Dusk
+          //   animateButton(prevButton);
+          //   prevButton.style.color = '#898c5e'; // Dusk
+          //   nextButton.style.color = '#898c5e';
+          //   meter.style.backgroundColor = '#898c5e';
+          //   workTextElements[7].querySelector('h1').style.color = '#898c5e';
+          //   workTextElements[7].querySelector('a').style.color = '#898c5e';
+          //   if (workTextElements[7].querySelector('svg')) {
+          //     workTextElements[7].querySelector('svg').style.fill = '#898c5e';
+          //   }
+          //   meter.style.width = (100 / totalSlides) * currentSlide + '%';
+          //   lines.forEach((line) => {
+          //     line.style.backgroundColor = '#898c5e';
+          //   });
           }
         }
       }

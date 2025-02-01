@@ -30,9 +30,9 @@ export default class extends Controller {
       document.getElementById("main-itii").style = "opacity: 1";
       document.getElementById("main-lh").style = "opacity: 1";
       document.getElementById("main-fot").style = "opacity: 1";
-      document.getElementById("main-d").style = "opacity: 1";
+      // document.getElementById("main-d").style = "opacity: 1";
       document.getElementById("main-r-f-f").style = "opacity: 1";
-      document.getElementById("main-ofri").style = "opacity: 1";
+      // document.getElementById("main-ofri").style = "opacity: 1";
       // document.getElementById("main-po").style = "opacity: 1";
       document.getElementById("main-vop").style = "opacity: 1";
       document.getElementById("main-lgdd").style = "opacity: 1";
@@ -128,22 +128,22 @@ export default class extends Controller {
       // document.getElementById('phone-next').style = "opacity: 1; color:rgb(100, 10, 149)";
     });
 
-    document.getElementById("main-d").addEventListener("click", () => {
-      // document.getElementById("burger-menu").style = "opacity: 0";
-      // document.getElementById("main-d").style = "opacity: 0";
-      // document.getElementById("mySidenav-d").style.width = "100%";
-      // document.getElementById('phone-prev').style = "opacity: 0";
-      // document.getElementById('phone-next').style = "opacity: 0";
-      openSidenav(sidenavs.d);
-    });
-    document.getElementById("closebtn-d").addEventListener("click", () => {
-      // document.getElementById("burger-menu").style = "opacity: 1;  color:#898c5e";
-      // document.getElementById("main-d").style = "opacity: 1;  color:#898c5e; transform:translate(-60%,-75%)";
-      // document.getElementById("mySidenav-d").style.width = "0";
-      // document.getElementById('phone-prev').style = "opacity: 1; color:#898c5e";
-      // document.getElementById('phone-next').style = "opacity: 1; color:#898c5e";
-      closeSidenav(sidenavs.d);
-    });
+    // document.getElementById("main-d").addEventListener("click", () => {
+    //   // document.getElementById("burger-menu").style = "opacity: 0";
+    //   // document.getElementById("main-d").style = "opacity: 0";
+    //   // document.getElementById("mySidenav-d").style.width = "100%";
+    //   // document.getElementById('phone-prev').style = "opacity: 0";
+    //   // document.getElementById('phone-next').style = "opacity: 0";
+    //   openSidenav(sidenavs.d);
+    // });
+    // document.getElementById("closebtn-d").addEventListener("click", () => {
+    //   // document.getElementById("burger-menu").style = "opacity: 1;  color:#898c5e";
+    //   // document.getElementById("main-d").style = "opacity: 1;  color:#898c5e; transform:translate(-60%,-75%)";
+    //   // document.getElementById("mySidenav-d").style.width = "0";
+    //   // document.getElementById('phone-prev').style = "opacity: 1; color:#898c5e";
+    //   // document.getElementById('phone-next').style = "opacity: 1; color:#898c5e";
+    //   closeSidenav(sidenavs.d);
+    // });
 
     document.getElementById("main-r-f-f").addEventListener("click", () => {
       // document.getElementById("burger-menu").style = "opacity: 0";
@@ -162,22 +162,22 @@ export default class extends Controller {
       closeSidenav(sidenavs.rff);
     });
 
-    document.getElementById("main-ofri").addEventListener("click", () => {
-      // document.getElementById("burger-menu").style = "opacity: 0";
-      // document.getElementById("main-ofri").style = "opacity: 0";
-      // document.getElementById("mySidenav-ofri").style.width = "100%";
-      // document.getElementById('phone-prev').style = "opacity: 0";
-      // document.getElementById('phone-next').style = "opacity: 0";
-      openSidenav(sidenavs.ofri);
-    });
-    document.getElementById("closebtn-ofri").addEventListener("click", () => {
-      // document.getElementById("mySidenav-ofri").style.width = "0";
-      // document.getElementById("burger-menu").style = "opacity: 1; color:#b0885e";
-      // document.getElementById("main-ofri").style = "opacity: 1; color:#b0885e; transform:translate(-55%,-48%)";
-      // document.getElementById('phone-prev').style = "opacity: 1; color:#b0885e";
-      // document.getElementById('phone-next').style = "opacity: 1; color:#b0885e";
-      closeSidenav(sidenavs.ofri);
-    });
+    // document.getElementById("main-ofri").addEventListener("click", () => {
+    //   // document.getElementById("burger-menu").style = "opacity: 0";
+    //   // document.getElementById("main-ofri").style = "opacity: 0";
+    //   // document.getElementById("mySidenav-ofri").style.width = "100%";
+    //   // document.getElementById('phone-prev').style = "opacity: 0";
+    //   // document.getElementById('phone-next').style = "opacity: 0";
+    //   openSidenav(sidenavs.ofri);
+    // });
+    // document.getElementById("closebtn-ofri").addEventListener("click", () => {
+    //   // document.getElementById("mySidenav-ofri").style.width = "0";
+    //   // document.getElementById("burger-menu").style = "opacity: 1; color:#b0885e";
+    //   // document.getElementById("main-ofri").style = "opacity: 1; color:#b0885e; transform:translate(-55%,-48%)";
+    //   // document.getElementById('phone-prev').style = "opacity: 1; color:#b0885e";
+    //   // document.getElementById('phone-next').style = "opacity: 1; color:#b0885e";
+    //   closeSidenav(sidenavs.ofri);
+    // });
 
     // document.getElementById("main-po").addEventListener("click", () => {
     //   document.getElementById("burger-menu").style = "opacity: 0";
