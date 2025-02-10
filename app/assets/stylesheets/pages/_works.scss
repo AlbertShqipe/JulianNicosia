@@ -154,13 +154,27 @@
 
 }
 
+// background images for the swipers
+#and-if-this-is-it-pc {
+  background-image: url('O2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#and-if-this-is-it-ph {
+  background-image: url('O2.png');
+  background-repeat: no-repeat;
+  background-position: 40% center ;
+  background-size: cover;
+}
+
 #v-b-itii iframe{
   width: 2000px;
   height: 1600px;
   z-index:-1;
   bottom:-30%;
   right:0%;
-  transform:translate(-50%, 5%)
+  transform:translate(-50%, 5%);
 }
 
 #v-b-lh iframe{
