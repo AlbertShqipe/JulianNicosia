@@ -19,7 +19,6 @@ export default class extends Controller {
     aitiiPh.style.opacity = "0";
     aitiiPh.style.transition = "opacity 1s ease-in-out";
 
-    // And if this is it
     const playerAitiiPc = new Player(aitiiPc);
 
     playerAitiiPc.on("play", () => {
@@ -34,6 +33,7 @@ export default class extends Controller {
       aitiiPh.style.opacity = "1"; // Fade-in effect
     });
 
+
     // Fragments of Time
     const fotPc = document.getElementById("fot");
     const fotPh = document.getElementById("fot-ph");
@@ -47,7 +47,6 @@ export default class extends Controller {
     fotPh.style.opacity = "0";
     fotPh.style.transition = "opacity 1s ease-in-out";
 
-    // Fragments of Time
     const playerFotPc = new Player(fotPc);
 
     playerFotPc.on("play", () => {
@@ -62,6 +61,7 @@ export default class extends Controller {
       fotPh.style.opacity = "1"; // Fade-in effect
     });
 
+
     // Love hurts
     const lhPc = document.getElementById("lh");
     const lhPh = document.getElementById("lh-ph");
@@ -75,7 +75,6 @@ export default class extends Controller {
     lhPh.style.opacity = "0";
     lhPh.style.transition = "opacity 1s ease-in-out";
 
-    // Love hurts
     const playerLhPc = new Player(lhPc);
 
     playerLhPc.on("play", () => {
@@ -90,6 +89,33 @@ export default class extends Controller {
       lhPh.style.opacity = "1"; // Fade-in effect
     });
 
+
+    // Veil of Perspective
+    const vopPc = document.getElementById("vop");
+    const vopPh = document.getElementById("vop-ph");
+    const backgroundVopPc = document.getElementById("veil-of-perspective-pc");
+    const backgroundVopPh = document.getElementById("veil-of-perspective-ph");
+
+    // Initially hide the video smoothly
+    vopPc.style.opacity = "0";
+    vopPc.style.transition = "opacity 1s ease-in-out"; // Smooth transition
+
+    vopPh.style.opacity = "0";
+    vopPh.style.transition = "opacity 1s ease-in-out";
+
+    const playerVopPc = new Player(vopPc);
+
+    playerVopPc.on("play", () => {
+      console.log("▶️ Played the video vopPc!");
+      vopPc.style.opacity = "1"; // Fade-in effect
+    });
+
+    const playerVopPh = new Player(vopPh);
+
+    playerVopPh.on("play", () => {
+      console.log("▶️ Played the video vopPh!");
+      vopPh.style.opacity = "1"; // Fade-in effect
+    });
 
     // Check if the element exists
     // if (aitiiPc) {
