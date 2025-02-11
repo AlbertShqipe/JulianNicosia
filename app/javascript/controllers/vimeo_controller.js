@@ -47,7 +47,7 @@ export default class extends Controller {
     fotPh.style.opacity = "0";
     fotPh.style.transition = "opacity 1s ease-in-out";
 
-    // And if this is it
+    // Fragments of Time
     const playerFotPc = new Player(fotPc);
 
     playerFotPc.on("play", () => {
@@ -62,6 +62,33 @@ export default class extends Controller {
       fotPh.style.opacity = "1"; // Fade-in effect
     });
 
+    // Love hurts
+    const lhPc = document.getElementById("lh");
+    const lhPh = document.getElementById("lh-ph");
+    const backgroundLhPc = document.getElementById("love-hurts-pc");
+    const backgroundLhPh = document.getElementById("love-hurts-ph");
+
+    // Initially hide the video smoothly
+    lhPc.style.opacity = "0";
+    lhPc.style.transition = "opacity 1s ease-in-out"; // Smooth transition
+
+    lhPh.style.opacity = "0";
+    lhPh.style.transition = "opacity 1s ease-in-out";
+
+    // Love hurts
+    const playerLhPc = new Player(lhPc);
+
+    playerLhPc.on("play", () => {
+      console.log("▶️ Played the video lhPc!");
+      lhPc.style.opacity = "1"; // Fade-in effect
+    });
+
+    const playerLhPh = new Player(lhPh);
+
+    playerLhPh.on("play", () => {
+      console.log("▶️ Played the video lhPh!");
+      lhPh.style.opacity = "1"; // Fade-in effect
+    });
 
 
     // Check if the element exists
