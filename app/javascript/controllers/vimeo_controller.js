@@ -5,20 +5,12 @@ import Player from '@vimeo/player';
 export default class extends Controller {
   connect() {
     // console.log("✅ Stimulus controller connected");
+
+    // And if this is it
     const aitiiPc = document.getElementById("aitii");
     const aitiiPh = document.getElementById("aitii-ph");
     const backgroundAitiiPc = document.getElementById("and-if-this-is-it-pc");
     const backgroundAitiiPh = document.getElementById("and-if-this-is-it-ph");
-
-    if (!aitiiPc || !backgroundAitiiPc) {
-      console.error("❌ Missing aitiiPC!");
-      return;
-    }
-
-    if (!aitiiPh || !backgroundAitiiPh) {
-      console.error("❌ Missing aitiiPh!");
-      return;
-    }
 
     // Initially hide the video smoothly
     aitiiPc.style.opacity = "0";
@@ -41,6 +33,35 @@ export default class extends Controller {
       console.log("▶️ Played the video aitiiPh!");
       aitiiPh.style.opacity = "1"; // Fade-in effect
     });
+
+    // Fragments of Time
+    const fotPc = document.getElementById("fot");
+    const fotPh = document.getElementById("fot-ph");
+    const backgroundFotPc = document.getElementById("fragments-of-time-pc");
+    const backgroundFotPh = document.getElementById("fragments-of-time-ph");
+
+    // Initially hide the video smoothly
+    fotPc.style.opacity = "0";
+    fotPc.style.transition = "opacity 1s ease-in-out"; // Smooth transition
+
+    fotPh.style.opacity = "0";
+    fotPh.style.transition = "opacity 1s ease-in-out";
+
+    // And if this is it
+    const playerFotPc = new Player(fotPc);
+
+    playerFotPc.on("play", () => {
+      console.log("▶️ Played the video fotPc!");
+      fotPc.style.opacity = "1"; // Fade-in effect
+    });
+
+    const playerFotPh = new Player(fotPh);
+
+    playerFotPh.on("play", () => {
+      console.log("▶️ Played the video fotPh!");
+      fotPh.style.opacity = "1"; // Fade-in effect
+    });
+
 
 
     // Check if the element exists
