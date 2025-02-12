@@ -117,6 +117,61 @@ export default class extends Controller {
       vopPh.style.opacity = "1"; // Fade-in effect
     });
 
+
+    // Rush for Full
+    const rffPc = document.getElementById("rff");
+    const rffPh = document.getElementById("rff-ph");
+    const backgroundRffPc = document.getElementById("rush-for-full-pc");
+    const backgroundRffPh = document.getElementById("rush-for-full-ph");
+
+    // Initially hide the video smoothly
+    rffPc.style.opacity = "0";
+    rffPc.style.transition = "opacity 1s ease-in-out"; // Smooth transition
+
+    rffPh.style.opacity = "0";
+    rffPh.style.transition = "opacity 1s ease-in-out";
+
+    const playerRffPc = new Player(rffPc);
+
+    playerRffPc.on("play", () => {
+      console.log("▶️ Played the video rffPc!");
+      rffPc.style.opacity = "1"; // Fade-in effect
+    });
+
+    const playerRffPh = new Player(rffPh);
+
+    playerRffPh.on("play", () => {
+      console.log("▶️ Played the video rffPh!");
+      rffPh.style.opacity = "1"; // Fade-in effect
+    });
+
+
+    // Le Gout de Dieu
+    const lgddPc = document.getElementById("lgdd");
+    const lgddPh = document.getElementById("lgdd-ph");
+    const backgroundLgddPc = document.getElementById("le-gout-de-dieu-pc");
+    const backgroundLgddPh = document.getElementById("le-gout-de-dieu-ph");
+
+    // Initially hide the video smoothly
+    lgddPc.style.opacity = "0";
+    lgddPc.style.transition = "opacity 1s ease-in-out"; // Smooth transition
+
+    lgddPh.style.opacity = "0";
+    lgddPh.style.transition = "opacity 1s ease-in-out";
+
+    const playerLgddPc = new Player(lgddPc);
+
+    playerLgddPc.on("play", () => {
+      console.log("▶️ Played the video lgddPc!");
+      lgddPc.style.opacity = "1"; // Fade-in effect
+    });
+
+    const playerLgddPh = new Player(lgddPh);
+
+    playerLgddPh.on("play", () => {
+      console.log("▶️ Played the video lgddPh!");
+      lgddPh.style.opacity = "1"; // Fade-in effect
+    });
     // Check if the element exists
     // if (aitiiPc) {
     //   console.log("🎥 Vimeo iframe found:", aitiiPc);
