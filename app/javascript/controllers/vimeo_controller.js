@@ -1,201 +1,84 @@
-import { Controller } from "@hotwired/stimulus"
-import Player from '@vimeo/player';
+import { Controller } from "@hotwired/stimulus";
+import Player from "@vimeo/player";
 
 // Connects to data-controller="vimeo"
 export default class extends Controller {
   connect() {
-    // console.log("✅ Stimulus controller connected");
+    const minWidth = 760;
+    const videos = [
+      { id: "aitii", bgId: "and-if-this-is-it" },
+      { id: "fot", bgId: "fragments-of-time" },
+      { id: "lh", bgId: "love-hurts" },
+      { id: "vop", bgId: "veil-of-perspective" },
+      { id: "rff", bgId: "rush-for-full" },
+      { id: "lgdd", bgId: "le-gout-de-dieu" },
+    ];
 
-    // And if this is it
-    const aitiiPc = document.getElementById("aitii");
-    const aitiiPh = document.getElementById("aitii-ph");
-    const backgroundAitiiPc = document.getElementById("and-if-this-is-it-pc");
-    const backgroundAitiiPh = document.getElementById("and-if-this-is-it-ph");
+    // Store players so we can properly destroy them
+    this.players = [];
 
-    // Initially hide the video smoothly
-    aitiiPc.style.opacity = "0";
-    aitiiPc.style.transition = "opacity 1s ease-in-out"; // Smooth transition
-
-    aitiiPh.style.opacity = "0";
-    aitiiPh.style.transition = "opacity 1s ease-in-out";
-
-    const playerAitiiPc = new Player(aitiiPc);
-
-    playerAitiiPc.on("play", () => {
-      console.log("▶️ Played the video aitiiPc!");
-      aitiiPc.style.opacity = "1"; // Fade-in effect
+    videos.forEach(({ id }) => {
+      this.setupPlayer(id);
     });
 
-    const playerAitiiPh = new Player(aitiiPh);
+    this.handleVideoLoading(minWidth, videos);
+  }
 
-    playerAitiiPh.on("play", () => {
-      console.log("▶️ Played the video aitiiPh!");
-      aitiiPh.style.opacity = "1"; // Fade-in effect
+  setupPlayer(id) {
+    const pcVideo = document.getElementById(id);
+    const phVideo = document.getElementById(`${id}-ph`);
+
+    if (!pcVideo || !phVideo) return;
+
+    const setupFadeEffect = (video) => {
+      video.style.opacity = "0";
+      video.style.transition = "opacity 1s ease-in-out";
+    };
+
+    setupFadeEffect(pcVideo);
+    setupFadeEffect(phVideo);
+
+    const playerPc = new Player(pcVideo);
+    const playerPh = new Player(phVideo);
+
+    this.players.push({ player: playerPc, element: pcVideo });
+    this.players.push({ player: playerPh, element: phVideo });
+
+    const addPlayListener = (player, video, label) => {
+      player.on("play", () => {
+        console.log(`▶️ Played the video ${label}!`);
+        video.style.opacity = "1";
+      });
+    };
+
+    addPlayListener(playerPc, pcVideo, `${id}Pc`);
+    addPlayListener(playerPh, phVideo, `${id}Ph`);
+  }
+
+  handleVideoLoading(minWidth, videos) {
+    const isMobile = window.innerWidth <= minWidth;
+
+    videos.forEach(({ id }) => {
+      const pcVideo = document.getElementById(id);
+      const phVideo = document.getElementById(`${id}-ph`);
+
+      if (isMobile && pcVideo) {
+        this.destroyPlayer(pcVideo);
+      } else if (!isMobile && phVideo) {
+        this.destroyPlayer(phVideo);
+      }
     });
+  }
 
-
-    // Fragments of Time
-    const fotPc = document.getElementById("fot");
-    const fotPh = document.getElementById("fot-ph");
-    const backgroundFotPc = document.getElementById("fragments-of-time-pc");
-    const backgroundFotPh = document.getElementById("fragments-of-time-ph");
-
-    // Initially hide the video smoothly
-    fotPc.style.opacity = "0";
-    fotPc.style.transition = "opacity 1s ease-in-out"; // Smooth transition
-
-    fotPh.style.opacity = "0";
-    fotPh.style.transition = "opacity 1s ease-in-out";
-
-    const playerFotPc = new Player(fotPc);
-
-    playerFotPc.on("play", () => {
-      console.log("▶️ Played the video fotPc!");
-      fotPc.style.opacity = "1"; // Fade-in effect
-    });
-
-    const playerFotPh = new Player(fotPh);
-
-    playerFotPh.on("play", () => {
-      console.log("▶️ Played the video fotPh!");
-      fotPh.style.opacity = "1"; // Fade-in effect
-    });
-
-
-    // Love hurts
-    const lhPc = document.getElementById("lh");
-    const lhPh = document.getElementById("lh-ph");
-    const backgroundLhPc = document.getElementById("love-hurts-pc");
-    const backgroundLhPh = document.getElementById("love-hurts-ph");
-
-    // Initially hide the video smoothly
-    lhPc.style.opacity = "0";
-    lhPc.style.transition = "opacity 1s ease-in-out"; // Smooth transition
-
-    lhPh.style.opacity = "0";
-    lhPh.style.transition = "opacity 1s ease-in-out";
-
-    const playerLhPc = new Player(lhPc);
-
-    playerLhPc.on("play", () => {
-      console.log("▶️ Played the video lhPc!");
-      lhPc.style.opacity = "1"; // Fade-in effect
-    });
-
-    const playerLhPh = new Player(lhPh);
-
-    playerLhPh.on("play", () => {
-      console.log("▶️ Played the video lhPh!");
-      lhPh.style.opacity = "1"; // Fade-in effect
-    });
-
-
-    // Veil of Perspective
-    const vopPc = document.getElementById("vop");
-    const vopPh = document.getElementById("vop-ph");
-    const backgroundVopPc = document.getElementById("veil-of-perspective-pc");
-    const backgroundVopPh = document.getElementById("veil-of-perspective-ph");
-
-    // Initially hide the video smoothly
-    vopPc.style.opacity = "0";
-    vopPc.style.transition = "opacity 1s ease-in-out"; // Smooth transition
-
-    vopPh.style.opacity = "0";
-    vopPh.style.transition = "opacity 1s ease-in-out";
-
-    const playerVopPc = new Player(vopPc);
-
-    playerVopPc.on("play", () => {
-      console.log("▶️ Played the video vopPc!");
-      vopPc.style.opacity = "1"; // Fade-in effect
-    });
-
-    const playerVopPh = new Player(vopPh);
-
-    playerVopPh.on("play", () => {
-      console.log("▶️ Played the video vopPh!");
-      vopPh.style.opacity = "1"; // Fade-in effect
-    });
-
-
-    // Rush for Full
-    const rffPc = document.getElementById("rff");
-    const rffPh = document.getElementById("rff-ph");
-    const backgroundRffPc = document.getElementById("rush-for-full-pc");
-    const backgroundRffPh = document.getElementById("rush-for-full-ph");
-
-    // Initially hide the video smoothly
-    rffPc.style.opacity = "0";
-    rffPc.style.transition = "opacity 1s ease-in-out"; // Smooth transition
-
-    rffPh.style.opacity = "0";
-    rffPh.style.transition = "opacity 1s ease-in-out";
-
-    const playerRffPc = new Player(rffPc);
-
-    playerRffPc.on("play", () => {
-      console.log("▶️ Played the video rffPc!");
-      rffPc.style.opacity = "1"; // Fade-in effect
-    });
-
-    const playerRffPh = new Player(rffPh);
-
-    playerRffPh.on("play", () => {
-      console.log("▶️ Played the video rffPh!");
-      rffPh.style.opacity = "1"; // Fade-in effect
-    });
-
-
-    // Le Gout de Dieu
-    const lgddPc = document.getElementById("lgdd");
-    const lgddPh = document.getElementById("lgdd-ph");
-    const backgroundLgddPc = document.getElementById("le-gout-de-dieu-pc");
-    const backgroundLgddPh = document.getElementById("le-gout-de-dieu-ph");
-
-    // Initially hide the video smoothly
-    lgddPc.style.opacity = "0";
-    lgddPc.style.transition = "opacity 1s ease-in-out"; // Smooth transition
-
-    lgddPh.style.opacity = "0";
-    lgddPh.style.transition = "opacity 1s ease-in-out";
-
-    const playerLgddPc = new Player(lgddPc);
-
-    playerLgddPc.on("play", () => {
-      console.log("▶️ Played the video lgddPc!");
-      lgddPc.style.opacity = "1"; // Fade-in effect
-    });
-
-    const playerLgddPh = new Player(lgddPh);
-
-    playerLgddPh.on("play", () => {
-      console.log("▶️ Played the video lgddPh!");
-      lgddPh.style.opacity = "1"; // Fade-in effect
-    });
-    // Check if the element exists
-    // if (aitiiPc) {
-    //   console.log("🎥 Vimeo iframe found:", aitiiPc);
-    //   try {
-    //     const player = new Player(aitiiPc);
-
-    //     player.on("play", () => {
-    //       console.log("▶️ Played the video!");
-    //     });
-
-    //     player.on("error", (error) => {
-    //       console.error("❌ Vimeo Player Error:", error);
-    //     });
-
-    //     player.getDuration().then((duration) => {
-    //       console.log(`⏳ Video duration: ${duration} seconds`);
-    //     });
-
-    //   } catch (e) {
-    //     console.error("❌ Error initializing Vimeo Player:", e);
-    //   }
-
-    // } else {
-    //   console.error("❌ Vimeo iframe not found!");
-    // }
+  destroyPlayer(videoElement) {
+    const playerEntry = this.players.find((p) => p.element === videoElement);
+    if (playerEntry) {
+      playerEntry.player.destroy().then(() => {
+        console.log(`🛑 Destroyed player for`, videoElement.id);
+        videoElement.innerHTML = ""; // Remove the iframe properly
+      }).catch((error) => {
+        console.error(`❌ Error destroying player:`, error);
+      });
+    }
   }
 }
