@@ -120,17 +120,17 @@ export default class extends Controller {
               line.style.backgroundColor = '#776a7c';
             });
           } else if (this.realIndex === 4) { // Rush For Full
-            prevButton.style.color = 'black';
-            nextButton.style.color = 'black';
-            meter.style.backgroundColor = 'black';
-            workTextElements[4].querySelector('h1').style.color = 'black';
-            workTextElements[4].querySelector('a').style.color = 'black';
+            prevButton.style.color = 'rgb(101, 101, 92)';
+            nextButton.style.color = 'rgb(101, 101, 92)';
+            meter.style.backgroundColor = 'rgb(101, 101, 92)';
+            workTextElements[4].querySelector('h1').style.color = 'rgb(101, 101, 92)';
+            workTextElements[4].querySelector('a').style.color = 'rgb(101, 101, 92)';
             if (workTextElements[4].querySelector('svg')) {
-              workTextElements[4].querySelector('svg').style.fill = 'black';
+              workTextElements[4].querySelector('svg').style.fill = 'rgb(101, 101, 92)';
             };
             meter.style.width = (100 / totalSlides) * currentSlide + '%';
             lines.forEach((line) => {
-              line.style.backgroundColor = 'black';
+              line.style.backgroundColor = 'rgb(101, 101, 92)';
             });
           // } else if (this.realIndex === 5) { // Only Fools Rush In
           //   stopAnimateButton(prevButton);

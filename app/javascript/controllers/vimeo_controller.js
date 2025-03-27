@@ -10,8 +10,8 @@ export default class extends Controller {
       { id: "fot", bgId: "fragments-of-time" },
       { id: "lh", bgId: "love-hurts" },
       { id: "vop", bgId: "veil-of-perspective" },
-      { id: "rff", bgId: "rush-for-full" },
-      { id: "lgdd", bgId: "le-gout-de-dieu" },
+      { id: "cf", bgId: "celestial-fractures" },
+      // { id: "lgdd", bgId: "le-gout-de-dieu" },
     ];
 
     // Store players so we can properly destroy them

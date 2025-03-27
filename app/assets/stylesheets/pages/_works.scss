@@ -2,7 +2,7 @@
 //   //
 // }
 
-.sidenav-if-this-is-it-page, .sidenav-dusk-page, .sidenav-fragments-of-time-page, .sidenav-love-hurts-page, .sidenav-rush-for-full-page, .sidenav-only-fools-rush-in-page, .sidenav-le-gout-de-dieu-page, .sidenav-veil-of-perspective-page {
+.sidenav-if-this-is-it-page, .sidenav-dusk-page, .sidenav-fragments-of-time-page, .sidenav-love-hurts-page, .sidenav-celestial-fractures-page, .sidenav-only-fools-rush-in-page, .sidenav-le-gout-de-dieu-page, .sidenav-veil-of-perspective-page {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
@@ -207,14 +207,14 @@
   background-size: cover;
 }
 
-#rush-for-full-pc {
-  background-image: url('rff-b.png');
+#celestial-fractures-pc {
+  background-image: url('cf2.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-#rush-for-full-ph {
-  background-image: url('rff-b1.png');
+#celestial-fractures-ph {
+  background-image: url('cf1.jpg');
   background-repeat: no-repeat;
   background-position: 40% center ;
   background-size: cover;
@@ -297,7 +297,7 @@
   transform:translate(-50%, 5%);
 }
 
-#v-b-rff iframe {
+#v-b-cf iframe {
   width: 2000px;
   height: 1600px;
   z-index:-1;

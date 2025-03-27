@@ -7,7 +7,7 @@ export default class extends Controller {
     const lh = document.getElementById('text-info-2-pc');
     const fot = document.getElementById('text-info-3-pc');
     const lgdd = document.getElementById('text-info-4-pc');
-    const rff = document.getElementById('text-info-7-pc');
+    const cf = document.getElementById('text-info-7-pc');
     const vop = document.getElementById('text-info-8-pc');
     const burger = document.getElementById('burger-menu');
     // const d = document.getElementById('text-info-5-pc');
@@ -58,20 +58,20 @@ export default class extends Controller {
       document.getElementById('pc-next').style = "opacity: 1; color: #640a95";
     });
 
-    lgdd.addEventListener('click', () => {
-      document.getElementById("mySidenav-lgdd").style = "width:100%;opacity:1";
-      burger.style = "opacity: 0";
-      lgdd.style = "opacity: 0";
-      document.getElementById('pc-prev').style = "opacity: 0";
-      document.getElementById('pc-next').style = "opacity: 0";
-    });
-    document.getElementById("closebtn-lgdd").addEventListener("click", () => {
-      document.getElementById("mySidenav-lgdd").style.width = "0";
-      lgdd.style = "opacity: 1";
-      burger.style = "opacity: 1; color: white";
-      document.getElementById('pc-prev').style = "opacity: 1; color: white";
-      document.getElementById('pc-next').style = "opacity: 1; color: white";
-    });
+    // lgdd.addEventListener('click', () => {
+    //   document.getElementById("mySidenav-lgdd").style = "width:100%;opacity:1";
+    //   burger.style = "opacity: 0";
+    //   lgdd.style = "opacity: 0";
+    //   document.getElementById('pc-prev').style = "opacity: 0";
+    //   document.getElementById('pc-next').style = "opacity: 0";
+    // });
+    // document.getElementById("closebtn-lgdd").addEventListener("click", () => {
+    //   document.getElementById("mySidenav-lgdd").style.width = "0";
+    //   lgdd.style = "opacity: 1";
+    //   burger.style = "opacity: 1; color: white";
+    //   document.getElementById('pc-prev').style = "opacity: 1; color: white";
+    //   document.getElementById('pc-next').style = "opacity: 1; color: white";
+    // });
 
     // d.addEventListener('click', () => {
     //   document.getElementById("mySidenav-d").style = "width:100%;opacity:1";
@@ -103,19 +103,19 @@ export default class extends Controller {
     //   document.getElementById('pc-next').style = "opacity: 1; color:#898c5e";
     // });
 
-    rff.addEventListener('click', () => {
-      document.getElementById("mySidenav-rff").style = "width:100%;opacity:1"
-      rff.style = "opacity: 0";
+    cf.addEventListener('click', () => {
+      document.getElementById("mySidenav-cf").style = "width:100%;opacity:1"
+      cf.style = "opacity: 0";
       burger.style = "opacity: 0";
       document.getElementById('pc-prev').style = "opacity: 0";
       document.getElementById('pc-next').style = "opacity: 0";
     });
-    document.getElementById("closebtn-rff").addEventListener("click", () => {
-      rff.style = "opacity: 1";
-      burger.style = "opacity: 1; color:black";
-      document.getElementById("mySidenav-rff").style.width = "0";
-      document.getElementById('pc-prev').style = "opacity: 1; color:black";
-      document.getElementById('pc-next').style = "opacity: 1; color:black";
+    document.getElementById("closebtn-cf").addEventListener("click", () => {
+      cf.style = "opacity: 1";
+      burger.style = "opacity: 1; color:rgb(101, 101, 92)";
+      document.getElementById("mySidenav-cf").style.width = "0";
+      document.getElementById('pc-prev').style = "opacity: 1; color:rgb(101, 101, 92)";
+      document.getElementById('pc-next').style = "opacity: 1; color:rgb(101, 101, 92)";
     });
 
     vop.addEventListener('click', () => {
