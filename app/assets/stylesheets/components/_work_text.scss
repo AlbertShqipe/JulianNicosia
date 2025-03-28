@@ -1,5 +1,5 @@
 .work_text {
-  color: #2C3651;
+  color: rgb(101, 101, 92);
   display: inline-block;
   padding: 10px 20px;
   padding-left: 100px;
@@ -60,7 +60,7 @@
     font-size: 1.6rem;
     text-decoration: none;
     position: relative;
-    color:#2C3651;
+    color:rgb(101, 101, 92);
     transition: color 0.3s ease;
     display: inline-flex;
     text-shadow: 0.4px 0.4px 0.4px #000000;
@@ -114,7 +114,7 @@
 }
 
 .work_text_phone {
-  color: #2C3651;
+  color: rgb(101, 101, 92);
   display: block;
   padding: 10px 30px; /* Keep general padding */
   font-family: "Roboto Mono", sans-serif !important;
@@ -158,7 +158,7 @@
     font-size: 1rem;
     text-decoration: none;
     // color:  rgb(13, 110, 253);
-    color: #2C3651;
+    color: rgb(101, 101, 92);
     transition: color 0.3s ease;
     display: inline-flex;
     text-shadow: 0.25px 0.25px 0.25px #000000;
@@ -196,7 +196,6 @@
 }
 
 #main-lh {
-  color: #ceceff;
   display: block;
   padding: 10px 30px; /* Keep general padding */
   font-family: "Roboto Mono", sans-serif !important;

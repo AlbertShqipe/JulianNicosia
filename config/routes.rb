@@ -26,4 +26,5 @@ Rails.application.routes.draw do
   get "alessandro_and_giada" => "works#alessandro_and_giada"
   get "rush_for_full" => "works#rush_for_full"
   get "veil_of_perspective" => "works#veil_of_perspective"
+  get "celestial_fractures" => "works#celestial_fractures"
 end

@@ -33,4 +33,7 @@ class WorksController < ApplicationController
   def veil_of_perspective
   end
 
+  def celestial_fractures
+  end
+
 end

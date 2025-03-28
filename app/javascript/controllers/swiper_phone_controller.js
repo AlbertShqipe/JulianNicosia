@@ -46,8 +46,8 @@ export default class extends Controller {
           const swipeText = document.getElementById('h3-swipe');
 
 
-          prevButton.style.color = '#2C3651';
-          nextButton.style.color = '#2C3651';
+          prevButton.style.color = 'rgb(101, 101, 92)';
+          nextButton.style.color = 'rgb(101, 101, 92)';
           // animateButton(nextButton);
           animateButton(nextButton);
 
@@ -57,6 +57,7 @@ export default class extends Controller {
           const totalSlides = this.slides.length;
           // console.log('Current slide is', currentSlide);
 
+
           const swipeText = document.getElementById('h3-swipe');
           const prevButton = document.getElementById('phone-prev');
           const nextButton = document.getElementById('phone-next');
@@ -64,126 +65,81 @@ export default class extends Controller {
           const lines = burgerMenu.querySelectorAll('.line');
           const meter = document.getElementById('meter-phone');
           const workTextElements = document.getElementsByClassName('work_text_phone');
-
           swipeText.style.display = 'none';
-          if (this.realIndex === 0) { // And if this it
+
+          // CF VOP AITII FOT LH
+          if (this.realIndex === 0) { // Celestial Fractures
             animateButton(nextButton);
+            prevButton.style.color = 'rgb(101, 101, 92)';
+            nextButton.style.color = 'rgb(101, 101, 92)';
+            meter.style.backgroundColor = 'rgb(101, 101, 92)';
+            workTextElements[0].querySelector('h1').style.color = 'rgb(101, 101, 92)';
+            workTextElements[0].querySelector('a').style.color = 'rgb(101, 101, 92)';
+            if (workTextElements[0].querySelector('svg')) {
+              workTextElements[0].querySelector('svg').style.fill = 'rgb(101, 101, 92)';
+            };
+            meter.style.width = (100 / totalSlides) * currentSlide + '%';
+            lines.forEach((line) => {
+              line.style.backgroundColor = 'rgb(101, 101, 92)';
+            });
+          } else if (this.realIndex === 1) { // Veil of Perspective
+            stopAnimateButton(nextButton);
+            prevButton.style.color = '#776a7c';
+            nextButton.style.color = '#776a7c';
+            meter.style.backgroundColor = '#776a7c';
+            workTextElements[1].querySelector('h1').style.color = '#776a7c';
+            workTextElements[1].querySelector('a').style.color = '#776a7c';
+            meter.style.width = (100 / totalSlides) * currentSlide + '%';
+            lines.forEach((line) => {
+              line.style.backgroundColor = '#776a7c';
+            });
+          } else if (this.realIndex === 2) { // And if this it
             prevButton.style.color = '#2C3651'; // And if this it
             nextButton.style.color = '#2C3651';
             meter.style.backgroundColor = '#2C3651';
-            workTextElements[0].querySelector('h1').style.color = '#2C3651';
-            workTextElements[0].querySelector('a').style.color = '#2C3651';
-            if (workTextElements[0].querySelector('svg')) {
-              workTextElements[0].querySelector('svg').style.fill = '#2C3651';
+            workTextElements[2].querySelector('h1').style.color = '#2C3651';
+            workTextElements[2].querySelector('a').style.color = '#2C3651';
+            if (workTextElements[2].querySelector('svg')) {
+              workTextElements[2].querySelector('svg').style.fill = '#2C3651';
             }
             meter.style.width = (100 / totalSlides) * currentSlide + '%';
             lines.forEach((line) => {
               // line.style.backgroundColor = 'rgb(13, 110, 253)';
               line.style.backgroundColor = '#2C3651';
             });
-          } else if (this.realIndex === 1) { // Fragments Of Time
-            stopAnimateButton(nextButton);
+
+
+
+
+
+
+          } else if (this.realIndex === 3) { // Fragments Of Time
             prevButton.style.color = 'rgb(100, 50, 200)'; // Fragments Of Time
             nextButton.style.color = 'rgb(100, 50, 200)';
             meter.style.backgroundColor = 'rgb(100, 50, 200)';
-            workTextElements[1].querySelector('h1').style.color = 'rgb(100, 50, 200)';
-            workTextElements[1].querySelector('a').style.color = 'rgb(100, 50, 200)';
-            if (workTextElements[1].querySelector('svg')) {
-              workTextElements[1].querySelector('svg').style.fill = 'rgb(100, 50, 200)';
+            workTextElements[3].querySelector('h1').style.color = 'rgb(100, 50, 200)';
+            workTextElements[3].querySelector('a').style.color = 'rgb(100, 50, 200)';
+            if (workTextElements[3].querySelector('svg')) {
+              workTextElements[3].querySelector('svg').style.fill = 'rgb(100, 50, 200)';
             }
             meter.style.width = (100 / totalSlides) * currentSlide + '%';
             lines.forEach((line) => {
               line.style.backgroundColor = 'rgb(100, 50, 200)';
             });
-          } else if (this.realIndex === 2) { // Love Hurts
+          } else if (this.realIndex === 4) {  // Love Hurts
             prevButton.style.color = 'rgb(100, 0, 0)'; // Love Hurts
             nextButton.style.color = 'rgb(100, 0, 0)';
             meter.style.backgroundColor = 'rgb(100, 0, 0)';
             // julian.style.color = 'rgb(100, 0, 0)';
-            workTextElements[2].querySelector('h1').style.color = 'rgb(100, 0, 0)';
-            workTextElements[2].querySelector('a').style.color ='rgb(100, 0, 0)';
-            if (workTextElements[2].querySelector('svg')) {
-            workTextElements[2].querySelector('svg').style.fill ='rgb(100, 0, 0)';
+            workTextElements[4].querySelector('h1').style.color = 'rgb(100, 0, 0)';
+            workTextElements[4].querySelector('a').style.color ='rgb(100, 0, 0)';
+            if (workTextElements[4].querySelector('svg')) {
+            workTextElements[4].querySelector('svg').style.fill ='rgb(100, 0, 0)';
             }
             meter.style.width = (100 / totalSlides) * currentSlide + '%';
             lines.forEach((line) => {
               line.style.backgroundColor = 'rgb(100, 0, 0)';
             });
-          } else if (this.realIndex === 3) { // Veil of Perspective
-            prevButton.style.color = '#776a7c';
-            nextButton.style.color = '#776a7c';
-            meter.style.backgroundColor = '#776a7c';
-            workTextElements[3].querySelector('h1').style.color = '#776a7c';
-            workTextElements[3].querySelector('a').style.color = '#776a7c';
-            meter.style.width = (100 / totalSlides) * currentSlide + '%';
-            lines.forEach((line) => {
-              line.style.backgroundColor = '#776a7c';
-            });
-          } else if (this.realIndex === 4) { // Rush For Full
-            prevButton.style.color = 'rgb(101, 101, 92)';
-            nextButton.style.color = 'rgb(101, 101, 92)';
-            meter.style.backgroundColor = 'rgb(101, 101, 92)';
-            workTextElements[4].querySelector('h1').style.color = 'rgb(101, 101, 92)';
-            workTextElements[4].querySelector('a').style.color = 'rgb(101, 101, 92)';
-            if (workTextElements[4].querySelector('svg')) {
-              workTextElements[4].querySelector('svg').style.fill = 'rgb(101, 101, 92)';
-            };
-            meter.style.width = (100 / totalSlides) * currentSlide + '%';
-            lines.forEach((line) => {
-              line.style.backgroundColor = 'rgb(101, 101, 92)';
-            });
-          // } else if (this.realIndex === 5) { // Only Fools Rush In
-          //   stopAnimateButton(prevButton);
-          //   prevButton.style.color = '#b0885e';
-          //   nextButton.style.color = '#b0885e';
-          //   meter.style.backgroundColor = '#b0885e';
-          //   workTextElements[5].querySelector('h1').style.color = '#b0885e';
-          //   workTextElements[5].querySelector('a').style.color = '#b0885e';
-          //   if (workTextElements[5].querySelector('svg')) {
-          //     workTextElements[5].querySelector('svg').style.fill = '#b0885e';
-          //   };
-          //   meter.style.width = (100 / totalSlides) * currentSlide + '%';
-          //   lines.forEach((line) => {
-          //     line.style.backgroundColor = '#b0885e';
-          //   });
-          // } else if (this.realIndex === 6){
-          //   animateButton(prevButton);
-          //   prevButton.style.color = '#4871bc';
-          //   nextButton.style.color = '#4871bc';
-          //   meter.style.backgroundColor = '#4871bc';
-          //   workTextElements[6].querySelector('h1').style.color = '#4871bc';
-          //   workTextElements[6].querySelector('a').style.color = '#4871bc';
-          //   meter.style.width = (100 / totalSlides) * currentSlide + '%';
-          //   lines.forEach((line) => {
-          //     line.style.backgroundColor = '#4871bc';
-          //   });
-          } else if (this.realIndex === 5){ // Le gou de dieu
-            prevButton.style.color = 'white';
-            nextButton.style.color = 'white';
-            meter.style.backgroundColor = 'white';
-            workTextElements[5].querySelector('h1').style.color = 'white';
-            workTextElements[5].querySelector('a').style.color = 'white';
-            if (workTextElements[5].querySelector('svg')) {
-              workTextElements[5].querySelector('svg').style.fill = 'white';
-            }
-            meter.style.width = (100 / totalSlides) * currentSlide + '%';
-            lines.forEach((line) => {
-              line.style.backgroundColor = 'white';
-            });
-          // } else if (this.realIndex === 7){ // Dusk
-          //   animateButton(prevButton);
-          //   prevButton.style.color = '#898c5e'; // Dusk
-          //   nextButton.style.color = '#898c5e';
-          //   meter.style.backgroundColor = '#898c5e';
-          //   workTextElements[7].querySelector('h1').style.color = '#898c5e';
-          //   workTextElements[7].querySelector('a').style.color = '#898c5e';
-          //   if (workTextElements[7].querySelector('svg')) {
-          //     workTextElements[7].querySelector('svg').style.fill = '#898c5e';
-          //   }
-          //   meter.style.width = (100 / totalSlides) * currentSlide + '%';
-          //   lines.forEach((line) => {
-          //     line.style.backgroundColor = '#898c5e';
-          //   });
           }
         }
       }
