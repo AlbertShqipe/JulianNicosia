@@ -9,22 +9,29 @@ export default class extends Controller {
     const textInfosPhone = document.querySelectorAll('.work_text_phone');
     const swipeText = document.getElementById('h3-swipe');
     const media = document.querySelector('gallery');
+
     burgerMenu.addEventListener('click', () => {
       burgerMenu.classList.toggle('active');
+
       if (burgerMenu.classList.contains('active')) {
         menu.style = 'opacity: 1; z-index:1000';
+
         textInfosPhone.forEach((textInfo) => {
           textInfo.style = 'display: none';
         });
+
         textInfosPc.forEach((textInfo) => {
           textInfo.style = 'display: none';
         });
+
         swipeText.style = 'opacity: 0';
       } else {
         menu.style = 'display: none';
+
         textInfosPhone.forEach((textInfo) => {
           textInfo.style = 'display: inline-block';
         });
+
         textInfosPc.forEach((textInfo) => {
           textInfo.style = 'display: inline-block';
         });

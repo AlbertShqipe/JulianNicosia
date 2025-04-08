@@ -25,14 +25,14 @@
 
   .image-container {
     float: right;
-    margin: 0  0  0 1em; /* Margin to separate text from the image */
-    max-width: 350px; /* Ensure the image isn't too large */
+    margin: 0  0  0 1em;
+    max-width: 350px;
     opacity: 0.8;
 
     @media (max-width: 760px) {
       float: right;
-      margin: 0 0 1em 1em; /* Margin to separate text from the image */
-      max-width: 200px; /* Ensure the image isn't too large *//* Optional styling for a modern look */
+      margin: 0 0 1em 1em;
+      max-width: 200px;
     }
 
     .bio-image {
@@ -44,9 +44,9 @@
 
     .rights {
       margin-top: 5px;
-      font-size: 10px; /* Smaller font size for rights text */
-      color: #777; /* Subtle gray color */
-      font-style: italic; /* Optional, makes it look more formal */
+      font-size: 10px;
+      color: #777;
+      font-style: italic;
     }
   }
 

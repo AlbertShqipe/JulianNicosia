@@ -37,13 +37,13 @@ export default class extends Controller {
         });
       });
     });
+
     // Scroll event listener to handle opacity changes
     document.body.addEventListener('scroll', () => {
       const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-      // console.log(scrollPosition);
-
       const minScroll = 250; // Start opacity transition
       const maxScroll = 784; // End opacity transition
+      // console.log(scrollPosition);
 
       if (scrollPosition <= minScroll) {
         icon.style.opacity = 0; // Fully hidden before minScroll
@@ -74,7 +74,7 @@ export default class extends Controller {
 
 
     function smoothScrollToTop(element) {
-        const scrollStep = element.scrollTop / 20; // Adjust the divisor for speed (higher = slower)
+        const scrollStep = element.scrollTop / 20; // (higher = slower)
 
         function step() {
             if (element.scrollTop > 0) {
@@ -83,7 +83,7 @@ export default class extends Controller {
             }
         }
 
-        step(); // Start the animation
+        step();
     }
 
     // Listen for scroll events on each scroll-to-top element
@@ -96,11 +96,11 @@ export default class extends Controller {
         if (scrollTop <= 960) {
           icon.style.opacity = 0;
         } else {
-          // Gradually increase opacity between scroll positions 860 and 1160
+          // Gradually increase opacity between scroll positions 860 and 1690
           let maxOpacityScroll = 1690; // Adjust this to define the scroll range over which opacity increases
           let opacity = (scrollTop - 860) / (maxOpacityScroll - 860);
 
-          // Clamp the opacity value between 0 and 1
+          // opacity value between 0 and 1
           icon.style.opacity = Math.min(Math.max(opacity, 0), 1);
         };
       });

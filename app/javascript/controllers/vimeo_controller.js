@@ -14,7 +14,6 @@ export default class extends Controller {
       // { id: "lgdd", bgId: "le-gout-de-dieu" },
     ];
 
-    // Store players so we can properly destroy them
     this.players = [];
 
     videos.forEach(({ id }) => {
@@ -72,6 +71,7 @@ export default class extends Controller {
 
   destroyPlayer(videoElement) {
     const playerEntry = this.players.find((p) => p.element === videoElement);
+
     if (playerEntry) {
       playerEntry.player.destroy().then(() => {
         console.log(`🛑 Destroyed player for`, videoElement.id);

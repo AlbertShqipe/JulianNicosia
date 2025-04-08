@@ -1,9 +1,8 @@
 import { Controller } from "@hotwired/stimulus"
 
-let animationIntervals = new Map(); // Store intervals by button for precise control
+let animationIntervals = new Map();
 
 function animateButton(button) {
-  // Avoid starting multiple intervals for the same button
   if (animationIntervals.has(button)) return;
 
   let scaleUp = true;
@@ -19,12 +18,13 @@ function animateButton(button) {
 
 function stopAnimateButton(button) {
   const interval = animationIntervals.get(button);
+
   if (interval) {
-    clearInterval(interval); // Clear the interval
-    animationIntervals.delete(button); // Remove it from the map
+    clearInterval(interval);
+    animationIntervals.delete(button);
   }
-  button.style.transform = 'scale(1)'; // Reset scaling
-  button.style.transition = 'none'; // Stop transition
+  button.style.transform = 'scale(1)';
+  button.style.transition = 'none';
 }
 
 // Connects to data-controller="swiper-phone"
@@ -53,7 +53,7 @@ export default class extends Controller {
 
         },
         slideChange: function () {
-          const currentSlide = this.realIndex + 1; // Use realIndex for looped slides
+          const currentSlide = this.realIndex + 1;
           const totalSlides = this.slides.length;
           // console.log('Current slide is', currentSlide);
 

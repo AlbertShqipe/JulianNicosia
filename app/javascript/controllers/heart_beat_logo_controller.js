@@ -10,12 +10,15 @@ export default class extends Controller {
       cancelDiv.forEach((div) => {
         div.style.opacity = '0';
       });
+
       heartbeat.style = ' scale:3'
     });
+
     heartbeat.addEventListener('mouseleave', () => {
       cancelDiv.forEach((div) => {
         div.style.opacity = '1';
       });
+
       heartbeat.style = ''
     });
   }

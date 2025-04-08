@@ -1,6 +1,6 @@
 import { Controller } from "@hotwired/stimulus"
 
-let animationIntervals = new Map(); // Store intervals by button for precise control
+let animationIntervals = new Map();
 
 function animateButton(button) {
   // Avoid starting multiple intervals for the same button
@@ -10,21 +10,23 @@ function animateButton(button) {
 
   const interval = setInterval(() => {
     button.style.transform = scaleUp ? 'scale(1.7)' : 'scale(1)';
-    button.style.transition = 'transform 0.5s ease'; // Smooth transition
+    button.style.transition = 'transform 0.5s ease';
     scaleUp = !scaleUp;
-  }, 500); // Switch scale every 0.5 seconds
+  }, 500);
 
-  animationIntervals.set(button, interval); // Store the interval
+  animationIntervals.set(button, interval);
 }
 
 function stopAnimateButton(button) {
   const interval = animationIntervals.get(button);
+
   if (interval) {
-    clearInterval(interval); // Clear the interval
-    animationIntervals.delete(button); // Remove it from the map
+    clearInterval(interval);
+    animationIntervals.delete(button);
   }
-  button.style.transform = 'scale(1)'; // Reset scaling
-  button.style.transition = 'none'; // Stop transition
+
+  button.style.transform = 'scale(1)';
+  button.style.transition = 'none';
 }
 
 // Connects to data-controller="swiper-pc"
@@ -43,8 +45,10 @@ export default class extends Controller {
           // Initialization logic (if any)
           const prevButton = document.querySelector('.swiper-button-prev');
           const nextButton = document.querySelector('.swiper-button-next');
+
           prevButton.style.color = 'rgb(101, 101, 92)';
           nextButton.style.color = 'rgb(101, 101, 92)';
+
           animateButton(nextButton);
 
           const addHoverEffect = (button) => {
@@ -67,15 +71,15 @@ export default class extends Controller {
 
         },
         slideChange: function () {
-          const currentSlide = this.realIndex + 1; // Use realIndex for looped slides
+          const currentSlide = this.realIndex + 1;
           const totalSlides = this.slides.length;
           const prevButton = document.querySelector('.swiper-button-prev');
           const nextButton = document.querySelector('.swiper-button-next');
           const burgerMenu = document.getElementById('burger-menu');
           const lines = burgerMenu.querySelectorAll('.line');
           const meter = document.getElementById('meter');
-          const workTextElements = document.getElementsByClassName('work_text'); // Get all elements with the class 'work_text'
-          console.log(this.realIndex)
+          const workTextElements = document.getElementsByClassName('work_text');
+          // console.log(this.realIndex)
 
           // CF - VOP - AITII - FOT - LH
           if (this.realIndex === 0) { // Celestial Fractures

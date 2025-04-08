@@ -4,13 +4,10 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   static targets= ["link", "tab"];
 
-  connect() {
-
-  }
-
   open(event) {
     event.preventDefault
     let tabId = event.currentTarget.dataset.id
+
     this.tabTargets.forEach(tab => {
       if (tab.dataset.tabsTypeValue !== tabId)
         tab.classList.add('hidden')

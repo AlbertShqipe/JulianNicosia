@@ -2,7 +2,7 @@
   width: 100dvw;
   height: 100dvh;
   position: relative;
-  overflow: hidden; /* Hide overflow */
+  overflow: hidden;
 
   @media (max-width: 760px) {
     display: none;
@@ -10,7 +10,7 @@
 
   .swiper-slide {
     position: relative;
-    overflow: hidden; /* Hide overflow of video outside the container */
+    overflow: hidden;
   }
 
 
@@ -66,7 +66,7 @@
   width: 100vw;
   height: 100dvh;
   position: relative;
-  overflow: hidden; /* Hide overflow */
+  overflow: hidden;
 
   @media (min-width: 760px) {
     display: none;
@@ -75,7 +75,7 @@
 
   .swiper-slide {
     position: relative;
-    overflow: hidden; /* Hide overflow of video outside the container */
+    overflow: hidden;
   }
 
   .swiper-button-next:after, .swiper-button-prev:after {

@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function handleSwipe() {
       const swipeDistance = touchEndX - touchStartX;
-      if (swipeDistance > 50) { // Swipe right
+
+      if (swipeDistance > 50) {
         window.history.back();
       }
     }

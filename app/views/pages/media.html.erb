@@ -1,10 +1,9 @@
-<%# Below there is some commented elements to be able to set the gallery when
-  clicking on the images, check also the link on the head of the application.html.erb %>
 <a href="javascript:void(0);" class="burger-menu-works" id="burger-menu" data-controller="burger-menu" style="z-index:2000; position:top:50px !important;right:30px">
   <div class="line top"></div>
   <div class="line middle"></div>
   <div class="line bottom"></div>
 </a>
+
 <div class="backElement" style="width:100%; height:100%">
   <div class="gallery" data-controller="heart-beat-logo">
     <div class="cancel">
@@ -112,6 +111,9 @@
 </div>
 
 <%= javascript_include_tag 'swipe_back', 'data-turbo-track': 'reload' %>
+
+<%# Below there is some commented elements to be able to set the gallery when
+  clicking on the images, check also the link on the head of the application.html.erb %>
 <%# <script>
   const images = [
                   "/assets/LH1-55163fccf54f097884b99b32c3858047afe0ed7de6bf57631ab2bb65c969bbc1.jpg",

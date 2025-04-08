@@ -20,6 +20,7 @@ export default class extends Controller {
       burger.style = "opacity: 0";
       document.getElementById('pc-next').style = "opacity: 0";
     });
+
     document.getElementById("closebtn-itii").addEventListener("click", () => {
       document.getElementById("mySidenav-itii").style.width = "0";
       aitii.style = "opacity: 1";
@@ -35,6 +36,7 @@ export default class extends Controller {
       document.getElementById('pc-prev').style = "opacity: 0";
       document.getElementById('pc-next').style = "opacity: 0";
     });
+
     document.getElementById("closebtn-lh").addEventListener("click", () => {
       document.getElementById("mySidenav-lh").style.width = "0";
       lh.style = "opacity: 1";
@@ -50,6 +52,7 @@ export default class extends Controller {
       document.getElementById('pc-prev').style = "opacity: 0";
       document.getElementById('pc-next').style = "opacity: 0";
     });
+
     document.getElementById("closebtn-fot").addEventListener("click", () => {
       document.getElementById("mySidenav-fot").style.width = "0";
       fot.style = "opacity: 1";
@@ -58,51 +61,6 @@ export default class extends Controller {
       document.getElementById('pc-next').style = "opacity: 1; color: #640a95";
     });
 
-    // lgdd.addEventListener('click', () => {
-    //   document.getElementById("mySidenav-lgdd").style = "width:100%;opacity:1";
-    //   burger.style = "opacity: 0";
-    //   lgdd.style = "opacity: 0";
-    //   document.getElementById('pc-prev').style = "opacity: 0";
-    //   document.getElementById('pc-next').style = "opacity: 0";
-    // });
-    // document.getElementById("closebtn-lgdd").addEventListener("click", () => {
-    //   document.getElementById("mySidenav-lgdd").style.width = "0";
-    //   lgdd.style = "opacity: 1";
-    //   burger.style = "opacity: 1; color: white";
-    //   document.getElementById('pc-prev').style = "opacity: 1; color: white";
-    //   document.getElementById('pc-next').style = "opacity: 1; color: white";
-    // });
-
-    // d.addEventListener('click', () => {
-    //   document.getElementById("mySidenav-d").style = "width:100%;opacity:1";
-    //   d.style = "opacity: 0";
-    //   burger.style = "opacity: 0";
-    //   document.getElementById('pc-prev').style = "opacity: 0";
-    //   document.getElementById('pc-next').style = "opacity: 0";
-    // });
-    // document.getElementById("closebtn-d").addEventListener("click", () => {
-    //   document.getElementById("mySidenav-d").style.width = "0";
-    //   d.style = "opacity: 1";
-    //   burger.style = "opacity: 1; color:#898c5e";
-    //   document.getElementById('pc-prev').style = "opacity: 1; color:#898c5e";
-    //   document.getElementById('pc-next').style = "opacity: 1; color:#898c5e";
-    // });
-
-    // ofri.addEventListener('click', () => {
-    //   ofri.style = "opacity: 0";
-    //   document.getElementById("burger-menu").style = "width:100%;opacity:1"
-    //   document.getElementById("mySidenav-ofri").style.width = "100%";
-    //   document.getElementById('pc-prev').style = "opacity: 0";
-    //   document.getElementById('pc-next').style = "opacity: 0";
-    // });
-    // document.getElementById("closebtn-ofri").addEventListener("click", () => {
-    //   ofri.style = "opacity: 1";
-    //   burger.style = "opacity: 1; color:#898c5e";
-    //   document.getElementById("mySidenav-ofri").style.width = "0";
-    //   document.getElementById('pc-prev').style = "opacity: 1; color:#898c5e";
-    //   document.getElementById('pc-next').style = "opacity: 1; color:#898c5e";
-    // });
-
     cf.addEventListener('click', () => {
       document.getElementById("mySidenav-cf").style = "width:100%;opacity:1"
       cf.style = "opacity: 0";
@@ -110,6 +68,7 @@ export default class extends Controller {
       document.getElementById('pc-prev').style = "opacity: 0";
       document.getElementById('pc-next').style = "opacity: 0";
     });
+
     document.getElementById("closebtn-cf").addEventListener("click", () => {
       cf.style = "opacity: 1";
       burger.style = "opacity: 1; color:rgb(101, 101, 92)";
@@ -125,6 +84,7 @@ export default class extends Controller {
       document.getElementById('pc-prev').style = "opacity: 0";
       document.getElementById('pc-next').style = "opacity: 0";
     });
+
     document.getElementById("closebtn-vop").addEventListener("click", () => {
       vop.style = "opacity: 1";
       burger.style = "opacity: 1; color:#776a7c";

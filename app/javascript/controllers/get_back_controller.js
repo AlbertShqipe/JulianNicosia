@@ -3,12 +3,10 @@ import { Controller } from "@hotwired/stimulus";
 // Connects to data-controller="get-back"
 export default class extends Controller {
   connect() {
-    console.log("Stimulus connected!", this.element);
+    // console.log("Stimulus connected!", this.element);
 
-    // Select all elements where swipe detection is required
     const backElements = this.element.querySelectorAll('.backElement');
 
-    // Attach swipe listeners to each element
     backElements.forEach((element) => {
       this.setupSwipeListener(element);
     });
@@ -35,14 +33,12 @@ export default class extends Controller {
         const page = document.querySelector(".main-container");
         page.classList.add("fade-out");
 
-        // Wait for the transition to complete, then go back
         setTimeout(() => {
           window.history.back();
         }, 300); // Match the CSS transition duration
       }
     };
 
-    // Touch event listeners
     const onTouchStart = (e) => {
       touchStartX = e.changedTouches[0].screenX;
       touchStartY = e.changedTouches[0].screenY;
